@@ -18,7 +18,6 @@ class Footer extends Component {
         </div>
         <div className="date">
           <p>Roman-Lysyk © 2012-{ year }</p>
-          <p className="addDate"></p>
           <p>. All rights reserved.</p>
         </div>
       </div>

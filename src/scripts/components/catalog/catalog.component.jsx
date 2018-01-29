@@ -1,37 +1,38 @@
 import * as React from 'react';// eslint-disable-line
 import { Component } from 'react';
-import { phonesStore } from '../../stores/phones.store';
+import { imgItems } from "./img.js";
+//import './other.styl';
 
 class CatalogComponent extends Component {
-  constructor() {
-    super();
-    this.state = {
-      phones: []
-    };
-  }
-
-  componentDidMount() {
-    phonesStore.subscribe('dataChanged', (phones) => {
-      this.setState((state) => {
-        state.phones = phones;
-        return state;
-      })
-    });
-
-    phonesStore.getList();
-  }
-
-  render () {
-    const phones = this.state.phones.map((item, i) => {
-      return <div className='catalog__item' key={i}>
-        <img src={item.imgUrl} alt=''/>
-        <h2 className='catalog__title'>{item.name}  {item.price} $</h2>
+  render() {
+    const img = imgItems.map((item) => {
+      return <div key={item.id} className='img'>
+        <img src={ item.imgUrl } alt=""/>
       </div>
     });
-    return <div className='catalog'>
-      {phones}
-    </div>
+
+
+    return <section className="other">
+      <div className='img'></div>
+      <div className="item year">
+        { img }
+        <h3>+</h3>
+        <p>Years</p>
+      </div>
+      <div className="item">
+        <h3>55+</h3>
+        <p>Projects Done</p>
+      </div>
+      <div className="item">
+        <h3>89+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div className="item">
+        <h3>150+</h3>
+        <p>Meetings</p>
+      </div>
+    </section>;
   }
 }
 
-export {CatalogComponent};
+export { CatalogComponent };
