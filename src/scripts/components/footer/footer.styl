@@ -1,0 +1,28 @@
+@import './../../../styles/variables.styl';
+
+.footer
+  box-sizing border-box
+  .content-wrapper
+    padding 64px 0
+    background-color $Gray
+    &:hover
+      background-color $Gray - 50%
+      transition .5s
+    .item
+      text-align center
+      > a
+        > i
+          color $white
+          font-size 1.4rem
+          margin 5px
+          &:hover
+            color $Gray + 30%
+            transform scale(1.2, 1.1)
+            transition .5s
+
+    .date
+      margin-top 30px
+      display flex
+      justify-content center
+      > p
+        color $white

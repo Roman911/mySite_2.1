@@ -1,0 +1,51 @@
+@import './variables.styl';
+
+$baseFontSize=16px;
+
+$pageContentL=1260px;
+$pageContentM=992px;
+
+
+html
+  font-size $laptopsFontSize
+  font-family Lato, sans-serif;
+  min-height 100vh
+
+body
+  padding 0
+  margin 0
+  min-height 100vh
+
+h1,h2,h3,h4,p,ul
+  margin 0
+  padding 0
+  color $Gray
+  line-height 1.8
+
+h2
+  font-size 2.3rem
+
+h3
+  font-size 1.5rem
+
+h4
+  font-size 1.5rem
+
+li
+  list-style none
+
+a
+  text-decoration none
+
+.page-wrapper
+  box-sizing border-box
+
+.page-content-L
+  margin 0 auto
+  height 100%
+  max-width $pageContentL
+
+.page-content-M
+  margin 0 auto
+  height 100%
+  max-width $pageContentM

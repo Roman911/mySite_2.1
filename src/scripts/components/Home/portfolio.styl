@@ -1,0 +1,21 @@
+@import './../../../styles/variables.styl';
+
+.relative
+  position relative
+.portfolio
+  box-sizing border-box
+  min-height 400px
+  background-image url('./../../../../assets/images/foto_01.jpg')
+  opacity .75
+  background-repeat no-repeat
+  background-position center, center
+  background-size cover
+  background-attachment fixed
+  &__header
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    > h2
+      color $white
+      letter-spacing 0.9rem
