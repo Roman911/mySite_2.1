@@ -8,7 +8,7 @@ const dev = (config, _path) => {
   config.devServer = {
     contentBase: _path,
     compress: true,
-    port: 8085,
+    port: 8082,
     host: '0.0.0.0',
     disableHostCheck: true
   };

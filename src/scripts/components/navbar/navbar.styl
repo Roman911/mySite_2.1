@@ -1,7 +1,6 @@
 @import './../../../styles/variables.styl';
 
 .navbar
-	border 1px solid red
 	box-sizing border-box
 	position fixed
 	top 0
@@ -9,10 +8,21 @@
 	display flex
 	justify-content start
 	align-content center
+	background-color alpha($white, .5)
+	box-shadow 0 0 5px 5px $Gray
 	z-index 1
 	&-link
-		padding .5rem 1rem
-		font-size 1rem
+		padding .8rem 1.8rem
+		display flex
+		align-items center
+		font-size 1.2rem
 		color $Gray
+		> p
+			line-height 0
 		&:hover
-			background rgba(0, 0, 0, 0.54)
+			background alpha($white, .5)
+	.active
+		background-color alpha($Gray, .7)
+	.fa
+		> p
+			margin-left 10px

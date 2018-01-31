@@ -21,7 +21,7 @@ ReactDOM.render(<div>
         <Route path='/contacts' render={() => <h1>Contacts</h1>}/>
         <Route path='/contacts2' render={() => <h1>Contacts2</h1>}/>
         <Route path='/catalog' render={() => <CatalogComponent />}/>
-        <Redirect path='/' to='/taskList'/>
+        <Redirect path='/' to='/Home'/>
       </Switch>
       <Footer/>
     </div>

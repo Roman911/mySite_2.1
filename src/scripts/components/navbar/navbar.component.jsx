@@ -7,7 +7,7 @@ import './navbar.styl';
 class NavbarComponent extends Component {
   render() {
     const links = navbarItems.map((item, i) => {
-      return <NavLink key={Symbol(i).toString()} className={item.class} to={item.route}>{item.title}</NavLink>;
+      return <NavLink key={Symbol(i).toString()} className={item.class} to={item.route}><p>{item.title}</p></NavLink>;
     });
 
     return <nav className='navbar'>

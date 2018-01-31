@@ -17,8 +17,7 @@ class Footer extends Component {
           <a href="https://photographers.ua/RomanLisik/" target="_blank"><i className="fa fa-twitter"></i></a>
         </div>
         <div className="date">
-          <p>Roman-Lysyk © 2012-{ year }</p>
-          <p>. All rights reserved.</p>
+          <p>Roman-Lysyk © 2012-{ year }. All rights reserved.</p>
         </div>
       </div>
     </footer>;
