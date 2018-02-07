@@ -4,10 +4,12 @@ import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router';
 import { Route, NavLink, Switch, HashRouter as Router } from 'react-router-dom';
 import { NavbarComponent } from './scripts/components/navbar/navbar.component.jsx';
-import { TaskListComponent } from './scripts/components/taskList/taskList.component.jsx';
-import { CatalogComponent } from './scripts/components/catalog/catalog.component.jsx';
-import { HomePage } from './scripts/components/Home/Home.jsx';
+//import { CatalogComponent } from './scripts/components/catalog/catalog.component.jsx';
+import { HomePage } from './scripts/components/home/home.jsx';
 import { Footer } from './scripts/components/footer/footer.jsx';
+import { Gallery } from './scripts/components/gallery/gallery.jsx';
+import { About } from './scripts/components/about/about.jsx';
+import { Contacts } from './scripts/components/contacts/contacts.jsx';
 
 import './styles.styl';
 
@@ -16,14 +18,13 @@ ReactDOM.render(<div>
     <div className='page-wrapper'>
       <NavbarComponent />
       <Switch>
-        <Route path='/Home' render={() => <HomePage/>}/>
-        <Route path='/taskList' render={() => <TaskListComponent/>}/>
-        <Route path='/contacts' render={() => <h1>Contacts</h1>}/>
-        <Route path='/contacts2' render={() => <h1>Contacts2</h1>}/>
-        <Route path='/catalog' render={() => <CatalogComponent />}/>
-        <Redirect path='/' to='/Home'/>
+        <Route path='/home' render={() => <HomePage/>}/>
+        <Route path='/gallery' render={() => <Gallery/>}/>
+        <Route path='/about' render={() => <About/>}/>
+        <Route path='/contacts' render={() => <Contacts/>}/>
+        <Redirect path='/' to='/home'/>
       </Switch>
       <Footer/>
     </div>
   </Router>
-</div>, document.getElementById('taskList'));
+</div>, document.getElementById('page'));

@@ -31,8 +31,7 @@ class Works extends Component {
     const img = imgItems.map((item) => {
       return <div key={item.id} className='content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3'>
         <div className="item">
-          <img  src={ item.imgUrl } alt=""/>
-          <button onClick={ this.addClass }> {item.id}</button>
+          <img onClick={ this.addClass } src={ item.imgUrl } alt=""/>
         </div>
       </div>;
     });
@@ -54,7 +53,7 @@ class Works extends Component {
           </div>
 
           <div className="btn">
-            <a href="#"><button>GALLERY</button></a>
+            <a href="/#/gallery"><button>GALLERY</button></a>
           </div>
         </div>
       </div>

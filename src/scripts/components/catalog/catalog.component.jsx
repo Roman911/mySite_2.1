@@ -8,7 +8,7 @@ class CatalogComponent extends Component {
 
   render() {
     return <div className='test'>
-      <h1>nlknlk</h1>
+      <h1>vfdv</h1>
     </div>
   }
 }
