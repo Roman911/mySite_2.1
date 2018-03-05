@@ -1,0 +1,46 @@
+@import './../../../styles/variables.styl';
+
+.modalBg
+  display none
+  position fixed
+  top 0
+  left 0
+  width 100vw
+  height 100vh
+  background-color alpha($black, .85)
+  z-index 10
+  .modalWindow
+    width 100vw
+    height 100vh
+    display flex
+    justify-content space-between
+    align-items center
+    .previous,
+    .next
+      margin 50px
+      font-size 3rem
+  > button
+    box-sizing border-box
+    background none
+    border 1px solid alpha($black, 0)
+    padding 4px 9px
+    position absolute
+    top 1%
+    right 2%
+    cursor pointer
+    color $Gray
+    font-size 1.3rem
+    font-weight 500
+    transition .5s
+    &:hover
+      box-sizing border-box
+      border 1px solid $red
+      border-radius 17px
+      color $Gray + 40%
+      background-color alpha($Gray, .15)
+      transform-origin center
+      transform rotate(180deg)
+      transition .5s
+
+.modalBg.showed
+  display block

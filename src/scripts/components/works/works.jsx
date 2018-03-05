@@ -1,61 +1,63 @@
-import * as React from 'react';// eslint-disable-line
+import React, { Component } from 'react';// eslint-disable-line
 import classNames from 'classnames'
-import { Component } from 'react';
 import { imgItems } from "./works.js";
+// import Modal from 'react-modal';
 import './works.styl';
 import './modal.styl';
+
+const imgs = imgItems.map((item) => {
+  return item.imgUrl
+});
 
 class Works extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal:false
+      modal:false,
+      modalImg: imgs[0],
+      images: imgs
     };
     this.addClass = this.addClass.bind(this);
     this.removeClass = this.removeClass.bind(this);
   }
 
+  setModal(vis, imageId) {
+      this.setState({ modalImg: this.state.images[imageId] });
+      this.setState({ modal: vis })
+  }
+
   addClass() {
-    this.setState({
-      modal:true
-    });
+      this.setState({
+          modal:true
+      });
   }
 
   removeClass() {
-    this.setState({
-      modal:false
-    });
+      this.setState({
+          modal:false
+      });
   }
 
   render() {
-    const img = imgItems.map((item) => {
-      return <div key={item.id} className='content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3'>
-        <div className="item">
-          <img onClick={ this.addClass } src={ item.imgUrl } alt=""/>
-        </div>
+    let img = this.state.images.map((val, key) => {
+      return <div key={key} onClick={() => this.setModal(true, key) }>
+          <div>
+            <img src={this.state.images[key]} />
+          </div>
       </div>;
     });
 
     return <section className="works">
-      <div className="page-content-M">
-        <div className="content-wrapper">
-          <h3>MY WORK</h3>
-          <p>Here are some of my latest lorem work ipsum tipsum.<br/>
-            Click on the images to make them bigger</p>
-          <div className="grid-container">
-              { img }
-          </div>
-          <div className={classNames('modalBg', {'showed':this.state.modal})}>
-            <div className='modalWindow'>
-
+      <div>
+        <div >
+            <div className={classNames('modalBg', {'showed':this.state.modal})}>
+                <div className='modalWindow'>
+                    <img src={this.state.modalImg} alt=""/>
+                </div>
+                <button onClick={ this.removeClass }>remove class</button>
             </div>
-            <button onClick={ this.removeClass }>remove class</button>
-          </div>
-
-          <div className="btn">
-            <a href="/#/gallery"><button>GALLERY</button></a>
-          </div>
         </div>
+          { img }
       </div>
     </section>;
   }

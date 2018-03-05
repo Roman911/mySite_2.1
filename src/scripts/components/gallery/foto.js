@@ -1,38 +1,41 @@
 const imgItems = [
   {
-    id: '001',
+    id: '002',
     title: 't',
-    imgUrl: 'assets/images/foto_01.jpg'
+    imgUrl: './../../../../assets/images/foto_01.jpg',
+    description: "description 1"
   },
   {
     id: '002',
     title: 't1',
-    imgUrl: 'assets/images/foto_01.jpg'
+    imgUrl: require('./../../../../assets/images/foto_01.jpg'),
+    description: "description 2"
   },
   {
     id: '003',
     title: 't2',
-    imgUrl: 'assets/images/foto_01.jpg'
+    imgUrl: require('./../../../../assets/images/foto_02.jpg'),
+    description: "description 3"
   },
   {
     id: '004',
     title: 't3',
-    imgUrl: 'assets/images/foto_01.jpg'
+    imgUrl: require('./../../../../assets/images/foto_03.jpg'),
   },
   {
     id: '005',
     title: 't4',
-    imgUrl: 'assets/images/foto_01.jpg'
+    imgUrl: require('./../../../../assets/images/foto_04.jpg'),
   },
   {
     id: '006',
     title: 't5',
-    imgUrl: 'assets/images/foto_01.jpg'
+    imgUrl: require('./../../../../assets/images/foto_05.jpg'),
   },
   {
     id: '007',
     title: 't6',
-    imgUrl: 'assets/images/foto_01.jpg'
+    imgUrl: require('./../../../../assets/images/foto_06.jpg'),
   },
   {
     id: '008',

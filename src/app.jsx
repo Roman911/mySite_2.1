@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router';
 import { Route, NavLink, Switch, HashRouter as Router } from 'react-router-dom';
 import { NavbarComponent } from './scripts/components/navbar/navbar.component.jsx';
+import { ScrollButton } from './scripts/components/scrollingUp/scrollingUp.jsx';
 //import { CatalogComponent } from './scripts/components/catalog/catalog.component.jsx';
 import { HomePage } from './scripts/components/home/home.jsx';
 import { Footer } from './scripts/components/footer/footer.jsx';
@@ -25,6 +26,7 @@ ReactDOM.render(<div>
         <Redirect path='/' to='/home'/>
       </Switch>
       <Footer/>
+      < ScrollButton scrollStepInPx="50" delayInMs="16.66" />
     </div>
   </Router>
 </div>, document.getElementById('page'));

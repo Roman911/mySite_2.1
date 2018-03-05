@@ -2,7 +2,7 @@ const task = [
   {
     id: 'inp1',
     name: 'Portrait',
-    checkboxState: true
+    checkboxState: false
   },
   {
     id: 'inp2',
@@ -12,12 +12,12 @@ const task = [
   {
     id: 'inp3',
     name: 'Family',
-    checkboxState: true
+    checkboxState: false
   },
   {
     id: 'inp4',
     name: 'Gestation',
-    checkboxState: true
+    checkboxState: false
   }
 ];
 

@@ -1,51 +1,39 @@
-import * as React from 'react';
-import { Component } from 'react';
-import { task } from "./task.js";
+import React, {Component} from 'react';
+import classNames from 'classnames';
+import './checked.styl';
 
 class Checkbox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checkboxState: true
+      checkboxState: false,
+      show: false
     }
   }
 
   toggle() {
-    this.setState({
-      checkboxState: !this.state.checkboxState
-    });
+    this.setState({checkboxState: !this.state.checkboxState});
+    this.setState({show: !this.state.show});
   }
+
   render() {
-    const tasks = task.map((item) => {
-      return <input
-        key={item.id}
-        id={item.id}
-        name={item.title}
-        type="checkbox"
-        checked={this.checkboxState}
-        onClick={this.toggle.bind(this)}
-      />});
-    const tasks1 = task.map((item) => {
-      return <label htmlFor={item.id} className='cls'>
+    return <div className='controls'>
+      <label className={classNames('cls', {'showed': this.state.show})}>
+        <input
+          checked={this.checkboxState}
+          name={this.props.name}
+          onChange={this.toggle.bind(this)}
+          type="checkbox"/>
         <div className='input'>
-              <span className='deg'>
-
-              </span>
-          <span className="rad">
-
-              </span>
+          <span className='deg'>
+          </span>
+          <span className='rad'>
+          </span>
         </div>
-        <p>{item.name}</p>
-      </label>});
-    return ( <div className='window-task__categories'>
-        <p>Categories</p>
-        {tasks}
-        <div id='controls'>
-          {tasks1}
-        </div>
-      </div>
-    );
+        <p>{this.props.name}</p>
+      </label>
+    </div>;
   }
 }
 
-export { Checkbox };
+export {Checkbox};
