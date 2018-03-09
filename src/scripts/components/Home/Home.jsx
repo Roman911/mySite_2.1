@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navbar } from './../navbarHome/navbar.jsx';
 import { Header } from './header.jsx';
 import { About } from './../about/about.jsx';
 import { Other } from './other.jsx';
@@ -8,6 +9,7 @@ import { Portfolio } from './portfolio.jsx';
 class HomePage extends Component {
   render() {
     return <div>
+      <Navbar/>
       <Header/>
       <About/>
       <Other/>
