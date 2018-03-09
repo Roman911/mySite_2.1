@@ -37,11 +37,13 @@ class Slider extends Component {
                <Slide image={item.imgUrl} description={item.description} show={this.state.currentIndex === index} />
                </div>
         });
+        const ondown = addEventListener('keydown', console.log(28));
         return (
             <div className="slideShow">
                 <a className="previous" onClick={() => this.prev()}>prev</a>
-                <div className="slider">
+                <div onKeyDown={(e) => console.log(26)} className="slider">
                     {slid}
+                    {ondown}
                 </div>
                 <a className="next" onClick={() => this.next()}>next</a>
             </div>
