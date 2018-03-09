@@ -23,6 +23,7 @@ class Foto extends Component {
     };
     this.addClass = this.addClass.bind(this);
     this.removeClass = this.removeClass.bind(this);
+    this.onKeyPressed = this.onKeyPressed.bind(this);
   }
 
   setModal(vis, index) {
@@ -63,6 +64,16 @@ class Foto extends Component {
     }
   }
 
+  onKeyPressed() {
+    if (event.keyCode === 27) {
+      this.removeClass()
+    } else if (event.keyCode === 39) {
+      this.next()
+    } else if (event.keyCode === 37) {
+      this.prev()
+    }
+  }
+
   render() {
     const img = leng.map((val, index) => {
       return <div key={index} className='content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3'>
@@ -78,7 +89,7 @@ class Foto extends Component {
         show={this.state.currentIndex === index}
       />
     });
-
+    const onke = addEventListener('keydown', this.onKeyPressed);
     return <section className="gallery">
       <div className="page-content-L">
         <div className="page-content-M">

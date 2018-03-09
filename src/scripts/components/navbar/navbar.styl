@@ -2,7 +2,7 @@
 
 .navbar
 	box-sizing border-box
-	position fixed
+	position absolute
 	top 0
 	width 100%
 	display flex
@@ -23,6 +23,19 @@
 			background alpha($white, .5)
 	.active
 		background-color alpha($Gray, .7)
-	.fa
+  .fa
 		> p
 			margin-left 10px
+
+.navbar.fixed
+	position fixed
+	background-color alpha($white, .9)
+	animation-name example
+	animation-duration .5s
+
+
+@keyframes example
+	0%
+		transform translateY(-100%)
+	100%
+		transform translateY(0%)
