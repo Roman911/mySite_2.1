@@ -1,6 +1,6 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);.navbar {
+@import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);.navbar {
   box-sizing: border-box;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   display: -ms-flexbox;
@@ -31,8 +31,67 @@
 .navbar .active {
   background-color: rgba(119,119,119,0.7);
 }
-.navbar .fa > p {
+.fa > p {
   margin-left: 10px;
+}
+.navbar.fixed {
+  position: fixed;
+  background-color: rgba(255,255,255,0.9);
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+@keyframes example {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.scroll {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+button {
+  padding: 7px 15px;
+  border: 1px solid rgba(250,61,41,0);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #535353;
+  background-color: rgba(71,71,71,0.3);
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  border: 1px solid #fa3d29;
+  background-color: rgba(48,48,48,0.4);
+  color: #858585;
+  transition: 0.5s;
+}
+button > i {
+  color: #fff;
+  font-size: 1.9rem;
+  transition: 0.5s;
+}
+button > i:hover {
+  color: color #e31b05;
+  transition: 0.5s;
+}
+.scroll.show {
+  display: block;
+  animation-name: example2;
+  animation-duration: 0.5s;
+}
+@keyframes example2 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 .header {
   box-sizing: border-box;
@@ -175,88 +234,6 @@
   color: #fff;
   letter-spacing: 0.9rem;
 }
-.works {
-  box-sizing: border-box;
-}
-.works .page-content-M {
-  box-sizing: border-box;
-}
-.works .page-content-M .content-wrapper {
-  padding: 64px 10px;
-  text-align: center;
-}
-.works .page-content-M .content-wrapper > h3 {
-  margin: 10px;
-  font-weight: 100;
-}
-.works .page-content-M .content-wrapper > p {
-  margin: 15px;
-  font-style: italic;
-  font-weight: 100;
-}
-.works .page-content-M .content-wrapper .content-block .item {
-  box-sizing: border-box;
-  padding: 5px;
-  font-size: 0;
-  cursor: pointer;
-}
-.works .page-content-M .content-wrapper .content-block .item > img {
-  max-width: 100%;
-  box-sizing: border-box;
-  opacity: 0.75;
-  transition: 0.5s;
-}
-.works .page-content-M .content-wrapper .content-block .item:hover {
-  -ms-transform: scale(1.02, 1.02);
-      transform: scale(1.02, 1.02);
-  transition: 0.5s;
-}
-.works .page-content-M .content-wrapper .content-block .item:hover > img {
-  box-shadow: 0 0 4px 4px #777;
-  transition: 0.5s;
-  opacity: 1;
-}
-.works .page-content-M .content-wrapper .btn {
-  margin: 0 auto;
-  padding-top: 64px;
-}
-.works .page-content-M .content-wrapper .btn button {
-  padding: 10px 20px;
-  border: none;
-  font-size: 1rem;
-  color: #535353;
-  background-color: #bbb;
-  cursor: pointer;
-}
-.works .page-content-M .content-wrapper .btn button:hover {
-  background-color: #535353;
-  color: #858585;
-  transition: 0.5s;
-}
-.modalBg {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(119,119,119,0.75);
-  z-index: 10;
-}
-.modalBg .modalWindow {
-  position: fixed;
-  border: 1px solid #adadad;
-  width: 60%;
-  max-height: 100%;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  background-color: #fff;
-}
-.modalBg.showed {
-  display: block;
-}
 .footer {
   box-sizing: border-box;
 }
@@ -289,35 +266,21 @@
 .footer .content-wrapper .date > p {
   color: #fff;
 }
-.content-wrapper1 {
-  margin: 64px 5px;
-}
-.content-wrapper1 .window-task {
-  width: 250px;
-  box-sizing: border-box;
-  padding: 20px;
-  border: 1px solid #a0a0a0;
-  box-shadow: 0 0 5px 1px #929292;
-}
-.content-wrapper1 .window-task__categories > input,
-.content-wrapper1 .window-task__date > input {
-  display: none;
-}
-.content-wrapper1 .window-task__categories #controls > label,
-.content-wrapper1 .window-task__date #controls > label {
+.controls > label {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
 }
-.content-wrapper1 .window-task__categories #controls > label .input,
-.content-wrapper1 .window-task__date #controls > label .input {
+.controls > label > input {
+  display: none;
+}
+.controls > label .input {
   position: relative;
   display: -ms-flexbox;
   display: flex;
 }
-.content-wrapper1 .window-task__categories #controls > label .input .deg,
-.content-wrapper1 .window-task__date #controls > label .input .deg {
+.controls > label .input .deg {
   height: 2px;
   border: 1px solid #858585;
   border-radius: 10px;
@@ -326,8 +289,7 @@
   background-color: #adadad;
   box-shadow: 2px 2px 10px 1px #adadad;
 }
-.content-wrapper1 .window-task__categories #controls > label .input .rad,
-.content-wrapper1 .window-task__date #controls > label .input .rad {
+.controls > label .input .rad {
   position: absolute;
   left: 0;
   top: 50%;
@@ -338,35 +300,29 @@
   background-color: #929292;
   padding: 8px;
 }
-.content-wrapper1 .window-task__categories #controls > label > p,
-.content-wrapper1 .window-task__date #controls > label > p {
+.controls > label > p {
   margin-left: 15px;
   font-style: italic;
 }
-#inp1:checked ~ #controls label:nth-child(1) > p,
-#inp2:checked ~ #controls label:nth-child(2) > p,
-#inp3:checked ~ #controls label:nth-child(3) > p,
-#inp4:checked ~ #controls label:nth-child(4) > p,
-#inp5:checked ~ #controls label:nth-child(1) > p,
-#inp6:checked ~ #controls label:nth-child(2) > p {
+.controls > label.showed > p {
   color: #667d98;
 }
-#inp1:checked ~ #controls label:nth-child(1) .deg,
-#inp2:checked ~ #controls label:nth-child(2) .deg,
-#inp3:checked ~ #controls label:nth-child(3) .deg,
-#inp4:checked ~ #controls label:nth-child(4) .deg,
-#inp5:checked ~ #controls label:nth-child(1) .deg,
-#inp6:checked ~ #controls label:nth-child(2) .deg {
+.controls > label.showed .deg {
   background-color: #b2becc;
 }
-#inp1:checked ~ #controls label:nth-child(1) .rad,
-#inp2:checked ~ #controls label:nth-child(2) .rad,
-#inp3:checked ~ #controls label:nth-child(3) .rad,
-#inp4:checked ~ #controls label:nth-child(4) .rad,
-#inp5:checked ~ #controls label:nth-child(1) .rad,
-#inp6:checked ~ #controls label:nth-child(2) .rad {
+.controls > label.showed .rad {
   left: 100%;
   background-color: #d6d6d6;
+}
+.content-wrapper1 {
+  margin: 64px 5px;
+}
+.content-wrapper1 .window-task {
+  width: 250px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #a0a0a0;
+  box-shadow: 0 0 5px 1px #929292;
 }
 .gallery {
   box-sizing: border-box;
@@ -415,22 +371,73 @@
   transition: 0.5s;
   opacity: 1;
 }
-.gallery .page-content-L .page-content-M .content-wrapper .btn {
-  margin: 0 auto;
-  padding-top: 64px;
+.modalBg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.85);
+  z-index: 10;
 }
-.gallery .page-content-L .page-content-M .content-wrapper .btn button {
-  padding: 10px 20px;
-  border: none;
-  font-size: 1rem;
-  color: #535353;
-  background-color: #bbb;
+.modalBg .modalWindow {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.modalBg .modalWindow .previous,
+.modalBg .modalWindow .next {
+  margin: 50px;
+  font-size: 3rem;
+}
+.modalBg > button {
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid rgba(0,0,0,0);
+  padding: 4px 9px;
+  position: absolute;
+  top: 1%;
+  right: 2%;
   cursor: pointer;
-}
-.gallery .page-content-L .page-content-M .content-wrapper .btn button:hover {
-  background-color: #535353;
-  color: #858585;
+  color: #777;
+  font-size: 1.3rem;
+  font-weight: 500;
   transition: 0.5s;
+}
+.modalBg > button:hover {
+  box-sizing: border-box;
+  border: 1px solid #fa3d29;
+  border-radius: 17px;
+  color: #adadad;
+  background-color: rgba(119,119,119,0.15);
+  -ms-transform-origin: center;
+      transform-origin: center;
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+  transition: 0.5s;
+}
+.modalBg.showed {
+  display: block;
+}
+.slide {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+.slide > img {
+  max-height: calc(100vh - 100px);
+}
+.slide.show {
+  display: block;
 }
 .contacts {
   padding: 63px;
