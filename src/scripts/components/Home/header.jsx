@@ -5,7 +5,7 @@ import './header.styl';
 class Header extends Component {
   render() {
 
-    return <section className="header">
+    return <section className="header" id="navhome">
       <div className="header__logo">
         <h1>MY WEBSITE LOGO</h1>
       </div>

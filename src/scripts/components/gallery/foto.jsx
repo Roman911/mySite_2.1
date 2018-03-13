@@ -11,6 +11,9 @@ const imgs = leng.map((item) => {
   return item.imgUrl
 });
 
+const arr = [1, 2, 3, 5, 7];
+const arr2 = [4, 6, 8, 9, 10];
+
 class Foto extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +22,8 @@ class Foto extends Component {
       modalImg: imgs[0],
       images: imgs,
       currentIndex: 0,
-      length: leng.length
+      length: leng.length,
+      arr: true
     };
     this.addClass = this.addClass.bind(this);
     this.removeClass = this.removeClass.bind(this);
@@ -74,6 +78,14 @@ class Foto extends Component {
     }
   }
 
+  arr5() {
+    if (this.state.arr === true) {
+      return arr2
+    } else {
+      return ''
+    }
+  }
+
   render() {
     const img = leng.map((val, index) => {
       return <div key={index} className='content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3'>
@@ -89,6 +101,11 @@ class Foto extends Component {
         show={this.state.currentIndex === index}
       />
     });
+    const num = [this.arr5()].map((item, index) => {
+      return <div key={index}>
+        <p>{item}</p>
+      </div>
+    });
     const onke = addEventListener('keydown', this.onKeyPressed);
     return <section className="gallery">
       <div className="page-content-L">
@@ -100,6 +117,7 @@ class Foto extends Component {
             <div className="grid-container">
               {img}
             </div>
+            {num}
             <div className={classNames('modalBg', {'showed': this.state.modal})}>
               <div className='modalWindow'>
                 <a className="previous" onClick={() => this.prev()}>

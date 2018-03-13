@@ -10,7 +10,7 @@ class Other extends Component {
     const start = 2012;
     const year = years - start;
 
-    return <section className="other">
+    return <section className="other" >
         <div className="item year">
           <h3>{ year }+</h3>
           <p>Years</p>

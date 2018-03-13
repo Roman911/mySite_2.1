@@ -1,4 +1,4 @@
-import React, { Component } from 'react';// eslint-disable-line
+import React, { Component } from 'react';
 import { Window } from "./../window-task/window-task.jsx";
 import { Foto } from "./foto.jsx";
 import './gallery.styl';

@@ -1,6 +1,6 @@
 const task = [
   {
-    id: 'inp1',
+    id: '1',
     name: 'Portrait',
     checkboxState: false
   },

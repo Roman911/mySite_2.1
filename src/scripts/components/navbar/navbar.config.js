@@ -2,7 +2,7 @@ const navbarItems = [
   {
     title: 'home',
     route: '/home',
-    class: 'navbar-link fa fa-th'
+    class: 'navbar-link'
   },
   {
     title: 'gallery',

@@ -5,7 +5,7 @@ import './about.styl';
 class About extends Component {
   render() {
 
-    return <section className="about-me">
+    return <section className="about-me" id="navabout">
       <div className="page-content-M">
         <div className="item">
           <h4>ABOUT ME</h4>

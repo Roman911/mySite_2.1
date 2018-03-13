@@ -15,6 +15,7 @@ class Checkbox extends Component {
       arr2: false
     };
     this.toggle = this.toggle.bind(this);
+    console.log(props)
   }
 
   toggle(id) {

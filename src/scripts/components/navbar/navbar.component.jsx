@@ -28,7 +28,6 @@ class NavbarComponent extends Component {
     });
     return <nav className={classNames('navbar', {'fixed':this.state.fixed})}>
       {links}
-      {onsc}
     </nav>;
   }
 }

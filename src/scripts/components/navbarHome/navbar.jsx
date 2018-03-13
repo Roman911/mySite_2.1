@@ -5,14 +5,21 @@ import './navbarHome.styl'
 class Navbar extends Component {
   constructor() {
     super();
+
   }
 
+
+
   render() {
+    let domNode = ReactDOM.findDOMNode(refs.divr);
+    let domRect = domNode.getBoundingClientRect();
     const links = navbarItems.map((item, index) => {
-      return <div key={index} className='navbar-home__link'><p>{item.title}</p></div>
+      return <a href={item.route} key={index} className='navbar-home__link'><p>{item.title}</p></a>
     });
-    return <nav className='navbar-home'>
+    const divt = <div className='divr'>divr</div>;
+    return <nav className='navbar-home' id='nav'>
       { links }
+      { console.log(domRect) }
     </nav>
   }
 }

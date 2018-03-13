@@ -5,7 +5,7 @@ import './portfolio.styl';
 class Portfolio extends Component {
   render() {
 
-    return <section className="portfolio relative">
+    return <section className="portfolio relative" id="navportfolio">
       <div className="portfolio__header">
         <h2>PORTFOLIO</h2>
       </div>

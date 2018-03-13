@@ -1,19 +1,15 @@
 const navbarItems = [
   {
     title: 'home',
-    route: '/home'
-  },
-  {
-    title: 'gallery',
-    route: '/gallery'
+    route: '#navhome'
   },
   {
     title: 'about',
-    route: '/about'
+    route: '#navabout'
   },
   {
-    title: 'contacts',
-    route: '/contacts'
+    title: 'portfolio',
+    route: '#navportfolio'
   }
 ];
 
