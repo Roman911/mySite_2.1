@@ -15,7 +15,6 @@ class Checkbox extends Component {
       arr2: false
     };
     this.toggle = this.toggle.bind(this);
-    console.log(props)
   }
 
   toggle(id) {
@@ -26,30 +25,9 @@ class Checkbox extends Component {
     } else if (id === 1) {
       this.setState({arr2: !this.state.arr2})
     }
-
-    console.log(id)
-  }
-
-  arr5() {
-    if (this.state.arr === true) {
-      return arr
-    } else {
-      return ''
-    }
-  }
-
-  arr6() {
-    if (this.state.arr2 === true) {
-      return arr2
-    } else {
-      return ''
-    }
   }
 
   render() {
-    const array = [this.arr5(), this.arr6()].map((item, index) => {
-      return <div key={index}>{item}</div>
-    });
     return <div className='controls'>
       <label className={classNames('cls', {'showed': this.state.show})}>
         <input
@@ -66,7 +44,6 @@ class Checkbox extends Component {
         </div>
         <p>{this.props.name}</p>
       </label>
-      {array}
     </div>;
   }
 }
