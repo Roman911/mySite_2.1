@@ -1,126 +1,151 @@
 const imgItems = [
   {
-    id: '002',
+    id: 0,
     title: 't',
-    imgUrl: './../../../../assets/images/foto_01.jpg',
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_03.jpg'),
     description: "description 1"
   },
   {
-    id: '002',
-    title: 't1',
+    id: 1,
+    title: 't',
+    portrait: 'portrait',
     imgUrl: require('./../../../../assets/images/foto_01.jpg'),
+    description: "description 1"
+  },
+  {
+    id: 2,
+    title: 't1',
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_05.jpg'),
     description: "description 2"
   },
   {
-    id: '003',
+    id: 3,
     title: 't2',
+    portrait: 'portrait',
     imgUrl: require('./../../../../assets/images/foto_02.jpg'),
     description: "description 3"
   },
   {
-    id: '004',
+    id: 4,
     title: 't3',
+    portrait: 'portrait',
     imgUrl: require('./../../../../assets/images/foto_03.jpg'),
   },
   {
-    id: '005',
+    id: 5,
     title: 't4',
+    portrait: 'portrait',
     imgUrl: require('./../../../../assets/images/foto_04.jpg'),
   },
   {
-    id: '006',
+    id: 6,
     title: 't5',
+    portrait: 'portrait',
     imgUrl: require('./../../../../assets/images/foto_05.jpg'),
   },
   {
-    id: '007',
+    id: 7,
     title: 't6',
+    portrait: 'portrait',
     imgUrl: require('./../../../../assets/images/foto_06.jpg'),
   },
   {
-    id: '008',
+    id: 8,
     title: 't7',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '009',
+    id: 9,
     title: 't',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '010',
+    id: 10,
     title: 't1',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '011',
+    id: 11,
     title: 't2',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '012',
+    id: 12,
     title: 't3',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '013',
+    id: 13,
     title: 't4',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '014',
+    id: 14,
     title: 't5',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '015',
+    id: 15,
     title: 't6',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '016',
+    id: 16,
     title: 't7',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '017',
+    id: 17,
     title: 't',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '018',
+    id: 18,
     title: 't1',
-    imgUrl: 'assets/images/foto_01.jpg'
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '019',
+    id: 19,
     title: 't2',
-    imgUrl: 'assets/images/foto_01.jpg'
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '020',
+    id: 20,
     title: 't3',
-    imgUrl: 'assets/images/foto_01.jpg'
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '021',
+    id: 21,
     title: 't4',
-    imgUrl: 'assets/images/foto_01.jpg'
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '022',
+    id: 22,
     title: 't5',
-    imgUrl: 'assets/images/foto_01.jpg'
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: '023',
+    id: 23,
     title: 't6',
-    imgUrl: 'assets/images/foto_01.jpg'
-  },
-  {
-    id: '024',
-    title: 't7',
-    imgUrl: 'assets/images/foto_01.jpg'
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_04.jpg')
   }
 ];
 

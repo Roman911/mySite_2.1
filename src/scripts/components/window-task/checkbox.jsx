@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import classNames from 'classnames';
 import './checked.styl';
 
-const arr = [1, 2, 3, 5, 7];
-const arr2 = [4, 6, 8, 9, 10];
-
 class Checkbox extends Component {
   constructor(props) {
     super(props);
