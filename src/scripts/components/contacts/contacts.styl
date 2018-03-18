@@ -3,14 +3,44 @@
 .contacts
   padding 63px
   .page-content-M
-    border 1px solid red
+    border 1px solid $Gray + 30%
+    box-shadow 0 0 5px 1px $Gray + 20%
     .head
+      margin 25px 0 30px
       text-align center
       > h2
         font-size 1.8rem
         font-weight 100
       > p
         font-style italic
-    .content-block
-      border 1px solid blue
+    .form
+      > input,textarea
+        box-sizing border-box
+        margin-bottom 15px
+        padding 5px
+        width 100%
+    .but
+      display flex
+      justify-content flex-end
+    .content-item
       width 100%
+      .item
+        padding 5px
+        font-size 0
+        > img
+          width 100%
+          opacity 0.75
+    .content-block
+      .content-block
+        padding 25px 20px
+        .head
+          align-items center
+        .contact
+          > p
+            margin 10px 0
+            > a
+              &:hover
+                color $Gray - 50%
+
+  .fas,.fab
+    margin 5px

@@ -5,20 +5,23 @@
   .content-wrapper
     padding 64px 0
     background-color $Gray
+    transition .5s
     &:hover
       background-color $Gray - 50%
       transition .5s
     .item
       text-align center
       > a
+        margin 15px
         > i
           color $white
-          font-size 1.4rem
+          font-size 1.8rem
           margin 5px
+          transition .4s
           &:hover
             color $Gray + 30%
-            transform scale(1.2, 1.1)
-            transition .5s
+            transform scale(1.1)
+            transition .4s
 
     .date
       margin-top 30px

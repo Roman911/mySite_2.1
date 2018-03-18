@@ -21,7 +21,7 @@ class About extends Component {
         <div className="grid-container">
           <div className="content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <div className="item">
-              <p><b><i className="fa fa-user"></i> My Name:</b></p>
+              <p><b><i className="fas fa-user"/> My Name:</b></p>
               <p>Roman Lysyk</p>
               <img src={require("../../../../assets/images/foto_02.jpg")} alt=""/>
             </div>
@@ -42,7 +42,7 @@ class About extends Component {
           <p>Im really good at:</p>
           <div className="properties">
             <div className="properties__header">
-              <i className="fa fa-camera"></i>
+              <i className="fas fa-camera-retro"/>
               <p> Photography</p>
             </div>
             <div className="properties__bar">
@@ -51,7 +51,7 @@ class About extends Component {
               </div>
             </div>
             <div className="properties__header">
-              <i className="fa fa-laptop"></i>
+              <i className="fas fa-laptop"/>
               <p> Web Design</p>
             </div>
             <div className="properties__bar">
@@ -60,7 +60,7 @@ class About extends Component {
               </div>
             </div>
             <div className="properties__header">
-              <i className="fa fa-photo"></i>
+              <i className="fas fa-images"/>
               <p> Photoshop</p>
             </div>
             <div className="properties__bar">

@@ -1,44 +1,71 @@
 const imgItems = [
   {
-    id: '001',
+    id: 0,
+    line: 1,
     title: 't',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_03.jpg'),
+    description: "description 1"
   },
   {
-    id: '002',
+    id: 1,
+    line: 1,
+    title: 't',
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg'),
+    description: "description 1"
+  },
+  {
+    id: 2,
+    line: 1,
     title: 't1',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_05.jpg'),
+    description: "description 2"
   },
   {
-    id: '003',
+    id: 3,
+    line: 2,
     title: 't2',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_02.jpg'),
+    description: "description 3"
   },
   {
-    id: '004',
+    id: 4,
+    line: 2,
     title: 't3',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_03.jpg'),
   },
   {
-    id: '005',
+    id: 5,
+    line: 2,
     title: 't4',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_01.jpg'),
   },
   {
-    id: '006',
+    id: 6,
+    line: 3,
     title: 't5',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_05.jpg'),
   },
   {
-    id: '007',
+    id: 7,
+    line: 3,
     title: 't6',
-    imgUrl: 'assets/images/foto_01.jpg'
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_06.jpg'),
   },
   {
-    id: '008',
+    id: 8,
+    line: 3,
     title: 't7',
-    imgUrl: 'assets/images/foto_01.jpg'
-  }
+    portrait: 'portrait',
+    imgUrl: require('./../../../../assets/images/foto_04.jpg')
+  },
 ];
 
 export { imgItems };

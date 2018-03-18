@@ -7,17 +7,17 @@ const navbarItems = [
   {
     title: 'gallery',
     route: '/gallery',
-    class: 'navbar-link fa fa-th'
+    class: 'navbar-link fas fa-th'
   },
   {
     title: 'about',
     route: '/about',
-    class: 'navbar-link fa fa-user-secret'
+    class: 'navbar-link fas fa-user-secret'
   },
   {
     title: 'contacts',
     route: '/contacts',
-    class: 'navbar-link fa fa-envelope'
+    class: 'navbar-link fas fa-address-book'
   }
 ];
 

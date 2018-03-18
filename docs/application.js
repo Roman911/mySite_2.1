@@ -1,6 +1,27 @@
 webpackJsonp([0],{
 
-/***/ 169:
+/***/ 120:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_02.jpg";
+
+/***/ }),
+
+/***/ 121:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_04.jpg";
+
+/***/ }),
+
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_01.jpg";
+
+/***/ }),
+
+/***/ 174:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17,7 +38,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(433);
+__webpack_require__(441);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -81,7 +102,7 @@ var About = function (_Component) {
                   React.createElement(
                     'b',
                     null,
-                    React.createElement('i', { className: 'fa fa-user' }),
+                    React.createElement('i', { className: 'fas fa-user' }),
                     ' My Name:'
                   )
                 ),
@@ -90,7 +111,7 @@ var About = function (_Component) {
                   null,
                   'Roman Lysyk'
                 ),
-                React.createElement('img', { src: __webpack_require__(170), alt: '' })
+                React.createElement('img', { src: __webpack_require__(120), alt: '' })
               )
             ),
             React.createElement(
@@ -121,7 +142,7 @@ var About = function (_Component) {
               React.createElement(
                 'div',
                 { className: 'properties__header' },
-                React.createElement('i', { className: 'fa fa-camera' }),
+                React.createElement('i', { className: 'fas fa-camera-retro' }),
                 React.createElement(
                   'p',
                   null,
@@ -144,7 +165,7 @@ var About = function (_Component) {
               React.createElement(
                 'div',
                 { className: 'properties__header' },
-                React.createElement('i', { className: 'fa fa-laptop' }),
+                React.createElement('i', { className: 'fas fa-laptop' }),
                 React.createElement(
                   'p',
                   null,
@@ -167,7 +188,7 @@ var About = function (_Component) {
               React.createElement(
                 'div',
                 { className: 'properties__header' },
-                React.createElement('i', { className: 'fa fa-photo' }),
+                React.createElement('i', { className: 'fas fa-images' }),
                 React.createElement(
                   'p',
                   null,
@@ -201,30 +222,97 @@ exports.About = About;
 
 /***/ }),
 
-/***/ 170:
+/***/ 175:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_02.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_06.jpg";
 
 /***/ }),
 
-/***/ 171:
+/***/ 176:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 187:
+/***/ 177:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 178:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(119);
-module.exports = __webpack_require__(389);
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Slide = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Slide = function (_Component) {
+  _inherits(Slide, _Component);
+
+  function Slide() {
+    _classCallCheck(this, Slide);
+
+    return _possibleConstructorReturn(this, (Slide.__proto__ || Object.getPrototypeOf(Slide)).apply(this, arguments));
+  }
+
+  _createClass(Slide, [{
+    key: "render",
+    value: function render() {
+      var classString = this.props.show ? "slide show" : "slide";
+      return _react2.default.createElement(
+        "div",
+        { className: classString },
+        _react2.default.createElement("img", { src: this.props.image })
+      );
+    }
+  }]);
+
+  return Slide;
+}(_react.Component);
+
+exports.Slide = Slide;
+
+/***/ }),
+
+/***/ 179:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 195:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(124);
+module.exports = __webpack_require__(397);
 
 
 /***/ }),
 
-/***/ 389:
+/***/ 397:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -234,29 +322,29 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _reactDom = __webpack_require__(58);
+var _reactDom = __webpack_require__(59);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouter = __webpack_require__(156);
+var _reactRouter = __webpack_require__(161);
 
-var _reactRouterDom = __webpack_require__(115);
+var _reactRouterDom = __webpack_require__(82);
 
-var _navbarComponent = __webpack_require__(425);
+var _navbarComponent = __webpack_require__(433);
 
-var _scrollingUp = __webpack_require__(428);
+var _scrollingUp = __webpack_require__(436);
 
-var _home = __webpack_require__(430);
+var _home = __webpack_require__(438);
 
-var _footer = __webpack_require__(438);
+var _footer = __webpack_require__(449);
 
-var _gallery = __webpack_require__(440);
+var _gallery = __webpack_require__(451);
 
-var _about = __webpack_require__(169);
+var _about = __webpack_require__(174);
 
-var _contacts = __webpack_require__(458);
+var _contacts = __webpack_require__(460);
 
-__webpack_require__(460);
+__webpack_require__(463);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -299,7 +387,7 @@ _reactDom2.default.render(React.createElement(
 
 /***/ }),
 
-/***/ 425:
+/***/ 433:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -316,15 +404,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _navbar = __webpack_require__(426);
+var _navbar = __webpack_require__(434);
 
-var _reactRouterDom = __webpack_require__(115);
+var _reactRouterDom = __webpack_require__(82);
 
-var _classnames = __webpack_require__(52);
+var _classnames = __webpack_require__(47);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(427);
+__webpack_require__(435);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -376,8 +464,7 @@ var NavbarComponent = function (_Component) {
       return _react2.default.createElement(
         'nav',
         { className: (0, _classnames2.default)('navbar', { 'fixed': this.state.fixed }) },
-        links,
-        onsc
+        links
       );
     }
   }]);
@@ -389,7 +476,7 @@ exports.NavbarComponent = NavbarComponent;
 
 /***/ }),
 
-/***/ 426:
+/***/ 434:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -401,33 +488,33 @@ Object.defineProperty(exports, "__esModule", {
 var navbarItems = [{
   title: 'home',
   route: '/home',
-  class: 'navbar-link fa fa-th'
+  class: 'navbar-link'
 }, {
   title: 'gallery',
   route: '/gallery',
-  class: 'navbar-link fa fa-th'
+  class: 'navbar-link fas fa-th'
 }, {
   title: 'about',
   route: '/about',
-  class: 'navbar-link fa fa-user-secret'
+  class: 'navbar-link fas fa-user-secret'
 }, {
   title: 'contacts',
   route: '/contacts',
-  class: 'navbar-link fa fa-envelope'
+  class: 'navbar-link fas fa-address-book'
 }];
 
 exports.navbarItems = navbarItems;
 
 /***/ }),
 
-/***/ 427:
+/***/ 435:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 428:
+/***/ 436:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -444,11 +531,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(52);
+var _classnames = __webpack_require__(47);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(429);
+__webpack_require__(437);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -522,14 +609,14 @@ exports.ScrollButton = ScrollButton;
 
 /***/ }),
 
-/***/ 429:
+/***/ 437:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 430:
+/***/ 438:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -546,13 +633,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(431);
+var _header = __webpack_require__(439);
 
-var _about = __webpack_require__(169);
+var _about = __webpack_require__(174);
 
-var _other = __webpack_require__(434);
+var _other = __webpack_require__(442);
 
-var _portfolio = __webpack_require__(436);
+var _portfolio = __webpack_require__(444);
+
+var _works = __webpack_require__(446);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -561,10 +650,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-//import { Navbar } from './../navbarHome/navbar.jsx';
-
-
-//import { Works } from './../works/works.jsx';
 
 var HomePage = function (_Component) {
   _inherits(HomePage, _Component);
@@ -584,7 +669,8 @@ var HomePage = function (_Component) {
         _react2.default.createElement(_header.Header, null),
         _react2.default.createElement(_about.About, null),
         _react2.default.createElement(_other.Other, null),
-        _react2.default.createElement(_portfolio.Portfolio, null)
+        _react2.default.createElement(_portfolio.Portfolio, null),
+        _react2.default.createElement(_works.Works, null)
       );
     }
   }]);
@@ -596,7 +682,7 @@ exports.HomePage = HomePage;
 
 /***/ }),
 
-/***/ 431:
+/***/ 439:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -613,7 +699,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(432);
+__webpack_require__(440);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -660,21 +746,21 @@ exports.Header = Header;
 
 /***/ }),
 
-/***/ 432:
+/***/ 440:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 433:
+/***/ 441:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 434:
+/***/ 442:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -691,7 +777,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(435);
+__webpack_require__(443);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -791,14 +877,14 @@ exports.Other = Other;
 
 /***/ }),
 
-/***/ 435:
+/***/ 443:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 436:
+/***/ 444:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -815,7 +901,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(437);
+__webpack_require__(445);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -862,14 +948,344 @@ exports.Portfolio = Portfolio;
 
 /***/ }),
 
-/***/ 437:
+/***/ 445:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 438:
+/***/ 446:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Works = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(82);
+
+var _classnames = __webpack_require__(47);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _works = __webpack_require__(447);
+
+__webpack_require__(448);
+
+__webpack_require__(176);
+
+__webpack_require__(177);
+
+var _slid = __webpack_require__(178);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var img = _works.imgItems.map(function (item) {
+  return item.imgUrl;
+});
+
+var Works = function (_Component) {
+  _inherits(Works, _Component);
+
+  function Works(props) {
+    _classCallCheck(this, Works);
+
+    var _this = _possibleConstructorReturn(this, (Works.__proto__ || Object.getPrototypeOf(Works)).call(this, props));
+
+    _this.state = {
+      modal: false,
+      modalImg: 0,
+      images: img,
+      currentIndex: 0,
+      length: img.length
+    };
+    _this.addClass = _this.addClass.bind(_this);
+    _this.removeClass = _this.removeClass.bind(_this);
+    _this.onKeyPressed = _this.onKeyPressed.bind(_this);
+    return _this;
+  }
+
+  _createClass(Works, [{
+    key: 'setModal',
+    value: function setModal(visible, index) {
+      this.setState({ modalImg: this.state.images[index] });
+      this.setState({ modal: visible });
+      this.setState({ currentIndex: index });
+      document.body.style.overflow = 'hidden';
+    }
+  }, {
+    key: 'addClass',
+    value: function addClass() {
+      this.setState({
+        modal: true
+      });
+    }
+  }, {
+    key: 'removeClass',
+    value: function removeClass() {
+      this.setState({
+        modal: false
+      });
+      document.body.style.overflow = '';
+    }
+  }, {
+    key: 'next',
+    value: function next() {
+      if (this.state.currentIndex < this.state.length - 1) {
+        this.setState({ currentIndex: this.state.currentIndex + 1 });
+      } else {
+        this.setState({ currentIndex: 0 });
+      }
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      if (this.state.currentIndex > 0) {
+        this.setState({ currentIndex: this.state.currentIndex - 1 });
+      } else {
+        this.setState({ currentIndex: this.state.length - 1 });
+      }
+    }
+  }, {
+    key: 'onKeyPressed',
+    value: function onKeyPressed() {
+      if (event.keyCode === 27) {
+        this.removeClass();
+      } else if (event.keyCode === 39) {
+        this.next();
+      } else if (event.keyCode === 37) {
+        this.prev();
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var img = _works.imgItems.map(function (item) {
+        if (item.line === 1) {
+          return _react2.default.createElement(
+            'div',
+            { key: item.id, className: 'item', onClick: function onClick() {
+                return _this2.setModal(true, item.id);
+              } },
+            _react2.default.createElement('img', { src: item.imgUrl, alt: '' })
+          );
+        }
+      });
+      var img2 = _works.imgItems.map(function (item) {
+        if (item.line === 2) {
+          return _react2.default.createElement(
+            'div',
+            { key: item.id, style: { flexGrow: 3 }, className: 'item', onClick: function onClick() {
+                return _this2.setModal(true, item.id);
+              } },
+            _react2.default.createElement('img', { src: item.imgUrl, alt: '' })
+          );
+        }
+      });
+      var img3 = _works.imgItems.map(function (item) {
+        if (item.line === 3) {
+          return _react2.default.createElement(
+            'div',
+            { key: item.id, style: { flexGrow: 3 }, className: 'item', onClick: function onClick() {
+                return _this2.setModal(true, item.id);
+              } },
+            _react2.default.createElement('img', { src: item.imgUrl, alt: '' })
+          );
+        }
+      });
+      var slid = _works.imgItems.map(function (item, index) {
+        return _react2.default.createElement(_slid.Slide, {
+          key: index,
+          image: item.imgUrl,
+          show: _this2.state.currentIndex === index
+        });
+      });
+      var onke = addEventListener('keydown', this.onKeyPressed);
+      return _react2.default.createElement(
+        'section',
+        { className: 'works' },
+        _react2.default.createElement(
+          'div',
+          { className: 'page-content-M' },
+          _react2.default.createElement(
+            'div',
+            { className: 'content-wrapper' },
+            _react2.default.createElement(
+              'h3',
+              null,
+              'MY WORK'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Here are some of my latest lorem work ipsum tipsum.',
+              _react2.default.createElement('br', null),
+              'Click on the images to make them bigger'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'content-block' },
+              img
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'content-block' },
+              img2
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'content-block' },
+              img3
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'btn' },
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { className: 'link', to: '/gallery' },
+                'gallery'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: (0, _classnames2.default)('modalBg', { 'showed': this.state.modal }) },
+              _react2.default.createElement(
+                'div',
+                { className: 'modalWindow' },
+                _react2.default.createElement(
+                  'a',
+                  { className: 'previous', onClick: function onClick() {
+                      return _this2.prev();
+                    } },
+                  _react2.default.createElement('i', { className: 'fas fa-chevron-left' })
+                ),
+                slid,
+                _react2.default.createElement(
+                  'a',
+                  { className: 'next', onClick: function onClick() {
+                      return _this2.next();
+                    } },
+                  _react2.default.createElement('i', { className: 'fas fa-chevron-right' })
+                )
+              ),
+              _react2.default.createElement(
+                'button',
+                { onClick: this.removeClass },
+                'X'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Works;
+}(_react.Component);
+
+exports.Works = Works;
+
+/***/ }),
+
+/***/ 447:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var imgItems = [{
+  id: 0,
+  line: 1,
+  title: 't',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(83),
+  description: "description 1"
+}, {
+  id: 1,
+  line: 1,
+  title: 't',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13),
+  description: "description 1"
+}, {
+  id: 2,
+  line: 1,
+  title: 't1',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(84),
+  description: "description 2"
+}, {
+  id: 3,
+  line: 2,
+  title: 't2',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(120),
+  description: "description 3"
+}, {
+  id: 4,
+  line: 2,
+  title: 't3',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(83)
+}, {
+  id: 5,
+  line: 2,
+  title: 't4',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 6,
+  line: 3,
+  title: 't5',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(84)
+}, {
+  id: 7,
+  line: 3,
+  title: 't6',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(175)
+}, {
+  id: 8,
+  line: 3,
+  title: 't7',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(121)
+}];
+
+exports.imgItems = imgItems;
+
+/***/ }),
+
+/***/ 448:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 449:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -886,7 +1302,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(439);
+__webpack_require__(450);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -924,27 +1340,27 @@ var Footer = function (_Component) {
             React.createElement(
               'a',
               { href: 'https://www.facebook.com/romalysyk', target: '_blank' },
-              React.createElement('i', { className: 'fa fa-facebook-official' })
+              React.createElement('i', { className: 'fab fa-facebook-square' })
             ),
             React.createElement(
               'a',
               { href: 'https://www.instagram.com/romanlysyk/', target: '_blank' },
-              React.createElement('i', { className: 'fa fa-instagram' })
+              React.createElement('i', { className: 'fab fa-instagram' })
             ),
             React.createElement(
               'a',
               { href: 'https://plus.google.com/u/0/110130571380761850863', target: '_blank' },
-              React.createElement('i', { className: 'fa fa-google-plus' })
+              React.createElement('i', { className: 'fab fa-google-plus-square' })
             ),
             React.createElement(
               'a',
               { href: 'https://photographers.ua/RomanLisik/', target: '_blank' },
-              React.createElement('i', { className: 'fa fa-camera' })
+              React.createElement('i', { className: 'fas fa-camera' })
             ),
             React.createElement(
               'a',
-              { href: 'https://photographers.ua/RomanLisik/', target: '_blank' },
-              React.createElement('i', { className: 'fa fa-twitter' })
+              { href: 'https://twitter.com/?lang=uk', target: '_blank' },
+              React.createElement('i', { className: 'fab fa-twitter-square' })
             )
           ),
           React.createElement(
@@ -970,14 +1386,14 @@ exports.Footer = Footer;
 
 /***/ }),
 
-/***/ 439:
+/***/ 450:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 440:
+/***/ 451:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -994,78 +1410,21 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _windowTask = __webpack_require__(441);
+var _foto = __webpack_require__(452);
 
-var _foto = __webpack_require__(448);
+var _task = __webpack_require__(453);
 
-__webpack_require__(171);
+var _taskRadio = __webpack_require__(454);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _foto2 = __webpack_require__(455);
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _checkbox = __webpack_require__(456);
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+var _radio = __webpack_require__(458);
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+__webpack_require__(179);
 
-var Gallery = function (_Component) {
-  _inherits(Gallery, _Component);
-
-  function Gallery() {
-    _classCallCheck(this, Gallery);
-
-    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).apply(this, arguments));
-  }
-
-  _createClass(Gallery, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "section",
-        { className: "gallery" },
-        _react2.default.createElement(
-          "div",
-          { className: "page-content-L" },
-          _react2.default.createElement(_windowTask.Window, null),
-          _react2.default.createElement(_foto.Foto, null)
-        )
-      );
-    }
-  }]);
-
-  return Gallery;
-}(_react.Component);
-
-exports.Gallery = Gallery;
-
-/***/ }),
-
-/***/ 441:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Window = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _task = __webpack_require__(442);
-
-var _taskRadio = __webpack_require__(443);
-
-var _checkbox = __webpack_require__(444);
-
-var _radio = __webpack_require__(446);
-
-__webpack_require__(447);
+__webpack_require__(459);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1078,89 +1437,356 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var checked = _task.task.slice();
 var radio = _taskRadio.taskRadio.slice();
 
-var arr = [1, 2, 3, 5, 7];
-var arr2 = [4, 6, 8, 9, 10];
+var Gallery = function (_Component) {
+  _inherits(Gallery, _Component);
 
-var Window = function (_Component) {
-  _inherits(Window, _Component);
+  function Gallery(props) {
+    _classCallCheck(this, Gallery);
 
-  function Window() {
-    _classCallCheck(this, Window);
-
-    var _this = _possibleConstructorReturn(this, (Window.__proto__ || Object.getPrototypeOf(Window)).call(this));
+    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
 
     _this.state = {
-      arr: false,
-      arr2: false
+      checkboxState: false,
+      portrait: false,
+      children: false,
+      radioState: false,
+      date: false
     };
+    _this.toggle = _this.toggle.bind(_this);
     return _this;
   }
 
-  _createClass(Window, [{
+  _createClass(Gallery, [{
+    key: "toggle",
+    value: function toggle(id) {
+      this.setState({ checkboxState: !this.state.checkboxState });
+      if (id === 0) {
+        this.setState({ portrait: !this.state.portrait });
+      } else if (id === 1) {
+        this.setState({ children: !this.state.children });
+      }
+    }
+  }, {
+    key: "toggleRadio",
+    value: function toggleRadio(id) {
+      this.setState({ radioState: !this.state.radioState });
+      if (id === 0) {
+        this.setState({ date: !this.state.date });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
+      var img = [];
+      _foto2.imgItems.map(function (item) {
+        if (_this2.state.portrait || _this2.state.children || !item.imgUrl) {
+          return;
+        }
+        img.push(item);
+      });
+      _foto2.imgItems.map(function (item) {
+        if (!_this2.state.portrait || !item.portrait) {
+          return;
+        }
+        img.push(item);
+      });
+      _foto2.imgItems.map(function (item) {
+        if (!_this2.state.children || !item.children) {
+          return;
+        }
+        img.push(item);
+      });
       var checkbox = checked.map(function (item, index) {
         return _react2.default.createElement(
           "div",
-          { key: index },
-          _react2.default.createElement(_checkbox.Checkbox, { name: item.name, id: item.id, index: index })
+          { key: index, onChange: function onChange() {
+              return _this2.toggle(index);
+            } },
+          _react2.default.createElement(_checkbox.Checkbox, { name: item.name, id: item.id, index: index, checked: _this2.state.checkboxState })
         );
       });
       var radio1 = radio.map(function (item, index) {
         return _react2.default.createElement(
           "div",
-          { key: index },
-          _react2.default.createElement(_radio.Radio, { name: item.name })
+          { key: index, onChange: function onChange() {
+              return _this2.toggleRadio(index);
+            } },
+          _react2.default.createElement(_radio.Radio, { name: item.name, id: item.id, index: index, checked: _this2.state.radioState })
         );
       });
       return _react2.default.createElement(
-        "div",
-        { className: "content-wrapper1" },
+        "section",
+        { className: "gallery" },
         _react2.default.createElement(
           "div",
-          { className: "window-task" },
+          { className: "page-content-L" },
           _react2.default.createElement(
             "div",
-            { className: "window-task__header" },
+            { className: "content-wrapper1" },
             _react2.default.createElement(
-              "p",
-              null,
-              "Select"
+              "div",
+              { className: "window-task" },
+              _react2.default.createElement(
+                "div",
+                { className: "window-task__header" },
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Select"
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "window-task__categories" },
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Categories"
+                ),
+                checkbox
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "window-task__radio" },
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Date"
+                ),
+                radio1
+              )
             )
           ),
+          _react2.default.createElement(_foto.Foto, { img: img })
+        )
+      );
+    }
+  }]);
+
+  return Gallery;
+}(_react.Component);
+
+exports.Gallery = Gallery;
+
+/***/ }),
+
+/***/ 452:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Foto = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__(47);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _slid = __webpack_require__(178);
+
+__webpack_require__(179);
+
+__webpack_require__(176);
+
+__webpack_require__(177);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Foto = function (_Component) {
+  _inherits(Foto, _Component);
+
+  function Foto(props) {
+    _classCallCheck(this, Foto);
+
+    var _this = _possibleConstructorReturn(this, (Foto.__proto__ || Object.getPrototypeOf(Foto)).call(this, props));
+
+    var img = props.img;
+    var imgUrl = img.map(function (item) {
+      return item.imgUrl;
+    });
+    _this.state = {
+      modal: false,
+      modalImg: 0,
+      images: imgUrl,
+      currentIndex: 0,
+      length: img.length,
+      res: false
+    };
+    _this.addClass = _this.addClass.bind(_this);
+    _this.removeClass = _this.removeClass.bind(_this);
+    _this.onKeyPressed = _this.onKeyPressed.bind(_this);
+    return _this;
+  }
+
+  _createClass(Foto, [{
+    key: 'setModal',
+    value: function setModal(visible, index, length) {
+      this.setState({ modalImg: this.state.images[index] });
+      this.setState({ modal: visible });
+      this.setState({ currentIndex: index });
+      this.setState({ length: length });
+      document.body.style.overflow = 'hidden';
+    }
+  }, {
+    key: 'addClass',
+    value: function addClass() {
+      this.setState({
+        modal: true
+      });
+    }
+  }, {
+    key: 'removeClass',
+    value: function removeClass() {
+      this.setState({
+        modal: false
+      });
+      document.body.style.overflow = '';
+    }
+  }, {
+    key: 'next',
+    value: function next() {
+      if (this.state.currentIndex < this.state.length - 1) {
+        this.setState({ currentIndex: this.state.currentIndex + 1 });
+      } else {
+        this.setState({ currentIndex: 0 });
+      }
+    }
+  }, {
+    key: 'prev',
+    value: function prev() {
+      if (this.state.currentIndex > 0) {
+        this.setState({ currentIndex: this.state.currentIndex - 1 });
+      } else {
+        this.setState({ currentIndex: this.state.length - 1 });
+      }
+    }
+  }, {
+    key: 'onKeyPressed',
+    value: function onKeyPressed() {
+      if (event.keyCode === 27) {
+        this.removeClass();
+      } else if (event.keyCode === 39) {
+        this.next();
+      } else if (event.keyCode === 37) {
+        this.prev();
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var imgItem = this.props.img;
+      var img = imgItem.map(function (item, index) {
+        return _react2.default.createElement(
+          'div',
+          { key: index, className: 'content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3' },
           _react2.default.createElement(
-            "div",
-            { className: "window-task__categories" },
-            _react2.default.createElement(
-              "p",
-              null,
-              "Categories"
-            ),
-            checkbox
-          ),
+            'div',
+            { className: 'item', onClick: function onClick() {
+                return _this2.setModal(true, index, imgItem.length);
+              } },
+            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+          )
+        );
+      });
+      var slid = imgItem.map(function (item, index) {
+        return _react2.default.createElement(_slid.Slide, {
+          key: index,
+          image: item.imgUrl,
+          show: _this2.state.currentIndex === index
+        });
+      });
+      var onke = addEventListener('keydown', this.onKeyPressed);
+      return _react2.default.createElement(
+        'section',
+        { className: 'gallery' },
+        _react2.default.createElement(
+          'div',
+          { className: 'page-content-L' },
           _react2.default.createElement(
-            "div",
-            { className: "window-task__radio" },
+            'div',
+            { className: 'page-content-M' },
             _react2.default.createElement(
-              "p",
-              null,
-              "Date"
-            ),
-            radio1
+              'div',
+              { className: 'content-wrapper' },
+              _react2.default.createElement(
+                'h3',
+                null,
+                'MY WORK'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'Here are some of my latest lorem work ipsum tipsum.',
+                _react2.default.createElement('br', null),
+                'Click on the images to make them bigger'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'grid-container' },
+                img
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: (0, _classnames2.default)('modalBg', { 'showed': this.state.modal }) },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'modalWindow' },
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'previous', onClick: function onClick() {
+                        return _this2.prev();
+                      } },
+                    _react2.default.createElement('i', { className: 'fas fa-chevron-left' })
+                  ),
+                  slid,
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'next', onClick: function onClick() {
+                        return _this2.next();
+                      } },
+                    _react2.default.createElement('i', { className: 'fas fa-chevron-right' })
+                  )
+                ),
+                _react2.default.createElement(
+                  'button',
+                  { onClick: this.removeClass },
+                  'X'
+                )
+              )
+            )
           )
         )
       );
     }
   }]);
 
-  return Window;
+  return Foto;
 }(_react.Component);
 
-exports.Window = Window;
+exports.Foto = Foto;
 
 /***/ }),
 
-/***/ 442:
+/***/ 453:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1191,7 +1817,7 @@ exports.task = task;
 
 /***/ }),
 
-/***/ 443:
+/***/ 454:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1214,7 +1840,146 @@ exports.taskRadio = taskRadio;
 
 /***/ }),
 
-/***/ 444:
+/***/ 455:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var imgItems = [{
+  id: 0,
+  title: 't',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(83),
+  description: "description 1"
+}, {
+  id: 1,
+  title: 't',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13),
+  description: "description 1"
+}, {
+  id: 2,
+  title: 't1',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(84),
+  description: "description 2"
+}, {
+  id: 3,
+  title: 't2',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(120),
+  description: "description 3"
+}, {
+  id: 4,
+  title: 't3',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(83)
+}, {
+  id: 5,
+  title: 't4',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(121)
+}, {
+  id: 6,
+  title: 't5',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(84)
+}, {
+  id: 7,
+  title: 't6',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(175)
+}, {
+  id: 8,
+  title: 't7',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 9,
+  title: 't',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 10,
+  title: 't1',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 11,
+  title: 't2',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 12,
+  title: 't3',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 13,
+  title: 't4',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 14,
+  title: 't5',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 15,
+  title: 't6',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 16,
+  title: 't7',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 17,
+  title: 't',
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 18,
+  title: 't1',
+  children: 'children',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 19,
+  title: 't2',
+  children: 'children',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 20,
+  title: 't3',
+  children: 'children',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 21,
+  title: 't4',
+  children: 'children',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 22,
+  title: 't5',
+  children: 'children',
+  imgUrl: __webpack_require__(13)
+}, {
+  id: 23,
+  title: 't6',
+  children: 'children',
+  imgUrl: __webpack_require__(121)
+}];
+
+exports.imgItems = imgItems;
+
+/***/ }),
+
+/***/ 456:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1231,11 +1996,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(52);
+var _classnames = __webpack_require__(47);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(445);
+__webpack_require__(457);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1244,9 +2009,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var arr = [1, 2, 3, 5, 7];
-var arr2 = [4, 6, 8, 9, 10];
 
 var Checkbox = function (_Component) {
   _inherits(Checkbox, _Component);
@@ -1276,39 +2038,12 @@ var Checkbox = function (_Component) {
       } else if (id === 1) {
         this.setState({ arr2: !this.state.arr2 });
       }
-
-      console.log(id);
-    }
-  }, {
-    key: 'arr5',
-    value: function arr5() {
-      if (this.state.arr === true) {
-        return arr;
-      } else {
-        return '';
-      }
-    }
-  }, {
-    key: 'arr6',
-    value: function arr6() {
-      if (this.state.arr2 === true) {
-        return arr2;
-      } else {
-        return '';
-      }
     }
   }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
 
-      var array = [this.arr5(), this.arr6()].map(function (item, index) {
-        return _react2.default.createElement(
-          'div',
-          { key: index },
-          item
-        );
-      });
       return _react2.default.createElement(
         'div',
         { className: 'controls' },
@@ -1334,8 +2069,7 @@ var Checkbox = function (_Component) {
             null,
             this.props.name
           )
-        ),
-        array
+        )
       );
     }
   }]);
@@ -1347,14 +2081,14 @@ exports.Checkbox = Checkbox;
 
 /***/ }),
 
-/***/ 445:
+/***/ 457:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 446:
+/***/ 458:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1371,7 +2105,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(52);
+var _classnames = __webpack_require__(47);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1442,469 +2176,14 @@ exports.Radio = Radio;
 
 /***/ }),
 
-/***/ 447:
+/***/ 459:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 448:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Foto = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _classnames = __webpack_require__(52);
-
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _foto = __webpack_require__(449);
-
-var _slid = __webpack_require__(455);
-
-__webpack_require__(171);
-
-__webpack_require__(456);
-
-__webpack_require__(457);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var leng = _foto.imgItems.slice();
-var imgs = leng.map(function (item) {
-  return item.imgUrl;
-});
-
-var arr = [1, 2, 3, 5, 7];
-var arr2 = [4, 6, 8, 9, 10];
-
-var Foto = function (_Component) {
-  _inherits(Foto, _Component);
-
-  function Foto(props) {
-    _classCallCheck(this, Foto);
-
-    var _this = _possibleConstructorReturn(this, (Foto.__proto__ || Object.getPrototypeOf(Foto)).call(this, props));
-
-    _this.state = {
-      modal: false,
-      modalImg: imgs[0],
-      images: imgs,
-      currentIndex: 0,
-      length: leng.length,
-      arr: true
-    };
-    _this.addClass = _this.addClass.bind(_this);
-    _this.removeClass = _this.removeClass.bind(_this);
-    _this.onKeyPressed = _this.onKeyPressed.bind(_this);
-    return _this;
-  }
-
-  _createClass(Foto, [{
-    key: 'setModal',
-    value: function setModal(vis, index) {
-      this.setState({ modalImg: this.state.images[index] });
-      this.setState({ modal: vis });
-      this.setState({ currentIndex: index });
-      document.body.style.overflow = 'hidden';
-    }
-  }, {
-    key: 'addClass',
-    value: function addClass() {
-      this.setState({
-        modal: true
-      });
-    }
-  }, {
-    key: 'removeClass',
-    value: function removeClass() {
-      this.setState({
-        modal: false
-      });
-      document.body.style.overflow = '';
-    }
-  }, {
-    key: 'next',
-    value: function next() {
-      if (this.state.currentIndex < this.state.length - 1) {
-        this.setState({ currentIndex: this.state.currentIndex + 1 });
-      } else {
-        this.setState({ currentIndex: 0 });
-      }
-    }
-  }, {
-    key: 'prev',
-    value: function prev() {
-      if (this.state.currentIndex > 0) {
-        this.setState({ currentIndex: this.state.currentIndex - 1 });
-      } else {
-        this.setState({ currentIndex: this.state.length - 1 });
-      }
-    }
-  }, {
-    key: 'onKeyPressed',
-    value: function onKeyPressed() {
-      if (event.keyCode === 27) {
-        this.removeClass();
-      } else if (event.keyCode === 39) {
-        this.next();
-      } else if (event.keyCode === 37) {
-        this.prev();
-      }
-    }
-  }, {
-    key: 'arr5',
-    value: function arr5() {
-      if (this.state.arr === true) {
-        return arr2;
-      } else {
-        return '';
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var img = leng.map(function (val, index) {
-        return _react2.default.createElement(
-          'div',
-          { key: index, className: 'content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3' },
-          _react2.default.createElement(
-            'div',
-            { className: 'item', onClick: function onClick() {
-                return _this2.setModal(true, index);
-              } },
-            _react2.default.createElement('img', { src: _this2.state.images[index] })
-          )
-        );
-      });
-      var slid = leng.map(function (item, index) {
-        return _react2.default.createElement(_slid.Slide, {
-          key: index,
-          image: item.imgUrl,
-          show: _this2.state.currentIndex === index
-        });
-      });
-      var num = [this.arr5()].map(function (item, index) {
-        return _react2.default.createElement(
-          'div',
-          { key: index },
-          _react2.default.createElement(
-            'p',
-            null,
-            item
-          )
-        );
-      });
-      var onke = addEventListener('keydown', this.onKeyPressed);
-      return _react2.default.createElement(
-        'section',
-        { className: 'gallery' },
-        _react2.default.createElement(
-          'div',
-          { className: 'page-content-L' },
-          _react2.default.createElement(
-            'div',
-            { className: 'page-content-M' },
-            _react2.default.createElement(
-              'div',
-              { className: 'content-wrapper' },
-              _react2.default.createElement(
-                'h3',
-                null,
-                'MY WORK'
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                'Here are some of my latest lorem work ipsum tipsum.',
-                _react2.default.createElement('br', null),
-                'Click on the images to make them bigger'
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'grid-container' },
-                img
-              ),
-              num,
-              _react2.default.createElement(
-                'div',
-                { className: (0, _classnames2.default)('modalBg', { 'showed': this.state.modal }) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'modalWindow' },
-                  _react2.default.createElement(
-                    'a',
-                    { className: 'previous', onClick: function onClick() {
-                        return _this2.prev();
-                      } },
-                    _react2.default.createElement('i', { className: 'fas fa-chevron-left' })
-                  ),
-                  slid,
-                  _react2.default.createElement(
-                    'a',
-                    { className: 'next', onClick: function onClick() {
-                        return _this2.next();
-                      } },
-                    _react2.default.createElement('i', { className: 'fas fa-chevron-right' })
-                  )
-                ),
-                _react2.default.createElement(
-                  'button',
-                  { onClick: this.removeClass },
-                  'X'
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Foto;
-}(_react.Component);
-
-exports.Foto = Foto;
-
-/***/ }),
-
-/***/ 449:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var imgItems = [{
-  id: '002',
-  title: 't',
-  imgUrl: './../../../../assets/images/foto_01.jpg',
-  description: "description 1"
-}, {
-  id: '002',
-  title: 't1',
-  imgUrl: __webpack_require__(450),
-  description: "description 2"
-}, {
-  id: '003',
-  title: 't2',
-  imgUrl: __webpack_require__(170),
-  description: "description 3"
-}, {
-  id: '004',
-  title: 't3',
-  imgUrl: __webpack_require__(451)
-}, {
-  id: '005',
-  title: 't4',
-  imgUrl: __webpack_require__(452)
-}, {
-  id: '006',
-  title: 't5',
-  imgUrl: __webpack_require__(453)
-}, {
-  id: '007',
-  title: 't6',
-  imgUrl: __webpack_require__(454)
-}, {
-  id: '008',
-  title: 't7',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '009',
-  title: 't',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '010',
-  title: 't1',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '011',
-  title: 't2',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '012',
-  title: 't3',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '013',
-  title: 't4',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '014',
-  title: 't5',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '015',
-  title: 't6',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '016',
-  title: 't7',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '017',
-  title: 't',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '018',
-  title: 't1',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '019',
-  title: 't2',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '020',
-  title: 't3',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '021',
-  title: 't4',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '022',
-  title: 't5',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '023',
-  title: 't6',
-  imgUrl: 'assets/images/foto_01.jpg'
-}, {
-  id: '024',
-  title: 't7',
-  imgUrl: 'assets/images/foto_01.jpg'
-}];
-
-exports.imgItems = imgItems;
-
-/***/ }),
-
-/***/ 450:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_01.jpg";
-
-/***/ }),
-
-/***/ 451:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_03.jpg";
-
-/***/ }),
-
-/***/ 452:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_04.jpg";
-
-/***/ }),
-
-/***/ 453:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_05.jpg";
-
-/***/ }),
-
-/***/ 454:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_06.jpg";
-
-/***/ }),
-
-/***/ 455:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Slide = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Slide = function (_Component) {
-  _inherits(Slide, _Component);
-
-  function Slide() {
-    _classCallCheck(this, Slide);
-
-    return _possibleConstructorReturn(this, (Slide.__proto__ || Object.getPrototypeOf(Slide)).apply(this, arguments));
-  }
-
-  _createClass(Slide, [{
-    key: "render",
-    value: function render() {
-      var classString = this.props.show ? "slide show" : "slide";
-      return _react2.default.createElement(
-        "div",
-        { className: classString },
-        _react2.default.createElement("img", { src: this.props.image })
-      );
-    }
-  }]);
-
-  return Slide;
-}(_react.Component);
-
-exports.Slide = Slide;
-
-/***/ }),
-
-/***/ 456:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 457:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 458:
+/***/ 460:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1921,7 +2200,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(459);
+__webpack_require__(461);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1969,20 +2248,129 @@ var Contacts = function (_Component) {
             { className: 'grid-container' },
             React.createElement(
               'div',
-              { className: 'content-block col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5' },
+              { className: 'content-item col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4' },
               React.createElement(
-                'h3',
-                null,
-                '131231'
+                'div',
+                { className: 'item' },
+                React.createElement('img', { src: __webpack_require__(462), alt: '' })
               )
             ),
             React.createElement(
               'div',
-              { className: 'content-block col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7' },
+              { className: 'content-block col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8' },
               React.createElement(
-                'h3',
-                null,
-                '131231'
+                'div',
+                { className: 'grid-container' },
+                React.createElement(
+                  'div',
+                  { className: 'content-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6' },
+                  React.createElement(
+                    'div',
+                    { className: 'head' },
+                    React.createElement(
+                      'p',
+                      null,
+                      'Lets get in touch. Send me a message:'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'form' },
+                    React.createElement('input', { type: 'text', placeholder: 'Name', name: 'Name' }),
+                    React.createElement('input', { type: 'text', placeholder: 'Email', name: 'Email' }),
+                    React.createElement('textarea', { placeholder: 'Message', rows: '5', name: 'Message' })
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'but' },
+                    React.createElement(
+                      'button',
+                      { className: 'btn' },
+                      'submit'
+                    )
+                  )
+                ),
+                React.createElement(
+                  'div',
+                  { className: 'content-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6' },
+                  React.createElement(
+                    'div',
+                    { className: 'head' },
+                    React.createElement(
+                      'p',
+                      null,
+                      'Contact'
+                    )
+                  ),
+                  React.createElement(
+                    'div',
+                    { className: 'contact' },
+                    React.createElement(
+                      'p',
+                      null,
+                      React.createElement('i', { className: 'fas fa-phone' }),
+                      React.createElement('i', { className: 'fab fa-telegram-plane' }),
+                      React.createElement('i', { className: 'fab fa-viber' }),
+                      '+38(096)7594520'
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      React.createElement('i', { className: 'fas fa-envelope' }),
+                      'roma-lysyk@ukr.net'
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      React.createElement('i', { className: 'fab fa-facebook-square' }),
+                      React.createElement(
+                        'a',
+                        { href: 'https://www.facebook.com/romalysyk' },
+                        'facebook.com/romalysyk'
+                      )
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      React.createElement('i', { className: 'fab fa-instagram' }),
+                      React.createElement(
+                        'a',
+                        { href: 'https://www.instagram.com/romanlysyk' },
+                        'instagram.com/romanlysyk'
+                      )
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      React.createElement('i', { className: 'fab fa-twitter-square' }),
+                      React.createElement(
+                        'a',
+                        { href: 'https://twitter.com/roma_lysyk' },
+                        'twitter.com/roma_lysyk'
+                      )
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      React.createElement('i', { className: 'fab fa-google-plus-square' }),
+                      React.createElement(
+                        'a',
+                        { href: 'https://plus.google.com/u/0/110130571380761850863' },
+                        'plus.google.com'
+                      )
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      React.createElement('i', { className: 'fas fa-camera' }),
+                      React.createElement(
+                        'a',
+                        { href: 'https://photographers.ua/RomanLisik/' },
+                        'photographers.ua/RomanLisik'
+                      )
+                    )
+                  )
+                )
               )
             )
           )
@@ -1998,18 +2386,39 @@ exports.Contacts = Contacts;
 
 /***/ }),
 
-/***/ 459:
+/***/ 461:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 460:
+/***/ 462:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_07.jpg";
+
+/***/ }),
+
+/***/ 463:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
+/***/ }),
+
+/***/ 83:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_03.jpg";
+
+/***/ }),
+
+/***/ 84:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_05.jpg";
+
 /***/ })
 
-},[187]);
+},[195]);

@@ -18,7 +18,15 @@
     .previous,
     .next
       margin 50px
-      font-size 3rem
+      background-color alpha($Gray, .1)
+      font-size 2.5rem
+      color $white
+      cursor pointer
+      padding 60px 35px
+      transition .4s
+      &:hover
+        background-color alpha($Gray, .2)
+        transition .4s
   > button
     box-sizing border-box
     background none
