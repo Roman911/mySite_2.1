@@ -20,13 +20,14 @@
 		color $Gray
 		> p
 			line-height 0
+			margin-left 10px
 		&:hover
 			background alpha($white, .5)
 	.active
-		background-color alpha($Gray, .7)
-  .fa, .fas
+		background-color alpha($Gray - 50%, .7)
+		color $Gray + 90%
 		> p
-			margin-left 10px
+			color $Gray + 90%
 
 .navbar.fixed
 	position fixed

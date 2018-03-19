@@ -19,10 +19,10 @@
           font-style italic
           font-weight 100
         .content-block
-
           .item
+            overflow hidden
             box-sizing border-box
-            padding 5px
+            padding 3px
             font-size 0
             cursor pointer
             > img
@@ -31,9 +31,7 @@
               opacity 0.75
               transition .5s
             &:hover
-              transform scale(1.02, 1.02)
-              transition .5s
               > img
-                box-shadow 0 0 4px 4px $Gray
-                transition .5s
                 opacity 1
+                transform scale(1.05, 1.05)
+                transition .5s

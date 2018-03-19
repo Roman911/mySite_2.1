@@ -1,3 +1,5 @@
+@import './../../../styles/variables.styl';
+
 .header
   box-sizing border-box
   height 100vh
@@ -10,6 +12,15 @@
   background-attachment fixed
   &__logo
     position absolute
-    top 50%
+    top 85%
     left 50%
+    padding 5px 40px
+    background-color $Gray - 90%
     transform translate(-50%, -50%)
+    box-shadow 0 0 8px 3px $Gray - 20%
+    > h1
+      color $Gray + 20%
+      font-size 1.4rem
+      display inline
+      &:last-child
+        color $red

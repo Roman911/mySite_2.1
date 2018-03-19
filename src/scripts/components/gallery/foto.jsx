@@ -77,11 +77,32 @@ class Foto extends Component {
   render() {
     const imgItem = this.props.img;
     const img = imgItem.map((item, index) => {
-      return <div key={index} className='content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3'>
-        <div className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
+      if (item.column === 1) {
+        return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
           <img src={this.state.images[item.id]}/>
-        </div>
-      </div>;
+        </div>;
+      }
+    });
+    const img2 = imgItem.map((item, index) => {
+      if (item.column === 2) {
+        return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
+          <img src={this.state.images[item.id]}/>
+        </div>;
+      }
+    });
+    const img3 = imgItem.map((item, index) => {
+      if (item.column === 3) {
+        return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
+          <img src={this.state.images[item.id]}/>
+        </div>;
+      }
+    });
+    const img4 = imgItem.map((item, index) => {
+      if (item.column === 4) {
+        return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
+          <img src={this.state.images[item.id]}/>
+        </div>;
+      }
     });
     const slid = imgItem.map((item, index) => {
       return <Slide
@@ -99,7 +120,18 @@ class Foto extends Component {
             <p>Here are some of my latest lorem work ipsum tipsum.<br/>
               Click on the images to make them bigger</p>
             <div className="grid-container">
-              {img}
+              <div className='content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3'>
+                {img}
+              </div>
+              <div className='content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3'>
+                {img2}
+              </div>
+              <div className='content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3'>
+                {img3}
+              </div>
+              <div className='content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3'>
+                {img4}
+              </div>
             </div>
             <div className={classNames('modalBg', {'showed': this.state.modal})}>
               <div className='modalWindow'>

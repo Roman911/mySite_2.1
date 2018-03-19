@@ -25,16 +25,17 @@
 }
 .navbar-link > p {
   line-height: 0;
+  margin-left: 10px;
 }
 .navbar-link:hover {
   background: rgba(255,255,255,0.5);
 }
 .navbar .active {
-  background-color: rgba(119,119,119,0.7);
+  background-color: rgba(59,59,59,0.7);
+  color: #f1f1f1;
 }
-.fa > p,
-.fas > p {
-  margin-left: 10px;
+.navbar .active > p {
+  color: #f1f1f1;
 }
 .navbar.fixed {
   position: fixed;
@@ -108,10 +109,21 @@ button > i:hover {
 }
 .header__logo {
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 50%;
+  padding: 5px 40px;
+  background-color: #0c0c0c;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px 3px #5f5f5f;
+}
+.header__logo > h1 {
+  color: #929292;
+  font-size: 1.4rem;
+  display: inline;
+}
+.header__logo > h1:last-child {
+  color: #fa3d29;
 }
 .about-me .item {
   padding: 64px 16px;
@@ -441,8 +453,9 @@ button > i:hover {
   font-weight: 100;
 }
 .gallery .page-content-L .page-content-M .content-wrapper .content-block .item {
+  overflow: hidden;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 3px;
   font-size: 0;
   cursor: pointer;
 }
@@ -452,15 +465,11 @@ button > i:hover {
   opacity: 0.75;
   transition: 0.5s;
 }
-.gallery .page-content-L .page-content-M .content-wrapper .content-block .item:hover {
-  -ms-transform: scale(1.02, 1.02);
-      transform: scale(1.02, 1.02);
-  transition: 0.5s;
-}
 .gallery .page-content-L .page-content-M .content-wrapper .content-block .item:hover > img {
-  box-shadow: 0 0 4px 4px #777;
-  transition: 0.5s;
   opacity: 1;
+  -ms-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05);
+  transition: 0.5s;
 }
 .controls > label {
   display: -ms-flexbox;

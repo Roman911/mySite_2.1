@@ -732,7 +732,12 @@ var Header = function (_Component) {
           React.createElement(
             'h1',
             null,
-            'MY WEBSITE LOGO'
+            'ROMA_'
+          ),
+          React.createElement(
+            'h1',
+            null,
+            'LI'
           )
         )
       );
@@ -1695,17 +1700,48 @@ var Foto = function (_Component) {
 
       var imgItem = this.props.img;
       var img = imgItem.map(function (item, index) {
-        return _react2.default.createElement(
-          'div',
-          { key: index, className: 'content-block col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3' },
-          _react2.default.createElement(
+        if (item.column === 1) {
+          return _react2.default.createElement(
             'div',
-            { className: 'item', onClick: function onClick() {
+            { key: index, className: 'item', onClick: function onClick() {
                 return _this2.setModal(true, index, imgItem.length);
               } },
             _react2.default.createElement('img', { src: _this2.state.images[item.id] })
-          )
-        );
+          );
+        }
+      });
+      var img2 = imgItem.map(function (item, index) {
+        if (item.column === 2) {
+          return _react2.default.createElement(
+            'div',
+            { key: index, className: 'item', onClick: function onClick() {
+                return _this2.setModal(true, index, imgItem.length);
+              } },
+            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+          );
+        }
+      });
+      var img3 = imgItem.map(function (item, index) {
+        if (item.column === 3) {
+          return _react2.default.createElement(
+            'div',
+            { key: index, className: 'item', onClick: function onClick() {
+                return _this2.setModal(true, index, imgItem.length);
+              } },
+            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+          );
+        }
+      });
+      var img4 = imgItem.map(function (item, index) {
+        if (item.column === 4) {
+          return _react2.default.createElement(
+            'div',
+            { key: index, className: 'item', onClick: function onClick() {
+                return _this2.setModal(true, index, imgItem.length);
+              } },
+            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+          );
+        }
       });
       var slid = imgItem.map(function (item, index) {
         return _react2.default.createElement(_slid.Slide, {
@@ -1742,7 +1778,26 @@ var Foto = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'grid-container' },
-                img
+                _react2.default.createElement(
+                  'div',
+                  { className: 'content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3' },
+                  img
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3' },
+                  img2
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3' },
+                  img3
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'content-block col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3' },
+                  img4
+                )
               ),
               _react2.default.createElement(
                 'div',
@@ -1852,125 +1907,149 @@ Object.defineProperty(exports, "__esModule", {
 var imgItems = [{
   id: 0,
   title: 't',
+  column: 1,
   portrait: 'portrait',
   imgUrl: __webpack_require__(81),
   description: "description 1"
 }, {
   id: 1,
   title: 't',
+  column: 2,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13),
   description: "description 1"
 }, {
   id: 2,
   title: 't1',
+  column: 3,
   portrait: 'portrait',
   imgUrl: __webpack_require__(82),
   description: "description 2"
 }, {
   id: 3,
   title: 't2',
+  column: 4,
   portrait: 'portrait',
   imgUrl: __webpack_require__(116),
   description: "description 3"
 }, {
   id: 4,
   title: 't3',
+  column: 1,
   portrait: 'portrait',
   imgUrl: __webpack_require__(81)
 }, {
   id: 5,
   title: 't4',
+  column: 2,
   portrait: 'portrait',
   imgUrl: __webpack_require__(117)
 }, {
   id: 6,
   title: 't5',
+  column: 3,
   portrait: 'portrait',
   imgUrl: __webpack_require__(82)
 }, {
   id: 7,
   title: 't6',
+  column: 4,
   portrait: 'portrait',
   imgUrl: __webpack_require__(171)
 }, {
   id: 8,
   title: 't7',
+  column: 1,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 9,
   title: 't',
+  column: 2,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 10,
   title: 't1',
+  column: 3,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 11,
   title: 't2',
+  column: 4,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 12,
   title: 't3',
+  column: 1,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 13,
   title: 't4',
+  column: 2,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 14,
   title: 't5',
+  column: 3,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 15,
   title: 't6',
+  column: 4,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 16,
   title: 't7',
+  column: 1,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 17,
   title: 't',
+  column: 2,
   portrait: 'portrait',
   imgUrl: __webpack_require__(13)
 }, {
   id: 18,
   title: 't1',
+  column: 3,
   children: 'children',
   imgUrl: __webpack_require__(13)
 }, {
   id: 19,
   title: 't2',
+  column: 4,
   children: 'children',
   imgUrl: __webpack_require__(13)
 }, {
   id: 20,
   title: 't3',
+  column: 1,
   children: 'children',
   imgUrl: __webpack_require__(13)
 }, {
   id: 21,
   title: 't4',
+  column: 2,
   children: 'children',
   imgUrl: __webpack_require__(13)
 }, {
   id: 22,
   title: 't5',
+  column: 3,
   children: 'children',
   imgUrl: __webpack_require__(13)
 }, {
   id: 23,
   title: 't6',
+  column: 4,
   children: 'children',
   imgUrl: __webpack_require__(117)
 }];
