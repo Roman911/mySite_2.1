@@ -2,11 +2,37 @@
 
 .slide
   display none
+  overflow hidden
   position absolute
   top 50%
   left 50%
   transform translate(-50%, -50%)
   > img
-    max-height calc(100vh - 100px)
+    max-height calc(100vh - 50px)
+    max-width calc(100vw - 50px)
+  > p
+    color red
+  &__title,
+  &__date
+    position absolute
+    left 0
+    width 100%
+    transition .5s
+    > h4
+      margin 10px 20px
+      text-align start
+      color $Gray + 70%
+  &__title
+    top 0
+    transform translateY(-100%)
+    background: linear-gradient(to bottom, alpha($Gray - 80%, 1) 0%, alpha($Gray - 60%, 0) 100%)
+  &__date
+    bottom 0
+    transform translateY(100%)
+    background: linear-gradient(to top, alpha($Gray - 80%, 1) 0%, alpha($Gray - 60%, 0) 100%)
+  &:hover
+    .slide__title,
+    .slide__date
+      transform translateY(0)
 .slide.show
   display block

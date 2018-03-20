@@ -1,11 +1,9 @@
-import * as React from 'react';// eslint-disable-line
-import { Component } from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router';
-import { Route, NavLink, Switch, HashRouter as Router } from 'react-router-dom';
+import { Route, Switch, HashRouter as Router } from 'react-router-dom';
 import { NavbarComponent } from './scripts/components/navbar/navbar.component.jsx';
 import { ScrollButton } from './scripts/components/scrollingUp/scrollingUp.jsx';
-//import { CatalogComponent } from './scripts/components/catalog/catalog.component.jsx';
 import { HomePage } from './scripts/components/home/home.jsx';
 import { Footer } from './scripts/components/footer/footer.jsx';
 import { Gallery } from './scripts/components/gallery/gallery.jsx';

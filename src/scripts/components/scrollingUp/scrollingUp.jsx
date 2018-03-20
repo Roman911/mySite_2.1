@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import './scrollButton.styl';
+import './../../../styles/buttons.styl';
 
 class ScrollButton extends Component {
   constructor() {
@@ -34,7 +35,7 @@ class ScrollButton extends Component {
 
   render () {
     const onsc = addEventListener('scroll', this.addClass);
-    return <button className={classNames('btn scroll', {'show':this.state.show})}
+    return <button className={classNames('btn__scroll scroll', {'show':this.state.show})}
                    onClick={ () => { this.scrollToTop(); }}>
       <i className='fas fa-chevron-up' />
         {onsc}

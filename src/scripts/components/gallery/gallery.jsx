@@ -41,7 +41,7 @@ class Gallery extends Component {
   }
 
   render() {
-    const img = [];
+    let img = [];
     imgItems.map((item) => {
       if (this.state.portrait || this.state.children || !item.imgUrl) {
         return;
@@ -60,6 +60,7 @@ class Gallery extends Component {
       }
       img.push(item)
     });
+    img = (this.state.date === true) ? img.reverse() : img;
     const checkbox = checked.map((item, index) => {
       return <div key={index} onChange={() => this.toggle(index)} >
         < Checkbox name={item.name} id={item.id} index={index} checked={this.state.checkboxState} />

@@ -7,7 +7,7 @@ class Header extends Component {
 
     return <section className="header" id="navhome">
       <div className="header__logo">
-        <h1>ROMA_</h1><h1>LI</h1>
+        <h3>ROMA_</h3><h3>LI</h3>
       </div>
     </section>;
   }

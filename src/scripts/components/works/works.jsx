@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import { imgItems } from "./works.js";
+import {Slide} from "./../gallery/slid.jsx";
 import './works.styl';
 import './../showFoto/modal.styl';
 import './../showFoto/slider.styl';
-import {Slide} from "./../gallery/slid.jsx";
+import './../../../styles/buttons.styl';
 
 const img = imgItems.map((item) => {
   return item.imgUrl
@@ -120,7 +121,12 @@ class Works extends Component {
             {img3}
           </div>
           <div className='btn'>
-            <NavLink className='link' to='/gallery'>gallery</NavLink>
+            <NavLink to='/gallery'>
+              <button className='button'>
+                <i className='fas fa-th'/>
+                <p>galle</p><p>ry</p>
+              </button>
+            </NavLink>
           </div>
           <div className={classNames('modalBg', {'showed': this.state.modal})}>
             <div className='modalWindow'>
@@ -132,7 +138,7 @@ class Works extends Component {
                 <i className='fas fa-chevron-right' />
               </a>
             </div>
-            <button onClick={this.removeClass}>X</button>
+            <button className='btn__remove' onClick={this.removeClass}>X</button>
           </div>
         </div>
       </div>

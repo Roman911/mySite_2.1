@@ -1,7 +1,8 @@
 const imgItems = [
   {
     id: 0,
-    title: 't',
+    title: 'Sabina, Dnipro embankment',
+    date: [2016, 2, 16],
     column: 1,
     portrait: 'portrait',
     imgUrl: require('./../../../../assets/images/foto_03.jpg'),
@@ -165,7 +166,7 @@ const imgItems = [
     imgUrl: require('./../../../../assets/images/foto_01.jpg')
   },
   {
-    id: 23,
+    id: 1,
     title: 't6',
     column: 4,
     children: 'children',

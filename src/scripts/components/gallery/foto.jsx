@@ -4,6 +4,7 @@ import {Slide} from "./slid.jsx";
 import './gallery.styl';
 import './../showFoto/modal.styl';
 import './../showFoto/slider.styl';
+import './../../../styles/buttons.styl';
 
 class Foto extends Component {
   constructor(props) {
@@ -77,28 +78,28 @@ class Foto extends Component {
   render() {
     const imgItem = this.props.img;
     const img = imgItem.map((item, index) => {
-      if (item.column === 1) {
+      if ((index % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
           <img src={this.state.images[item.id]}/>
         </div>;
       }
     });
     const img2 = imgItem.map((item, index) => {
-      if (item.column === 2) {
+      if (((index - 1) % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
           <img src={this.state.images[item.id]}/>
         </div>;
       }
     });
     const img3 = imgItem.map((item, index) => {
-      if (item.column === 3) {
+      if (((index - 2) % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
           <img src={this.state.images[item.id]}/>
         </div>;
       }
     });
     const img4 = imgItem.map((item, index) => {
-      if (item.column === 4) {
+      if (((index - 3) % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
           <img src={this.state.images[item.id]}/>
         </div>;
@@ -108,6 +109,8 @@ class Foto extends Component {
       return <Slide
         key={index}
         image={item.imgUrl}
+        title={item.title}
+        date={item.date}
         show={this.state.currentIndex === index}
       />;
     });
@@ -143,7 +146,7 @@ class Foto extends Component {
                   <i className='fas fa-chevron-right' />
                 </a>
               </div>
-              <button onClick={this.removeClass}>X</button>
+              <button className='btn__remove' onClick={this.removeClass}>X</button>
             </div>
           </div>
         </div>
