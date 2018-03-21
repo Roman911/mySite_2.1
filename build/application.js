@@ -1,34 +1,81 @@
-webpackJsonp([0],{
-
-/***/ 116:
+webpackJsonp([0],Array(113).concat([
+/* 113 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 117:
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_02.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_001.jpg";
 
 /***/ }),
-
-/***/ 118:
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_04.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_002.jpg";
 
 /***/ }),
-
-/***/ 13:
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_01.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_003.jpg";
 
 /***/ }),
-
-/***/ 171:
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -118,7 +165,7 @@ var About = function (_Component) {
                   null,
                   'Roman Lysyk'
                 ),
-                React.createElement('img', { src: __webpack_require__(117), alt: '' })
+                React.createElement('img', { src: __webpack_require__(440), alt: '' })
               )
             ),
             React.createElement(
@@ -228,22 +275,31 @@ var About = function (_Component) {
 exports.About = About;
 
 /***/ }),
-
-/***/ 172:
+/* 170 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 173:
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_06.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_004.jpg";
 
 /***/ }),
+/* 172 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 174:
+module.exports = __webpack_require__.p + "assets/images/foto_005.jpg";
+
+/***/ }),
+/* 173 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_006.jpg";
+
+/***/ }),
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -290,7 +346,7 @@ var Slide = function (_Component) {
           "div",
           { className: "slide__title" },
           _react2.default.createElement(
-            "h4",
+            "h5",
             null,
             this.props.title
           )
@@ -300,7 +356,7 @@ var Slide = function (_Component) {
           "div",
           { className: "slide__date" },
           _react2.default.createElement(
-            "h4",
+            "h5",
             null,
             dateForm
           )
@@ -315,22 +371,19 @@ var Slide = function (_Component) {
 exports.Slide = Slide;
 
 /***/ }),
-
-/***/ 175:
+/* 175 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 176:
+/* 176 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 177:
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -415,8 +468,7 @@ var Form = function (_Component) {
 exports.Form = Form;
 
 /***/ }),
-
-/***/ 178:
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -543,24 +595,237 @@ var Links = function (_Component) {
 exports.Links = Links;
 
 /***/ }),
-
-/***/ 179:
+/* 179 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 195:
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(121);
+__webpack_require__(119);
 module.exports = __webpack_require__(397);
 
 
 /***/ }),
-
-/***/ 397:
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -570,13 +835,13 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _reactDom = __webpack_require__(58);
+var _reactDom = __webpack_require__(57);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouter = __webpack_require__(158);
+var _reactRouter = __webpack_require__(156);
 
-var _reactRouterDom = __webpack_require__(80);
+var _reactRouterDom = __webpack_require__(79);
 
 var _navbarComponent = __webpack_require__(431);
 
@@ -584,15 +849,15 @@ var _scrollingUp = __webpack_require__(434);
 
 var _home = __webpack_require__(436);
 
-var _footer = __webpack_require__(449);
+var _footer = __webpack_require__(450);
 
-var _gallery = __webpack_require__(451);
+var _gallery = __webpack_require__(452);
 
-var _about = __webpack_require__(171);
+var _about = __webpack_require__(169);
 
-var _contacts = __webpack_require__(460);
+var _contacts = __webpack_require__(532);
 
-__webpack_require__(463);
+__webpack_require__(535);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -632,8 +897,40 @@ _reactDom2.default.render(React.createElement(
 ), document.getElementById('page'));
 
 /***/ }),
-
-/***/ 431:
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -652,9 +949,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _navbar = __webpack_require__(432);
 
-var _reactRouterDom = __webpack_require__(80);
+var _reactRouterDom = __webpack_require__(79);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -721,8 +1018,7 @@ var NavbarComponent = function (_Component) {
 exports.NavbarComponent = NavbarComponent;
 
 /***/ }),
-
-/***/ 432:
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -752,15 +1048,13 @@ var navbarItems = [{
 exports.navbarItems = navbarItems;
 
 /***/ }),
-
-/***/ 433:
+/* 433 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 434:
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -777,13 +1071,13 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
 __webpack_require__(435);
 
-__webpack_require__(116);
+__webpack_require__(113);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -856,15 +1150,13 @@ var ScrollButton = function (_Component) {
 exports.ScrollButton = ScrollButton;
 
 /***/ }),
-
-/***/ 435:
+/* 435 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 436:
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -883,17 +1175,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _header = __webpack_require__(437);
 
-var _about = __webpack_require__(171);
+var _about = __webpack_require__(169);
 
-var _other = __webpack_require__(440);
+var _other = __webpack_require__(441);
 
-var _portfolio = __webpack_require__(442);
+var _portfolio = __webpack_require__(443);
 
-var _works = __webpack_require__(443);
+var _works = __webpack_require__(444);
 
-var _contact = __webpack_require__(446);
+var _contact = __webpack_require__(447);
 
-var _contactItem = __webpack_require__(447);
+var _contactItem = __webpack_require__(448);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -935,8 +1227,7 @@ var HomePage = function (_Component) {
 exports.HomePage = HomePage;
 
 /***/ }),
-
-/***/ 437:
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1004,22 +1295,25 @@ var Header = function (_Component) {
 exports.Header = Header;
 
 /***/ }),
-
-/***/ 438:
+/* 438 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 439:
+/* 439 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 440 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 440:
+module.exports = __webpack_require__.p + "assets/images/foto_18.jpg";
+
+/***/ }),
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1036,7 +1330,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(441);
+__webpack_require__(442);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1135,15 +1429,13 @@ var Other = function (_Component) {
 exports.Other = Other;
 
 /***/ }),
-
-/***/ 441:
+/* 442 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 442:
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1160,7 +1452,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(172);
+__webpack_require__(170);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1206,8 +1498,7 @@ var Portfolio = function (_Component) {
 exports.Portfolio = Portfolio;
 
 /***/ }),
-
-/***/ 443:
+/* 444 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1224,23 +1515,23 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(80);
+var _reactRouterDom = __webpack_require__(79);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _works = __webpack_require__(444);
+var _works = __webpack_require__(445);
 
 var _slid = __webpack_require__(174);
 
-__webpack_require__(445);
+__webpack_require__(446);
 
 __webpack_require__(175);
 
 __webpack_require__(176);
 
-__webpack_require__(116);
+__webpack_require__(113);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1472,8 +1763,7 @@ var Works = function (_Component) {
 exports.Works = Works;
 
 /***/ }),
-
-/***/ 444:
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1487,73 +1777,71 @@ var imgItems = [{
   line: 1,
   title: 't',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(81),
+  imgUrl: __webpack_require__(114),
   description: "description 1"
 }, {
   id: 1,
   line: 1,
   title: 't',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13),
+  imgUrl: __webpack_require__(115),
   description: "description 1"
 }, {
   id: 2,
   line: 1,
   title: 't1',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(82),
+  imgUrl: __webpack_require__(116),
   description: "description 2"
 }, {
   id: 3,
   line: 2,
   title: 't2',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(117),
+  imgUrl: __webpack_require__(171),
   description: "description 3"
 }, {
   id: 4,
   line: 2,
   title: 't3',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(81)
+  imgUrl: __webpack_require__(172)
 }, {
   id: 5,
   line: 2,
   title: 't4',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(173)
 }, {
   id: 6,
   line: 3,
   title: 't5',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(82)
+  imgUrl: __webpack_require__(114)
 }, {
   id: 7,
   line: 3,
   title: 't6',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(173)
+  imgUrl: __webpack_require__(115)
 }, {
   id: 8,
   line: 3,
   title: 't7',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(118)
+  imgUrl: __webpack_require__(116)
 }];
 
 exports.imgItems = imgItems;
 
 /***/ }),
-
-/***/ 445:
+/* 446 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 446:
+/* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1570,7 +1858,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(172);
+__webpack_require__(170);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1615,8 +1903,7 @@ var ContactBaner = function (_Component) {
 exports.ContactBaner = ContactBaner;
 
 /***/ }),
-
-/***/ 447:
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1637,7 +1924,7 @@ var _form = __webpack_require__(177);
 
 var _links = __webpack_require__(178);
 
-__webpack_require__(448);
+__webpack_require__(449);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1696,15 +1983,13 @@ var Contact = function (_Component) {
 exports.Contact = Contact;
 
 /***/ }),
-
-/***/ 448:
+/* 449 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 449:
+/* 450 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1721,7 +2006,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(450);
+__webpack_require__(451);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1804,15 +2089,13 @@ var Footer = function (_Component) {
 exports.Footer = Footer;
 
 /***/ }),
-
-/***/ 450:
+/* 451 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 451:
+/* 452 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1829,21 +2112,21 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _foto = __webpack_require__(452);
+var _foto = __webpack_require__(453);
 
-var _task = __webpack_require__(453);
+var _task = __webpack_require__(454);
 
-var _taskRadio = __webpack_require__(454);
+var _taskRadio = __webpack_require__(455);
 
-var _foto2 = __webpack_require__(455);
+var _foto2 = __webpack_require__(456);
 
-var _checkbox = __webpack_require__(456);
+var _checkbox = __webpack_require__(528);
 
-var _radio = __webpack_require__(458);
+var _radio = __webpack_require__(530);
 
 __webpack_require__(179);
 
-__webpack_require__(459);
+__webpack_require__(531);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1868,6 +2151,8 @@ var Gallery = function (_Component) {
       checkboxState: false,
       portrait: false,
       children: false,
+      family: false,
+      gestation: false,
       radioState: false,
       date: false
     };
@@ -1883,6 +2168,10 @@ var Gallery = function (_Component) {
         this.setState({ portrait: !this.state.portrait });
       } else if (id === 1) {
         this.setState({ children: !this.state.children });
+      } else if (id === 2) {
+        this.setState({ family: !this.state.family });
+      } else if (id === 3) {
+        this.setState({ gestation: !this.state.gestation });
       }
     }
   }, {
@@ -1900,7 +2189,7 @@ var Gallery = function (_Component) {
 
       var img = [];
       _foto2.imgItems.map(function (item) {
-        if (_this2.state.portrait || _this2.state.children || !item.imgUrl) {
+        if (_this2.state.portrait || _this2.state.children || _this2.state.family || _this2.state.gestation || !item.imgUrl) {
           return;
         }
         img.push(item);
@@ -1913,6 +2202,18 @@ var Gallery = function (_Component) {
       });
       _foto2.imgItems.map(function (item) {
         if (!_this2.state.children || !item.children) {
+          return;
+        }
+        img.push(item);
+      });
+      _foto2.imgItems.map(function (item) {
+        if (!_this2.state.family || !item.family) {
+          return;
+        }
+        img.push(item);
+      });
+      _foto2.imgItems.map(function (item) {
+        if (!_this2.state.gestation || !item.gestation) {
           return;
         }
         img.push(item);
@@ -1991,8 +2292,7 @@ var Gallery = function (_Component) {
 exports.Gallery = Gallery;
 
 /***/ }),
-
-/***/ 452:
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2009,7 +2309,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -2021,7 +2321,7 @@ __webpack_require__(175);
 
 __webpack_require__(176);
 
-__webpack_require__(116);
+__webpack_require__(113);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2259,8 +2559,7 @@ var Foto = function (_Component) {
 exports.Foto = Foto;
 
 /***/ }),
-
-/***/ 453:
+/* 454 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2290,8 +2589,7 @@ var task = [{
 exports.task = task;
 
 /***/ }),
-
-/***/ 454:
+/* 455 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2304,17 +2602,12 @@ var taskRadio = [{
   id: 'inp5',
   name: 'By date',
   checkboxState: false
-}, {
-  id: 'inp6',
-  name: 'By categories',
-  checkboxState: false
 }];
 
 exports.taskRadio = taskRadio;
 
 /***/ }),
-
-/***/ 455:
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2324,161 +2617,978 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var imgItems = [{
+  children: 'children'
+}, {
   id: 0,
   title: 'Sabina, Dnipro embankment',
-  date: [2016, 2, 16],
-  column: 1,
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(81),
-  description: "description 1"
+  imgUrl: __webpack_require__(114)
 }, {
   id: 1,
-  title: 't',
-  column: 2,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13),
-  description: "description 1"
+  imgUrl: __webpack_require__(115)
 }, {
   id: 2,
-  title: 't1',
-  column: 3,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(82),
-  description: "description 2"
+  imgUrl: __webpack_require__(116)
 }, {
   id: 3,
-  title: 't2',
-  column: 4,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(117),
-  description: "description 3"
+  imgUrl: __webpack_require__(171)
 }, {
   id: 4,
-  title: 't3',
-  column: 1,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(81)
+  imgUrl: __webpack_require__(172)
 }, {
   id: 5,
-  title: 't4',
-  column: 2,
-  portrait: 'portrait',
-  imgUrl: __webpack_require__(118)
-}, {
-  id: 6,
-  title: 't5',
-  column: 3,
-  portrait: 'portrait',
-  imgUrl: __webpack_require__(82)
-}, {
-  id: 7,
-  title: 't6',
-  column: 4,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
   imgUrl: __webpack_require__(173)
 }, {
-  id: 8,
-  title: 't7',
-  column: 1,
+  id: 6,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(457)
+}, {
+  id: 7,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(458)
+}, {
+  id: 8,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(459)
 }, {
   id: 9,
-  title: 't',
-  column: 2,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(460)
 }, {
   id: 10,
-  title: 't1',
-  column: 3,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(461)
 }, {
   id: 11,
-  title: 't2',
-  column: 4,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(462)
 }, {
   id: 12,
-  title: 't3',
-  column: 1,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(463)
 }, {
   id: 13,
-  title: 't4',
-  column: 2,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(464)
 }, {
   id: 14,
-  title: 't5',
-  column: 3,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(465)
 }, {
   id: 15,
-  title: 't6',
-  column: 4,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(466)
 }, {
   id: 16,
-  title: 't7',
-  column: 1,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(467)
 }, {
   id: 17,
-  title: 't',
-  column: 2,
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(468)
 }, {
   id: 18,
-  title: 't1',
-  column: 3,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(469)
 }, {
   id: 19,
-  title: 't2',
-  column: 4,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(470)
 }, {
   id: 20,
-  title: 't3',
-  column: 1,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(471)
 }, {
   id: 21,
-  title: 't4',
-  column: 2,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(472)
 }, {
   id: 22,
-  title: 't5',
-  column: 3,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Portrait',
+  teg: ['Tatiana'],
+  date: [2013, 3, 3],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(473)
 }, {
-  id: 1,
-  title: 't6',
-  column: 4,
+  id: 23,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 5, 5],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(474)
+}, {
+  id: 24,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 5, 5],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(475)
+}, {
+  id: 25,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 7, 14],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(476)
+}, {
+  id: 26,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 7, 14],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(477)
+}, {
+  id: 27,
+  title: 'Tatiana, Museum of Pyrogovo',
+  teg: ['Tatiana'],
+  date: [2013, 8, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(478)
+}, {
+  id: 28,
+  title: 'Tatiana, Museum of Pyrogovo',
+  teg: ['Tatiana'],
+  date: [2013, 8, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(479)
+}, {
+  id: 29,
+  title: 'Tatiana, Museum of Pyrogovo',
+  teg: ['Tatiana'],
+  date: [2013, 8, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(480)
+}, {
+  id: 30,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(481)
+}, {
+  id: 31,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(482)
+}, {
+  id: 32,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(483)
+}, {
+  id: 33,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(484)
+}, {
+  id: 34,
+  title: 'Tatiana, Uhman',
+  teg: ['Tatiana'],
+  date: [2013, 10, 6],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(485)
+}, {
+  id: 35,
+  title: 'Tatiana, Uhman',
+  teg: ['Tatiana'],
+  date: [2013, 10, 6],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(486)
+}, {
+  id: 36,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(487)
+}, {
+  id: 37,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(488)
+}, {
+  id: 38,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(489)
+}, {
+  id: 39,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(490)
+}, {
+  id: 40,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(491)
+}, {
+  id: 41,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(492)
+}, {
+  id: 42,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(493)
+}, {
+  id: 43,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(494)
+}, {
+  id: 44,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(495)
+}, {
+  id: 45,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(496)
+}, {
+  id: 46,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(497)
+}, {
+  id: 47,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(498)
+}, {
+  id: 48,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(499)
+}, {
+  id: 49,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(500)
+}, {
+  id: 50,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(501)
+}, {
+  id: 51,
+  title: 'Anna, 2 months',
+  teg: ['Anna'],
+  date: [2015, 2, 21],
   children: 'children',
-  imgUrl: __webpack_require__(118)
+  imgUrl: __webpack_require__(502)
+}, {
+  id: 52,
+  title: 'Anna, 2 months',
+  teg: ['Anna'],
+  date: [2015, 2, 21],
+  children: 'children',
+  imgUrl: __webpack_require__(503)
+}, {
+  id: 53,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(504)
+}, {
+  id: 54,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(505)
+}, {
+  id: 55,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(506)
+}, {
+  id: 56,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(507)
+}, {
+  id: 57,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(508)
+}, {
+  id: 58,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(509)
+}, {
+  id: 59,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(510)
+}, {
+  id: 60,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(511)
+}, {
+  id: 61,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(512)
+}, {
+  id: 62,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(513)
+}, {
+  id: 63,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(514)
+}, {
+  id: 64,
+  title: 'Ksenia and akura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(515)
+}, {
+  id: 65,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(516)
+}, {
+  id: 66,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(517)
+}, {
+  id: 67,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(518)
+}, {
+  id: 68,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(519)
+}, {
+  id: 69,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(520)
+}, {
+  id: 70,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(521)
+}, {
+  id: 71,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(522)
+}, {
+  id: 72,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(523)
+}, {
+  id: 73,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(524)
+}, {
+  id: 74,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(525)
+}, {
+  id: 75,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(526)
+}, {
+  id: 76,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(527)
 }];
 
 exports.imgItems = imgItems;
 
 /***/ }),
+/* 457 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 456:
+module.exports = __webpack_require__.p + "assets/images/foto_007.jpg";
+
+/***/ }),
+/* 458 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_008.jpg";
+
+/***/ }),
+/* 459 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_009.jpg";
+
+/***/ }),
+/* 460 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_010.jpg";
+
+/***/ }),
+/* 461 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_011.jpg";
+
+/***/ }),
+/* 462 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_012.jpg";
+
+/***/ }),
+/* 463 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_013.jpg";
+
+/***/ }),
+/* 464 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_014.jpg";
+
+/***/ }),
+/* 465 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_015.jpg";
+
+/***/ }),
+/* 466 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_016.jpg";
+
+/***/ }),
+/* 467 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_017.jpg";
+
+/***/ }),
+/* 468 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_018.jpg";
+
+/***/ }),
+/* 469 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_019.jpg";
+
+/***/ }),
+/* 470 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_020.jpg";
+
+/***/ }),
+/* 471 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_021.jpg";
+
+/***/ }),
+/* 472 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_022.jpg";
+
+/***/ }),
+/* 473 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_023.jpg";
+
+/***/ }),
+/* 474 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_024.jpg";
+
+/***/ }),
+/* 475 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_025.jpg";
+
+/***/ }),
+/* 476 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_026.jpg";
+
+/***/ }),
+/* 477 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_027.jpg";
+
+/***/ }),
+/* 478 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_028.jpg";
+
+/***/ }),
+/* 479 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_029.jpg";
+
+/***/ }),
+/* 480 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_030.jpg";
+
+/***/ }),
+/* 481 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_031.jpg";
+
+/***/ }),
+/* 482 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_032.jpg";
+
+/***/ }),
+/* 483 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_033.jpg";
+
+/***/ }),
+/* 484 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_034.jpg";
+
+/***/ }),
+/* 485 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_035.jpg";
+
+/***/ }),
+/* 486 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_036.jpg";
+
+/***/ }),
+/* 487 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_037.jpg";
+
+/***/ }),
+/* 488 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_038.jpg";
+
+/***/ }),
+/* 489 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_039.jpg";
+
+/***/ }),
+/* 490 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_040.jpg";
+
+/***/ }),
+/* 491 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_041.jpg";
+
+/***/ }),
+/* 492 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_042.jpg";
+
+/***/ }),
+/* 493 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_043.jpg";
+
+/***/ }),
+/* 494 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_044.jpg";
+
+/***/ }),
+/* 495 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_045.jpg";
+
+/***/ }),
+/* 496 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_046.jpg";
+
+/***/ }),
+/* 497 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_047.jpg";
+
+/***/ }),
+/* 498 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_048.jpg";
+
+/***/ }),
+/* 499 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_049.jpg";
+
+/***/ }),
+/* 500 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_050.jpg";
+
+/***/ }),
+/* 501 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_051.jpg";
+
+/***/ }),
+/* 502 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_052.jpg";
+
+/***/ }),
+/* 503 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_053.jpg";
+
+/***/ }),
+/* 504 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_054.jpg";
+
+/***/ }),
+/* 505 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_055.jpg";
+
+/***/ }),
+/* 506 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_056.jpg";
+
+/***/ }),
+/* 507 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_057.jpg";
+
+/***/ }),
+/* 508 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_058.jpg";
+
+/***/ }),
+/* 509 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_059.jpg";
+
+/***/ }),
+/* 510 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_060.jpg";
+
+/***/ }),
+/* 511 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_061.jpg";
+
+/***/ }),
+/* 512 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_062.jpg";
+
+/***/ }),
+/* 513 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_063.jpg";
+
+/***/ }),
+/* 514 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_064.jpg";
+
+/***/ }),
+/* 515 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_065.jpg";
+
+/***/ }),
+/* 516 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_066.jpg";
+
+/***/ }),
+/* 517 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_067.jpg";
+
+/***/ }),
+/* 518 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_068.jpg";
+
+/***/ }),
+/* 519 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_069.jpg";
+
+/***/ }),
+/* 520 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_070.jpg";
+
+/***/ }),
+/* 521 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_071.jpg";
+
+/***/ }),
+/* 522 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_072.jpg";
+
+/***/ }),
+/* 523 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_073.jpg";
+
+/***/ }),
+/* 524 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_074.jpg";
+
+/***/ }),
+/* 525 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_075.jpg";
+
+/***/ }),
+/* 526 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_076.jpg";
+
+/***/ }),
+/* 527 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_077.jpg";
+
+/***/ }),
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2495,11 +3605,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(457);
+__webpack_require__(529);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2519,9 +3629,7 @@ var Checkbox = function (_Component) {
 
     _this.state = {
       checkboxState: false,
-      show: false,
-      arr: false,
-      arr2: false
+      show: false
     };
     _this.toggle = _this.toggle.bind(_this);
     return _this;
@@ -2529,14 +3637,9 @@ var Checkbox = function (_Component) {
 
   _createClass(Checkbox, [{
     key: 'toggle',
-    value: function toggle(id) {
+    value: function toggle() {
       this.setState({ checkboxState: !this.state.checkboxState });
       this.setState({ show: !this.state.show });
-      if (id === 0) {
-        this.setState({ arr: !this.state.arr });
-      } else if (id === 1) {
-        this.setState({ arr2: !this.state.arr2 });
-      }
     }
   }, {
     key: 'render',
@@ -2579,15 +3682,13 @@ var Checkbox = function (_Component) {
 exports.Checkbox = Checkbox;
 
 /***/ }),
-
-/***/ 457:
+/* 529 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 458:
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2604,7 +3705,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -2674,15 +3775,13 @@ var Radio = function (_Component) {
 exports.Radio = Radio;
 
 /***/ }),
-
-/***/ 459:
+/* 531 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 460:
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2703,7 +3802,7 @@ var _links = __webpack_require__(178);
 
 var _form = __webpack_require__(177);
 
-__webpack_require__(461);
+__webpack_require__(533);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -2755,7 +3854,7 @@ var Contacts = function (_Component) {
               React.createElement(
                 'div',
                 { className: 'item' },
-                React.createElement('img', { src: __webpack_require__(462), alt: '' })
+                React.createElement('img', { src: __webpack_require__(534), alt: '' })
               )
             ),
             React.createElement(
@@ -2780,40 +3879,22 @@ var Contacts = function (_Component) {
 exports.Contacts = Contacts;
 
 /***/ }),
-
-/***/ 461:
+/* 533 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 462:
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_07.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_17.jpg";
 
 /***/ }),
-
-/***/ 463:
+/* 535 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 81:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_03.jpg";
-
-/***/ }),
-
-/***/ 82:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_05.jpg";
 
 /***/ })
-
-},[195]);
+]),[195]);

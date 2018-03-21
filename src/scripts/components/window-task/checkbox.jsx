@@ -7,21 +7,14 @@ class Checkbox extends Component {
     super(props);
     this.state = {
       checkboxState: false,
-      show: false,
-      arr: false,
-      arr2: false
+      show: false
     };
     this.toggle = this.toggle.bind(this);
   }
 
-  toggle(id) {
+  toggle() {
     this.setState({checkboxState: !this.state.checkboxState});
     this.setState({show: !this.state.show});
-    if (id === 0) {
-      this.setState({arr: !this.state.arr})
-    } else if (id === 1) {
-      this.setState({arr2: !this.state.arr2})
-    }
   }
 
   render() {

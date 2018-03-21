@@ -1,34 +1,81 @@
-webpackJsonp([0],{
-
-/***/ 120:
+webpackJsonp([0],Array(117).concat([
+/* 117 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 121:
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_02.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_001.jpg";
 
 /***/ }),
-
-/***/ 122:
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_04.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_002.jpg";
 
 /***/ }),
-
-/***/ 13:
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_01.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_003.jpg";
 
 /***/ }),
-
-/***/ 175:
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -118,7 +165,7 @@ var About = function (_Component) {
                   null,
                   'Roman Lysyk'
                 ),
-                React.createElement('img', { src: __webpack_require__(121), alt: '' })
+                React.createElement('img', { src: __webpack_require__(446), alt: '' })
               )
             ),
             React.createElement(
@@ -228,22 +275,31 @@ var About = function (_Component) {
 exports.About = About;
 
 /***/ }),
-
-/***/ 176:
+/* 174 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 177:
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_06.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_004.jpg";
 
 /***/ }),
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 178:
+module.exports = __webpack_require__.p + "assets/images/foto_005.jpg";
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_006.jpg";
+
+/***/ }),
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -290,7 +346,7 @@ var Slide = function (_Component) {
           "div",
           { className: "slide__title" },
           _react2.default.createElement(
-            "h4",
+            "h5",
             null,
             this.props.title
           )
@@ -300,7 +356,7 @@ var Slide = function (_Component) {
           "div",
           { className: "slide__date" },
           _react2.default.createElement(
-            "h4",
+            "h5",
             null,
             dateForm
           )
@@ -315,22 +371,19 @@ var Slide = function (_Component) {
 exports.Slide = Slide;
 
 /***/ }),
-
-/***/ 179:
+/* 179 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 180:
+/* 180 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 181:
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -415,8 +468,7 @@ var Form = function (_Component) {
 exports.Form = Form;
 
 /***/ }),
-
-/***/ 182:
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -543,24 +595,237 @@ var Links = function (_Component) {
 exports.Links = Links;
 
 /***/ }),
-
-/***/ 183:
+/* 183 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 199:
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(125);
+__webpack_require__(123);
 module.exports = __webpack_require__(401);
 
 
 /***/ }),
-
-/***/ 401:
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -570,13 +835,13 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _reactDom = __webpack_require__(59);
+var _reactDom = __webpack_require__(58);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouter = __webpack_require__(162);
+var _reactRouter = __webpack_require__(160);
 
-var _reactRouterDom = __webpack_require__(82);
+var _reactRouterDom = __webpack_require__(81);
 
 var _navbarComponent = __webpack_require__(437);
 
@@ -584,15 +849,15 @@ var _scrollingUp = __webpack_require__(440);
 
 var _home = __webpack_require__(442);
 
-var _footer = __webpack_require__(455);
+var _footer = __webpack_require__(456);
 
-var _gallery = __webpack_require__(457);
+var _gallery = __webpack_require__(458);
 
-var _about = __webpack_require__(175);
+var _about = __webpack_require__(173);
 
-var _contacts = __webpack_require__(466);
+var _contacts = __webpack_require__(580);
 
-__webpack_require__(469);
+__webpack_require__(583);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -632,8 +897,42 @@ _reactDom2.default.render(React.createElement(
 ), document.getElementById('page'));
 
 /***/ }),
-
-/***/ 437:
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -652,9 +951,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _navbar = __webpack_require__(438);
 
-var _reactRouterDom = __webpack_require__(82);
+var _reactRouterDom = __webpack_require__(81);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -721,8 +1020,7 @@ var NavbarComponent = function (_Component) {
 exports.NavbarComponent = NavbarComponent;
 
 /***/ }),
-
-/***/ 438:
+/* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -752,15 +1050,13 @@ var navbarItems = [{
 exports.navbarItems = navbarItems;
 
 /***/ }),
-
-/***/ 439:
+/* 439 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 440:
+/* 440 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -777,13 +1073,13 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
 __webpack_require__(441);
 
-__webpack_require__(120);
+__webpack_require__(117);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -856,15 +1152,13 @@ var ScrollButton = function (_Component) {
 exports.ScrollButton = ScrollButton;
 
 /***/ }),
-
-/***/ 441:
+/* 441 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 442:
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -883,17 +1177,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _header = __webpack_require__(443);
 
-var _about = __webpack_require__(175);
+var _about = __webpack_require__(173);
 
-var _other = __webpack_require__(446);
+var _other = __webpack_require__(447);
 
-var _portfolio = __webpack_require__(448);
+var _portfolio = __webpack_require__(449);
 
-var _works = __webpack_require__(449);
+var _works = __webpack_require__(450);
 
-var _contact = __webpack_require__(452);
+var _contact = __webpack_require__(453);
 
-var _contactItem = __webpack_require__(453);
+var _contactItem = __webpack_require__(454);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -935,8 +1229,7 @@ var HomePage = function (_Component) {
 exports.HomePage = HomePage;
 
 /***/ }),
-
-/***/ 443:
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1004,22 +1297,25 @@ var Header = function (_Component) {
 exports.Header = Header;
 
 /***/ }),
-
-/***/ 444:
+/* 444 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 445:
+/* 445 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 446 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 446:
+module.exports = __webpack_require__.p + "assets/images/foto_18.jpg";
+
+/***/ }),
+/* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1036,7 +1332,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(447);
+__webpack_require__(448);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1135,15 +1431,13 @@ var Other = function (_Component) {
 exports.Other = Other;
 
 /***/ }),
-
-/***/ 447:
+/* 448 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 448:
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1160,7 +1454,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(176);
+__webpack_require__(174);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1206,8 +1500,7 @@ var Portfolio = function (_Component) {
 exports.Portfolio = Portfolio;
 
 /***/ }),
-
-/***/ 449:
+/* 450 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1224,23 +1517,23 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(82);
+var _reactRouterDom = __webpack_require__(81);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _works = __webpack_require__(450);
+var _works = __webpack_require__(451);
 
 var _slid = __webpack_require__(178);
 
-__webpack_require__(451);
+__webpack_require__(452);
 
 __webpack_require__(179);
 
 __webpack_require__(180);
 
-__webpack_require__(120);
+__webpack_require__(117);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1472,8 +1765,7 @@ var Works = function (_Component) {
 exports.Works = Works;
 
 /***/ }),
-
-/***/ 450:
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1487,73 +1779,71 @@ var imgItems = [{
   line: 1,
   title: 't',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(83),
+  imgUrl: __webpack_require__(118),
   description: "description 1"
 }, {
   id: 1,
   line: 1,
   title: 't',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13),
+  imgUrl: __webpack_require__(119),
   description: "description 1"
 }, {
   id: 2,
   line: 1,
   title: 't1',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(84),
+  imgUrl: __webpack_require__(120),
   description: "description 2"
 }, {
   id: 3,
   line: 2,
   title: 't2',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(121),
+  imgUrl: __webpack_require__(175),
   description: "description 3"
 }, {
   id: 4,
   line: 2,
   title: 't3',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(83)
+  imgUrl: __webpack_require__(176)
 }, {
   id: 5,
   line: 2,
   title: 't4',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(177)
 }, {
   id: 6,
   line: 3,
   title: 't5',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(84)
+  imgUrl: __webpack_require__(118)
 }, {
   id: 7,
   line: 3,
   title: 't6',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(177)
+  imgUrl: __webpack_require__(119)
 }, {
   id: 8,
   line: 3,
   title: 't7',
   portrait: 'portrait',
-  imgUrl: __webpack_require__(122)
+  imgUrl: __webpack_require__(120)
 }];
 
 exports.imgItems = imgItems;
 
 /***/ }),
-
-/***/ 451:
+/* 452 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 452:
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1570,7 +1860,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(176);
+__webpack_require__(174);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1615,8 +1905,7 @@ var ContactBaner = function (_Component) {
 exports.ContactBaner = ContactBaner;
 
 /***/ }),
-
-/***/ 453:
+/* 454 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1637,7 +1926,7 @@ var _form = __webpack_require__(181);
 
 var _links = __webpack_require__(182);
 
-__webpack_require__(454);
+__webpack_require__(455);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1696,15 +1985,13 @@ var Contact = function (_Component) {
 exports.Contact = Contact;
 
 /***/ }),
-
-/***/ 454:
+/* 455 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 455:
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1721,7 +2008,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(456);
+__webpack_require__(457);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1804,15 +2091,13 @@ var Footer = function (_Component) {
 exports.Footer = Footer;
 
 /***/ }),
-
-/***/ 456:
+/* 457 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 457:
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1829,21 +2114,21 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _foto = __webpack_require__(458);
+var _foto = __webpack_require__(459);
 
-var _task = __webpack_require__(459);
+var _task = __webpack_require__(460);
 
-var _taskRadio = __webpack_require__(460);
+var _taskRadio = __webpack_require__(461);
 
-var _foto2 = __webpack_require__(461);
+var _foto2 = __webpack_require__(462);
 
-var _checkbox = __webpack_require__(462);
+var _checkbox = __webpack_require__(576);
 
-var _radio = __webpack_require__(464);
+var _radio = __webpack_require__(578);
 
 __webpack_require__(183);
 
-__webpack_require__(465);
+__webpack_require__(579);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1868,6 +2153,8 @@ var Gallery = function (_Component) {
       checkboxState: false,
       portrait: false,
       children: false,
+      family: false,
+      gestation: false,
       radioState: false,
       date: false
     };
@@ -1883,6 +2170,10 @@ var Gallery = function (_Component) {
         this.setState({ portrait: !this.state.portrait });
       } else if (id === 1) {
         this.setState({ children: !this.state.children });
+      } else if (id === 2) {
+        this.setState({ family: !this.state.family });
+      } else if (id === 3) {
+        this.setState({ gestation: !this.state.gestation });
       }
     }
   }, {
@@ -1900,7 +2191,7 @@ var Gallery = function (_Component) {
 
       var img = [];
       _foto2.imgItems.map(function (item) {
-        if (_this2.state.portrait || _this2.state.children || !item.imgUrl) {
+        if (_this2.state.portrait || _this2.state.children || _this2.state.family || _this2.state.gestation || !item.imgUrl) {
           return;
         }
         img.push(item);
@@ -1913,6 +2204,18 @@ var Gallery = function (_Component) {
       });
       _foto2.imgItems.map(function (item) {
         if (!_this2.state.children || !item.children) {
+          return;
+        }
+        img.push(item);
+      });
+      _foto2.imgItems.map(function (item) {
+        if (!_this2.state.family || !item.family) {
+          return;
+        }
+        img.push(item);
+      });
+      _foto2.imgItems.map(function (item) {
+        if (!_this2.state.gestation || !item.gestation) {
           return;
         }
         img.push(item);
@@ -1991,8 +2294,7 @@ var Gallery = function (_Component) {
 exports.Gallery = Gallery;
 
 /***/ }),
-
-/***/ 458:
+/* 459 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2009,7 +2311,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -2021,7 +2323,7 @@ __webpack_require__(179);
 
 __webpack_require__(180);
 
-__webpack_require__(120);
+__webpack_require__(117);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2259,8 +2561,7 @@ var Foto = function (_Component) {
 exports.Foto = Foto;
 
 /***/ }),
-
-/***/ 459:
+/* 460 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2290,8 +2591,7 @@ var task = [{
 exports.task = task;
 
 /***/ }),
-
-/***/ 460:
+/* 461 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2304,17 +2604,12 @@ var taskRadio = [{
   id: 'inp5',
   name: 'By date',
   checkboxState: false
-}, {
-  id: 'inp6',
-  name: 'By categories',
-  checkboxState: false
 }];
 
 exports.taskRadio = taskRadio;
 
 /***/ }),
-
-/***/ 461:
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2324,161 +2619,1524 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var imgItems = [{
+  children: 'children'
+}, {
   id: 0,
   title: 'Sabina, Dnipro embankment',
-  date: [2016, 2, 16],
-  column: 1,
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(83),
-  description: "description 1"
+  imgUrl: __webpack_require__(118)
 }, {
   id: 1,
-  title: 't',
-  column: 2,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13),
-  description: "description 1"
+  imgUrl: __webpack_require__(119)
 }, {
   id: 2,
-  title: 't1',
-  column: 3,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(84),
-  description: "description 2"
+  imgUrl: __webpack_require__(120)
 }, {
   id: 3,
-  title: 't2',
-  column: 4,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(121),
-  description: "description 3"
+  imgUrl: __webpack_require__(175)
 }, {
   id: 4,
-  title: 't3',
-  column: 1,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(83)
+  imgUrl: __webpack_require__(176)
 }, {
   id: 5,
-  title: 't4',
-  column: 2,
-  portrait: 'portrait',
-  imgUrl: __webpack_require__(122)
-}, {
-  id: 6,
-  title: 't5',
-  column: 3,
-  portrait: 'portrait',
-  imgUrl: __webpack_require__(84)
-}, {
-  id: 7,
-  title: 't6',
-  column: 4,
+  title: 'Sabina, Dnipro embankment',
+  teg: ['sabina'],
+  date: [2011, 7, 16],
   portrait: 'portrait',
   imgUrl: __webpack_require__(177)
 }, {
-  id: 8,
-  title: 't7',
-  column: 1,
+  id: 6,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(463)
+}, {
+  id: 7,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(464)
+}, {
+  id: 8,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(465)
 }, {
   id: 9,
-  title: 't',
-  column: 2,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(466)
 }, {
   id: 10,
-  title: 't1',
-  column: 3,
+  title: 'Beach, Obolon',
+  teg: ['Beach'],
+  date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(467)
 }, {
   id: 11,
-  title: 't2',
-  column: 4,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(468)
 }, {
   id: 12,
-  title: 't3',
-  column: 1,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(469)
 }, {
   id: 13,
-  title: 't4',
-  column: 2,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(470)
 }, {
   id: 14,
-  title: 't5',
-  column: 3,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(471)
 }, {
   id: 15,
-  title: 't6',
-  column: 4,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(472)
 }, {
   id: 16,
-  title: 't7',
-  column: 1,
+  title: 'Curly, European square',
+  teg: ['Curly'],
+  date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(473)
 }, {
   id: 17,
-  title: 't',
-  column: 2,
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(13)
+  imgUrl: __webpack_require__(474)
 }, {
   id: 18,
-  title: 't1',
-  column: 3,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(475)
 }, {
   id: 19,
-  title: 't2',
-  column: 4,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(476)
 }, {
   id: 20,
-  title: 't3',
-  column: 1,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(477)
 }, {
   id: 21,
-  title: 't4',
-  column: 2,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Podgoretsky castle',
+  teg: ['Tatiana'],
+  date: [2012, 6, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(478)
 }, {
   id: 22,
-  title: 't5',
-  column: 3,
-  children: 'children',
-  imgUrl: __webpack_require__(13)
+  title: 'Tatiana, Portrait',
+  teg: ['Tatiana'],
+  date: [2013, 3, 3],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(479)
 }, {
-  id: 1,
-  title: 't6',
-  column: 4,
+  id: 23,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 5, 5],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(480)
+}, {
+  id: 24,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 5, 5],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(481)
+}, {
+  id: 25,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 7, 14],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(482)
+}, {
+  id: 26,
+  title: 'Tatiana, Sunset',
+  teg: ['Tatiana'],
+  date: [2013, 7, 14],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(483)
+}, {
+  id: 27,
+  title: 'Tatiana, Museum of Pyrogovo',
+  teg: ['Tatiana'],
+  date: [2013, 8, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(484)
+}, {
+  id: 28,
+  title: 'Tatiana, Museum of Pyrogovo',
+  teg: ['Tatiana'],
+  date: [2013, 8, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(485)
+}, {
+  id: 29,
+  title: 'Tatiana, Museum of Pyrogovo',
+  teg: ['Tatiana'],
+  date: [2013, 8, 4],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(486)
+}, {
+  id: 30,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(487)
+}, {
+  id: 31,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(488)
+}, {
+  id: 32,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(489)
+}, {
+  id: 33,
+  title: 'Tatiana, Svitlovodsk Reservoir',
+  teg: ['Tatiana'],
+  date: [2013, 9, 8],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(490)
+}, {
+  id: 34,
+  title: 'Tatiana, Uhman',
+  teg: ['Tatiana'],
+  date: [2013, 10, 6],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(491)
+}, {
+  id: 35,
+  title: 'Tatiana, Uhman',
+  teg: ['Tatiana'],
+  date: [2013, 10, 6],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(492)
+}, {
+  id: 36,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(493)
+}, {
+  id: 37,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(494)
+}, {
+  id: 38,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(495)
+}, {
+  id: 39,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(496)
+}, {
+  id: 40,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 4, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(497)
+}, {
+  id: 41,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(498)
+}, {
+  id: 42,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(499)
+}, {
+  id: 43,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(500)
+}, {
+  id: 44,
+  title: 'Oksana, Brody',
+  teg: ['Oksana'],
+  date: [2014, 9, 27],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(501)
+}, {
+  id: 45,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(502)
+}, {
+  id: 46,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(503)
+}, {
+  id: 47,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(504)
+}, {
+  id: 48,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(505)
+}, {
+  id: 49,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(506)
+}, {
+  id: 50,
+  title: 'Tatiana, VDNH',
+  teg: ['Tatiana'],
+  date: [2014, 10, 12],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(507)
+}, {
+  id: 51,
+  title: 'Anna, 2 months',
+  teg: ['Anna'],
+  date: [2015, 2, 21],
+  family: 'family',
+  imgUrl: __webpack_require__(508)
+}, {
+  id: 52,
+  title: 'Anna, 2 months',
+  teg: ['Anna'],
+  date: [2015, 2, 21],
   children: 'children',
-  imgUrl: __webpack_require__(122)
+  imgUrl: __webpack_require__(509)
+}, {
+  id: 53,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(510)
+}, {
+  id: 54,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(511)
+}, {
+  id: 55,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(512)
+}, {
+  id: 56,
+  title: 'Tatiana, Ivy',
+  teg: ['Tatiana'],
+  date: [2015, 9, 26],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(513)
+}, {
+  id: 57,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(514)
+}, {
+  id: 58,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(515)
+}, {
+  id: 59,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(516)
+}, {
+  id: 60,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(517)
+}, {
+  id: 61,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(518)
+}, {
+  id: 62,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(519)
+}, {
+  id: 63,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(520)
+}, {
+  id: 64,
+  title: 'Ksenia and sakura',
+  teg: ['Ksenia'],
+  date: [2016, 4, 24],
+  portrait: 'portrait',
+  imgUrl: __webpack_require__(521)
+}, {
+  id: 65,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(522)
+}, {
+  id: 66,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(523)
+}, {
+  id: 67,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(524)
+}, {
+  id: 68,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(525)
+}, {
+  id: 69,
+  title: 'Tatiana, Waiting for a miracle',
+  teg: ['Tatiana'],
+  date: [2016, 10, 1],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(526)
+}, {
+  id: 70,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(527)
+}, {
+  id: 71,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(528)
+}, {
+  id: 72,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(529)
+}, {
+  id: 73,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(530)
+}, {
+  id: 74,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(531)
+}, {
+  id: 75,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(532)
+}, {
+  id: 76,
+  title: 'Tatiana, Studio Yu-Na',
+  teg: ['Tatiana'],
+  date: [2017, 1, 21],
+  gestation: 'gestation',
+  imgUrl: __webpack_require__(533)
+}, {
+  id: 77,
+  title: 'Polina, 2 months',
+  teg: ['Polina'],
+  date: [2017, 4, 22],
+  children: 'children',
+  imgUrl: __webpack_require__(534)
+}, {
+  id: 78,
+  title: 'Polina, 2 months',
+  teg: ['Polina'],
+  date: [2017, 4, 22],
+  children: 'children',
+  imgUrl: __webpack_require__(535)
+}, {
+  id: 79,
+  title: 'Polina, 2 months',
+  teg: ['Polina'],
+  date: [2017, 4, 22],
+  children: 'children',
+  imgUrl: __webpack_require__(536)
+}, {
+  id: 80,
+  title: 'Polina, 2 months',
+  teg: ['Polina'],
+  date: [2017, 4, 22],
+  children: 'children',
+  imgUrl: __webpack_require__(537)
+}, {
+  id: 81,
+  title: 'Polina, 2 months',
+  teg: ['Polina'],
+  date: [2017, 4, 22],
+  children: 'children',
+  imgUrl: __webpack_require__(538)
+}, {
+  id: 82,
+  title: 'Polina, 4 months',
+  teg: ['Polina'],
+  date: [2017, 5, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(539)
+}, {
+  id: 83,
+  title: 'Ksenia and Polina',
+  teg: ['Polina', 'Ksenia'],
+  date: [2017, 5, 28],
+  family: 'family',
+  imgUrl: __webpack_require__(540)
+}, {
+  id: 84,
+  title: 'Ksenia and Polina',
+  teg: ['Polina', 'Ksenia'],
+  date: [2017, 5, 28],
+  family: 'family',
+  imgUrl: __webpack_require__(541)
+}, {
+  id: 85,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(542)
+}, {
+  id: 86,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(543)
+}, {
+  id: 87,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(544)
+}, {
+  id: 88,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(545)
+}, {
+  id: 89,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(546)
+}, {
+  id: 90,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(547)
+}, {
+  id: 91,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(548)
+}, {
+  id: 92,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(549)
+}, {
+  id: 93,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(550)
+}, {
+  id: 94,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(551)
+}, {
+  id: 95,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(552)
+}, {
+  id: 96,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  children: 'children',
+  imgUrl: __webpack_require__(553)
+}, {
+  id: 97,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  family: 'family',
+  imgUrl: __webpack_require__(554)
+}, {
+  id: 98,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  family: 'family',
+  imgUrl: __webpack_require__(555)
+}, {
+  id: 99,
+  title: 'Annia, 1 year',
+  teg: ['Annia'],
+  date: [2017, 8, 5],
+  family: 'family',
+  imgUrl: __webpack_require__(556)
+}, {
+  id: 100,
+  title: 'Polina, 6 months',
+  teg: ['Polina'],
+  date: [2017, 8, 12],
+  children: 'children',
+  imgUrl: __webpack_require__(557)
+}, {
+  id: 101,
+  title: 'Polina, 6 months',
+  teg: ['Polina'],
+  date: [2017, 8, 12],
+  children: 'children',
+  imgUrl: __webpack_require__(558)
+}, {
+  id: 102,
+  title: 'Polina, 6 months',
+  teg: ['Polina'],
+  date: [2017, 8, 12],
+  children: 'children',
+  imgUrl: __webpack_require__(559)
+}, {
+  id: 103,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(560)
+}, {
+  id: 104,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(561)
+}, {
+  id: 105,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(562)
+}, {
+  id: 106,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(563)
+}, {
+  id: 107,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(564)
+}, {
+  id: 108,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(565)
+}, {
+  id: 109,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(566)
+}, {
+  id: 110,
+  title: 'Polina, 7 months',
+  teg: ['Polina'],
+  date: [2017, 8, 27],
+  children: 'children',
+  imgUrl: __webpack_require__(567)
+}, {
+  id: 111,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(568)
+}, {
+  id: 112,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(569)
+}, {
+  id: 113,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(570)
+}, {
+  id: 114,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(571)
+}, {
+  id: 115,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(572)
+}, {
+  id: 116,
+  title: 'Polina, 8 months',
+  teg: ['Polina'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(573)
+}, {
+  id: 117,
+  title: 'Polina, 8 months',
+  teg: ['Polina'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(574)
+}, {
+  id: 118,
+  title: 'Polina, 8 months',
+  teg: ['Polina'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(575)
 }];
 
 exports.imgItems = imgItems;
 
 /***/ }),
+/* 463 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 462:
+module.exports = __webpack_require__.p + "assets/images/foto_007.jpg";
+
+/***/ }),
+/* 464 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_008.jpg";
+
+/***/ }),
+/* 465 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_009.jpg";
+
+/***/ }),
+/* 466 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_010.jpg";
+
+/***/ }),
+/* 467 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_011.jpg";
+
+/***/ }),
+/* 468 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_012.jpg";
+
+/***/ }),
+/* 469 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_013.jpg";
+
+/***/ }),
+/* 470 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_014.jpg";
+
+/***/ }),
+/* 471 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_015.jpg";
+
+/***/ }),
+/* 472 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_016.jpg";
+
+/***/ }),
+/* 473 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_017.jpg";
+
+/***/ }),
+/* 474 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_018.jpg";
+
+/***/ }),
+/* 475 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_019.jpg";
+
+/***/ }),
+/* 476 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_020.jpg";
+
+/***/ }),
+/* 477 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_021.jpg";
+
+/***/ }),
+/* 478 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_022.jpg";
+
+/***/ }),
+/* 479 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_023.jpg";
+
+/***/ }),
+/* 480 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_024.jpg";
+
+/***/ }),
+/* 481 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_025.jpg";
+
+/***/ }),
+/* 482 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_026.jpg";
+
+/***/ }),
+/* 483 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_027.jpg";
+
+/***/ }),
+/* 484 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_028.jpg";
+
+/***/ }),
+/* 485 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_029.jpg";
+
+/***/ }),
+/* 486 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_030.jpg";
+
+/***/ }),
+/* 487 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_031.jpg";
+
+/***/ }),
+/* 488 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_032.jpg";
+
+/***/ }),
+/* 489 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_033.jpg";
+
+/***/ }),
+/* 490 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_034.jpg";
+
+/***/ }),
+/* 491 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_035.jpg";
+
+/***/ }),
+/* 492 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_036.jpg";
+
+/***/ }),
+/* 493 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_037.jpg";
+
+/***/ }),
+/* 494 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_038.jpg";
+
+/***/ }),
+/* 495 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_039.jpg";
+
+/***/ }),
+/* 496 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_040.jpg";
+
+/***/ }),
+/* 497 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_041.jpg";
+
+/***/ }),
+/* 498 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_042.jpg";
+
+/***/ }),
+/* 499 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_043.jpg";
+
+/***/ }),
+/* 500 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_044.jpg";
+
+/***/ }),
+/* 501 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_045.jpg";
+
+/***/ }),
+/* 502 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_046.jpg";
+
+/***/ }),
+/* 503 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_047.jpg";
+
+/***/ }),
+/* 504 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_048.jpg";
+
+/***/ }),
+/* 505 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_049.jpg";
+
+/***/ }),
+/* 506 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_050.jpg";
+
+/***/ }),
+/* 507 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_051.jpg";
+
+/***/ }),
+/* 508 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_052.jpg";
+
+/***/ }),
+/* 509 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_053.jpg";
+
+/***/ }),
+/* 510 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_054.jpg";
+
+/***/ }),
+/* 511 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_055.jpg";
+
+/***/ }),
+/* 512 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_056.jpg";
+
+/***/ }),
+/* 513 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_057.jpg";
+
+/***/ }),
+/* 514 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_058.jpg";
+
+/***/ }),
+/* 515 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_059.jpg";
+
+/***/ }),
+/* 516 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_060.jpg";
+
+/***/ }),
+/* 517 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_061.jpg";
+
+/***/ }),
+/* 518 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_062.jpg";
+
+/***/ }),
+/* 519 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_063.jpg";
+
+/***/ }),
+/* 520 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_064.jpg";
+
+/***/ }),
+/* 521 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_065.jpg";
+
+/***/ }),
+/* 522 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_066.jpg";
+
+/***/ }),
+/* 523 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_067.jpg";
+
+/***/ }),
+/* 524 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_068.jpg";
+
+/***/ }),
+/* 525 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_069.jpg";
+
+/***/ }),
+/* 526 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_070.jpg";
+
+/***/ }),
+/* 527 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_071.jpg";
+
+/***/ }),
+/* 528 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_072.jpg";
+
+/***/ }),
+/* 529 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_073.jpg";
+
+/***/ }),
+/* 530 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_074.jpg";
+
+/***/ }),
+/* 531 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_075.jpg";
+
+/***/ }),
+/* 532 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_076.jpg";
+
+/***/ }),
+/* 533 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_077.jpg";
+
+/***/ }),
+/* 534 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_078.jpg";
+
+/***/ }),
+/* 535 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_079.jpg";
+
+/***/ }),
+/* 536 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_080.jpg";
+
+/***/ }),
+/* 537 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_081.jpg";
+
+/***/ }),
+/* 538 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_082.jpg";
+
+/***/ }),
+/* 539 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_083.jpg";
+
+/***/ }),
+/* 540 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_084.jpg";
+
+/***/ }),
+/* 541 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_085.jpg";
+
+/***/ }),
+/* 542 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_086.jpg";
+
+/***/ }),
+/* 543 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_087.jpg";
+
+/***/ }),
+/* 544 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_088.jpg";
+
+/***/ }),
+/* 545 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_089.jpg";
+
+/***/ }),
+/* 546 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_090.jpg";
+
+/***/ }),
+/* 547 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_091.jpg";
+
+/***/ }),
+/* 548 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_092.jpg";
+
+/***/ }),
+/* 549 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_093.jpg";
+
+/***/ }),
+/* 550 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_094.jpg";
+
+/***/ }),
+/* 551 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_095.jpg";
+
+/***/ }),
+/* 552 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_096.jpg";
+
+/***/ }),
+/* 553 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_097.jpg";
+
+/***/ }),
+/* 554 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_098.jpg";
+
+/***/ }),
+/* 555 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_099.jpg";
+
+/***/ }),
+/* 556 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_100.jpg";
+
+/***/ }),
+/* 557 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_101.jpg";
+
+/***/ }),
+/* 558 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_102.jpg";
+
+/***/ }),
+/* 559 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_103.jpg";
+
+/***/ }),
+/* 560 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_104.jpg";
+
+/***/ }),
+/* 561 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_105.jpg";
+
+/***/ }),
+/* 562 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_106.jpg";
+
+/***/ }),
+/* 563 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_107.jpg";
+
+/***/ }),
+/* 564 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_108.jpg";
+
+/***/ }),
+/* 565 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_109.jpg";
+
+/***/ }),
+/* 566 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_110.jpg";
+
+/***/ }),
+/* 567 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_111.jpg";
+
+/***/ }),
+/* 568 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_112.jpg";
+
+/***/ }),
+/* 569 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_113.jpg";
+
+/***/ }),
+/* 570 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_114.jpg";
+
+/***/ }),
+/* 571 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_115.jpg";
+
+/***/ }),
+/* 572 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_116.jpg";
+
+/***/ }),
+/* 573 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_117.jpg";
+
+/***/ }),
+/* 574 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_118.jpg";
+
+/***/ }),
+/* 575 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_119.jpg";
+
+/***/ }),
+/* 576 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2495,11 +4153,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(463);
+__webpack_require__(577);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2519,9 +4177,7 @@ var Checkbox = function (_Component) {
 
     _this.state = {
       checkboxState: false,
-      show: false,
-      arr: false,
-      arr2: false
+      show: false
     };
     _this.toggle = _this.toggle.bind(_this);
     return _this;
@@ -2529,14 +4185,9 @@ var Checkbox = function (_Component) {
 
   _createClass(Checkbox, [{
     key: 'toggle',
-    value: function toggle(id) {
+    value: function toggle() {
       this.setState({ checkboxState: !this.state.checkboxState });
       this.setState({ show: !this.state.show });
-      if (id === 0) {
-        this.setState({ arr: !this.state.arr });
-      } else if (id === 1) {
-        this.setState({ arr2: !this.state.arr2 });
-      }
     }
   }, {
     key: 'render',
@@ -2579,15 +4230,13 @@ var Checkbox = function (_Component) {
 exports.Checkbox = Checkbox;
 
 /***/ }),
-
-/***/ 463:
+/* 577 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 464:
+/* 578 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2604,7 +4253,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(47);
+var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -2674,15 +4323,13 @@ var Radio = function (_Component) {
 exports.Radio = Radio;
 
 /***/ }),
-
-/***/ 465:
+/* 579 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 466:
+/* 580 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2703,7 +4350,7 @@ var _links = __webpack_require__(182);
 
 var _form = __webpack_require__(181);
 
-__webpack_require__(467);
+__webpack_require__(581);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -2755,7 +4402,7 @@ var Contacts = function (_Component) {
               React.createElement(
                 'div',
                 { className: 'item' },
-                React.createElement('img', { src: __webpack_require__(468), alt: '' })
+                React.createElement('img', { src: __webpack_require__(582), alt: '' })
               )
             ),
             React.createElement(
@@ -2780,40 +4427,22 @@ var Contacts = function (_Component) {
 exports.Contacts = Contacts;
 
 /***/ }),
-
-/***/ 467:
+/* 581 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 468:
+/* 582 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_07.jpg";
+module.exports = __webpack_require__.p + "assets/images/foto_17.jpg";
 
 /***/ }),
-
-/***/ 469:
+/* 583 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 83:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_03.jpg";
-
-/***/ }),
-
-/***/ 84:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "assets/images/foto_05.jpg";
 
 /***/ })
-
-},[199]);
+]),[199]);

@@ -7,11 +7,11 @@ class Slide extends Component {
     const classString = this.props.show ? "slide show" : "slide";
     return <div className={classString}>
       <div className='slide__title'>
-        <h4>{this.props.title}</h4>
+        <h5>{this.props.title}</h5>
       </div>
       <img src={this.props.image}/>
       <div className='slide__date'>
-        <h4>{dateForm}</h4>
+        <h5>{dateForm}</h5>
       </div>
     </div>;
   }

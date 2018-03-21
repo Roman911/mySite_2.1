@@ -23,7 +23,7 @@ class About extends Component {
             <div className="item">
               <p><b><i className="fas fa-user"/> My Name:</b></p>
               <p>Roman Lysyk</p>
-              <img src={require("../../../../assets/images/foto_02.jpg")} alt=""/>
+              <img src={require("../../../../assets/images/foto_18.jpg")} alt=""/>
             </div>
           </div>
           <div className="content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">

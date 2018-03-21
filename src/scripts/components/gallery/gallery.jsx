@@ -18,6 +18,8 @@ class Gallery extends Component {
       checkboxState: false,
       portrait: false,
       children: false,
+      family: false,
+      gestation: false,
       radioState: false,
       date: false
     };
@@ -30,6 +32,10 @@ class Gallery extends Component {
       this.setState({portrait: !this.state.portrait})
     } else if (id === 1) {
       this.setState({children: !this.state.children})
+    } else if (id === 2) {
+      this.setState({family: !this.state.family})
+    } else if (id === 3) {
+      this.setState({gestation: !this.state.gestation})
     }
   }
 
@@ -43,7 +49,7 @@ class Gallery extends Component {
   render() {
     let img = [];
     imgItems.map((item) => {
-      if (this.state.portrait || this.state.children || !item.imgUrl) {
+      if (this.state.portrait || this.state.children || this.state.family || this.state.gestation || !item.imgUrl) {
         return;
       }
       img.push(item);
@@ -56,6 +62,18 @@ class Gallery extends Component {
     });
     imgItems.map((item) => {
       if (!this.state.children || !item.children) {
+        return;
+      }
+      img.push(item)
+    });
+    imgItems.map((item) => {
+      if (!this.state.family || !item.family) {
+        return;
+      }
+      img.push(item)
+    });
+    imgItems.map((item) => {
+      if (!this.state.gestation || !item.gestation) {
         return;
       }
       img.push(item)

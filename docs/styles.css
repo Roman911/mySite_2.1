@@ -176,7 +176,7 @@
   box-sizing: border-box;
   height: 100vh;
   width: 100%;
-  background-image: url(assets/images/foto_01.jpg);
+  background-image: url(assets/images/foto_002.jpg);
   opacity: 0.75;
   background-repeat: no-repeat;
   background-position: center, center;
@@ -316,7 +316,7 @@
 .portfolio {
   box-sizing: border-box;
   min-height: 400px;
-  background-image: url(assets/images/foto_01.jpg);
+  background-image: url(assets/images/bg_contact.jpg);
   opacity: 0.75;
   background-repeat: no-repeat;
   background-position: center, center;
@@ -416,9 +416,6 @@
   max-height: calc(100vh - 50px);
   max-width: calc(100vw - 50px);
 }
-.slide > p {
-  color: #f00;
-}
 .slide__title,
 .slide__date {
   position: absolute;
@@ -426,9 +423,9 @@
   width: 100%;
   transition: 0.5s;
 }
-.slide__title > h4,
-.slide__date > h4 {
-  margin: 10px 20px;
+.slide__title > h5,
+.slide__date > h5 {
+  margin: 20px;
   text-align: start;
   color: #d6d6d6;
 }

@@ -16,7 +16,7 @@ class Contacts extends Component {
         <div className='grid-container'>
           <div className='content-item col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4'>
             <div className="item">
-              <img src={require('./../../../../assets/images/foto_07.jpg')} alt=""/>
+              <img src={require('./../../../../assets/images/foto_17.jpg')} alt=""/>
             </div>
           </div>
           <div className='content-block col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8'>
