@@ -1,21 +1,21 @@
 const navbarItems = [
   {
-    title: 'home',
+    title: ['головна', 'главная', 'home'],
     route: '/home',
     class: 'navbar-link'
   },
   {
-    title: 'gallery',
+    title: ['галерея', 'галерея', 'gallery'],
     route: '/gallery',
     class: 'navbar-link fas fa-th'
   },
   {
-    title: 'about',
+    title: ['про мене', 'обо мне', 'about me'],
     route: '/about',
     class: 'navbar-link fas fa-user-secret'
   },
   {
-    title: 'contacts',
+    title: ['контакти', 'контакты', 'contacts'],
     route: '/contacts',
     class: 'navbar-link fas fa-address-book'
   }

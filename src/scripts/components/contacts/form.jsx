@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Form extends Component {
 
   render() {
-    return <div className="content-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+    return <div className="content-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
       <div className="title">
         <p>Lets get in touch. Send me a message:</p>
       </div>

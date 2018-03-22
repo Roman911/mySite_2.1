@@ -1,8 +1,4 @@
 const imgItems = [
-
-  {
-    children: 'children'
-  },
   {
     id: 0,
     title: 'Sabina, Dnipro embankment',
@@ -893,67 +889,171 @@ const imgItems = [
   },
   {
     id: 111,
-    title: 'Annia, Brovary',
-    teg: ['Annia'],
-    date: [2017, 9, 16],
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
     children: 'children',
     imgUrl: require('./../../../../assets/images/foto_112.jpg')
   },
   {
     id: 112,
-    title: 'Annia, Brovary',
-    teg: ['Annia'],
-    date: [2017, 9, 16],
-    children: 'children',
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
+    family: 'family',
     imgUrl: require('./../../../../assets/images/foto_113.jpg')
   },
   {
     id: 113,
-    title: 'Annia, Brovary',
-    teg: ['Annia'],
-    date: [2017, 9, 16],
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
     children: 'children',
     imgUrl: require('./../../../../assets/images/foto_114.jpg')
   },
   {
     id: 114,
-    title: 'Annia, Brovary',
-    teg: ['Annia'],
-    date: [2017, 9, 16],
-    children: 'children',
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
+    family: 'family',
     imgUrl: require('./../../../../assets/images/foto_115.jpg')
   },
   {
     id: 115,
-    title: 'Annia, Brovary',
-    teg: ['Annia'],
-    date: [2017, 9, 16],
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
     children: 'children',
     imgUrl: require('./../../../../assets/images/foto_116.jpg')
   },
   {
     id: 116,
-    title: 'Polina, 8 months',
-    teg: ['Polina'],
-    date: [2017, 9, 16],
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
     children: 'children',
     imgUrl: require('./../../../../assets/images/foto_117.jpg')
   },
   {
     id: 117,
-    title: 'Polina, 8 months',
-    teg: ['Polina'],
-    date: [2017, 9, 16],
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
     children: 'children',
     imgUrl: require('./../../../../assets/images/foto_118.jpg')
   },
   {
     id: 118,
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_119.jpg')
+  },
+  {
+    id: 119,
+    title: 'Nastia and Yulia, Brovary park',
+    teg: ['Nastia'],
+    date: [2017, 9, 3],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_120.jpg')
+  },
+  {
+    id: 120,
+    title: 'Annia, Brovary',
+    teg: ['Annia'],
+    date: [2017, 9, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_121.jpg')
+  },
+  {
+    id: 121,
+    title: 'Annia, Brovary',
+    teg: ['Annia'],
+    date: [2017, 9, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_122.jpg')
+  },
+  {
+    id: 122,
+    title: 'Annia, Brovary',
+    teg: ['Annia'],
+    date: [2017, 9, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_123.jpg')
+  },
+  {
+    id: 123,
+    title: 'Annia, Brovary',
+    teg: ['Annia'],
+    date: [2017, 9, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_124.jpg')
+  },
+  {
+    id: 124,
+    title: 'Annia, Brovary',
+    teg: ['Annia'],
+    date: [2017, 9, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_125.jpg')
+  },
+  {
+    id: 125,
     title: 'Polina, 8 months',
     teg: ['Polina'],
     date: [2017, 9, 16],
     children: 'children',
-    imgUrl: require('./../../../../assets/images/foto_119.jpg')
+    imgUrl: require('./../../../../assets/images/foto_126.jpg')
+  },
+  {
+    id: 126,
+    title: 'Polina, 8 months',
+    teg: ['Polina'],
+    date: [2017, 9, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_127.jpg')
+  },
+  {
+    id: 127,
+    title: 'Polina, 8 months',
+    teg: ['Polina'],
+    date: [2017, 9, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_128.jpg')
+  },
+  {
+    id: 128,
+    title: 'Polina, Autumn',
+    teg: ['Polina'],
+    date: [2017, 10, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_129.jpg')
+  },
+  {
+    id: 129,
+    title: 'Polina, Autumn',
+    teg: ['Polina'],
+    date: [2017, 10, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_130.jpg')
+  },
+  {
+    id: 130,
+    title: 'Polina, Autumn',
+    teg: ['Polina'],
+    date: [2017, 10, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_131.jpg')
+  },
+  {
+    id: 131,
+    title: 'Polina, Autumn',
+    teg: ['Polina'],
+    date: [2017, 10, 16],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_132.jpg')
   },
 ];
 

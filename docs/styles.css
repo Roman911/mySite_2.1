@@ -1,4 +1,41 @@
-@import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);.navbar {
+@import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);.navbar-mob {
+  display: none;
+}
+.navbar-mob__btn {
+  position: fixed;
+  top: 5%;
+  left: 7%;
+  z-index: 3;
+  padding: 5px;
+  cursor: pointer;
+}
+.navbar-mob__btn > i {
+  color: #3b3b3b;
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+.navbar-mob__btn > p {
+  color: #3b3b3b;
+}
+.navbar-mob__list {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #fff;
+  z-index: 2;
+  -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+  transition: 0.4s;
+}
+.navbar-disc {
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -37,11 +74,38 @@
 .navbar .active > p {
   color: #f1f1f1;
 }
-.navbar.fixed {
+.navbar-mob.showed .navbar-mob__btn > i {
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+}
+.navbar-mob.showed .navbar-mob__list {
+  -ms-transform: translateX(0);
+      transform: translateX(0);
+}
+.navbar-disc.fixed {
   position: fixed;
   background-color: rgba(255,255,255,0.9);
   animation-name: example;
   animation-duration: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .navbar-mob {
+    display: block;
+  }
+  .navbar-disc {
+    display: none;
+  }
+  .navbar-link {
+    font-size: 1.5rem;
+    padding: 30px 0;
+  }
+  .navbar .active {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
 }
 @keyframes example {
   0% {

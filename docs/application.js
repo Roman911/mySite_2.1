@@ -422,7 +422,7 @@ var Form = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "content-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" },
+        { className: "content-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" },
         _react2.default.createElement(
           "div",
           { className: "title" },
@@ -507,7 +507,7 @@ var Links = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "content-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" },
+        { className: "content-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" },
         _react2.default.createElement(
           "div",
           { className: "title" },
@@ -855,9 +855,9 @@ var _gallery = __webpack_require__(458);
 
 var _about = __webpack_require__(173);
 
-var _contacts = __webpack_require__(580);
+var _contacts = __webpack_require__(593);
 
-__webpack_require__(583);
+__webpack_require__(596);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -976,9 +976,11 @@ var NavbarComponent = function (_Component) {
     var _this = _possibleConstructorReturn(this, (NavbarComponent.__proto__ || Object.getPrototypeOf(NavbarComponent)).call(this));
 
     _this.state = {
-      fixed: false
+      fixed: false,
+      menu: false
     };
     _this.addClass = _this.addClass.bind(_this);
+    _this.removeClass = _this.removeClass.bind(_this);
     return _this;
   }
 
@@ -992,24 +994,78 @@ var NavbarComponent = function (_Component) {
       }
     }
   }, {
+    key: 'hendleClick',
+    value: function hendleClick() {
+      this.setState({ menu: !this.state.menu });
+      if (this.state.menu === true) {
+        document.body.style.overflow = '';
+      } else {
+        document.body.style.overflow = 'hidden';
+      }
+    }
+  }, {
+    key: 'removeClass',
+    value: function removeClass() {
+      this.setState({ menu: false });
+      document.body.style.overflow = '';
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var onsc = addEventListener('scroll', this.addClass);
+      var lang = void 0;
+      var languageBrowser = navigator.language;
+      if (languageBrowser === 'uk-UA') {
+        lang = 0;
+      } else if (languageBrowser === 'ru-RU') {
+        lang = 1;
+      } else {
+        lang = 2;
+      }
       var links = _navbar.navbarItems.map(function (item, index) {
         return _react2.default.createElement(
           _reactRouterDom.NavLink,
-          { key: index, className: item.class, to: item.route },
+          { onClick: function onClick() {
+              return _this2.removeClass();
+            }, key: index, className: item.class, to: item.route },
           _react2.default.createElement(
             'p',
             null,
-            item.title
+            item.title[lang]
           )
         );
       });
       return _react2.default.createElement(
         'nav',
-        { className: (0, _classnames2.default)('navbar', { 'fixed': this.state.fixed }) },
-        links
+        { className: 'navbar' },
+        _react2.default.createElement(
+          'div',
+          { className: (0, _classnames2.default)('navbar-mob', { 'showed': this.state.menu }) },
+          _react2.default.createElement(
+            'div',
+            { className: 'navbar-mob__btn', onClick: function onClick() {
+                return _this2.hendleClick();
+              } },
+            _react2.default.createElement('i', { className: 'fas fa-arrow-circle-right' }),
+            _react2.default.createElement(
+              'p',
+              null,
+              'menu'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'navbar-mob__list' },
+            links
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: (0, _classnames2.default)('navbar-disc', { 'fixed': this.state.fixed }) },
+          links
+        )
       );
     }
   }]);
@@ -1030,19 +1086,19 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var navbarItems = [{
-  title: 'home',
+  title: ['головна', 'главная', 'home'],
   route: '/home',
   class: 'navbar-link'
 }, {
-  title: 'gallery',
+  title: ['галерея', 'галерея', 'gallery'],
   route: '/gallery',
   class: 'navbar-link fas fa-th'
 }, {
-  title: 'about',
+  title: ['про мене', 'обо мне', 'about me'],
   route: '/about',
   class: 'navbar-link fas fa-user-secret'
 }, {
-  title: 'contacts',
+  title: ['контакти', 'контакты', 'contacts'],
   route: '/contacts',
   class: 'navbar-link fas fa-address-book'
 }];
@@ -2122,13 +2178,13 @@ var _taskRadio = __webpack_require__(461);
 
 var _foto2 = __webpack_require__(462);
 
-var _checkbox = __webpack_require__(576);
+var _checkbox = __webpack_require__(589);
 
-var _radio = __webpack_require__(578);
+var _radio = __webpack_require__(591);
 
 __webpack_require__(183);
 
-__webpack_require__(579);
+__webpack_require__(592);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2619,8 +2675,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var imgItems = [{
-  children: 'children'
-}, {
   id: 0,
   title: 'Sabina, Dnipro embankment',
   teg: ['sabina'],
@@ -3399,60 +3453,151 @@ var imgItems = [{
   imgUrl: __webpack_require__(567)
 }, {
   id: 111,
-  title: 'Annia, Brovary',
-  teg: ['Annia'],
-  date: [2017, 9, 16],
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
   children: 'children',
   imgUrl: __webpack_require__(568)
 }, {
   id: 112,
-  title: 'Annia, Brovary',
-  teg: ['Annia'],
-  date: [2017, 9, 16],
-  children: 'children',
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
+  family: 'family',
   imgUrl: __webpack_require__(569)
 }, {
   id: 113,
-  title: 'Annia, Brovary',
-  teg: ['Annia'],
-  date: [2017, 9, 16],
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
   children: 'children',
   imgUrl: __webpack_require__(570)
 }, {
   id: 114,
-  title: 'Annia, Brovary',
-  teg: ['Annia'],
-  date: [2017, 9, 16],
-  children: 'children',
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
+  family: 'family',
   imgUrl: __webpack_require__(571)
 }, {
   id: 115,
-  title: 'Annia, Brovary',
-  teg: ['Annia'],
-  date: [2017, 9, 16],
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
   children: 'children',
   imgUrl: __webpack_require__(572)
 }, {
   id: 116,
-  title: 'Polina, 8 months',
-  teg: ['Polina'],
-  date: [2017, 9, 16],
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
   children: 'children',
   imgUrl: __webpack_require__(573)
 }, {
   id: 117,
-  title: 'Polina, 8 months',
-  teg: ['Polina'],
-  date: [2017, 9, 16],
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
   children: 'children',
   imgUrl: __webpack_require__(574)
 }, {
   id: 118,
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
+  children: 'children',
+  imgUrl: __webpack_require__(575)
+}, {
+  id: 119,
+  title: 'Nastia and Yulia, Brovary park',
+  teg: ['Nastia'],
+  date: [2017, 9, 3],
+  children: 'children',
+  imgUrl: __webpack_require__(576)
+}, {
+  id: 120,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(577)
+}, {
+  id: 121,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(578)
+}, {
+  id: 122,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(579)
+}, {
+  id: 123,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(580)
+}, {
+  id: 124,
+  title: 'Annia, Brovary',
+  teg: ['Annia'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(581)
+}, {
+  id: 125,
   title: 'Polina, 8 months',
   teg: ['Polina'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(575)
+  imgUrl: __webpack_require__(582)
+}, {
+  id: 126,
+  title: 'Polina, 8 months',
+  teg: ['Polina'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(583)
+}, {
+  id: 127,
+  title: 'Polina, 8 months',
+  teg: ['Polina'],
+  date: [2017, 9, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(584)
+}, {
+  id: 128,
+  title: 'Polina, Autumn',
+  teg: ['Polina'],
+  date: [2017, 10, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(585)
+}, {
+  id: 129,
+  title: 'Polina, Autumn',
+  teg: ['Polina'],
+  date: [2017, 10, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(586)
+}, {
+  id: 130,
+  title: 'Polina, Autumn',
+  teg: ['Polina'],
+  date: [2017, 10, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(587)
+}, {
+  id: 131,
+  title: 'Polina, Autumn',
+  teg: ['Polina'],
+  date: [2017, 10, 16],
+  children: 'children',
+  imgUrl: __webpack_require__(588)
 }];
 
 exports.imgItems = imgItems;
@@ -4139,6 +4284,84 @@ module.exports = __webpack_require__.p + "assets/images/foto_119.jpg";
 /* 576 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "assets/images/foto_120.jpg";
+
+/***/ }),
+/* 577 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_121.jpg";
+
+/***/ }),
+/* 578 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_122.jpg";
+
+/***/ }),
+/* 579 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_123.jpg";
+
+/***/ }),
+/* 580 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_124.jpg";
+
+/***/ }),
+/* 581 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_125.jpg";
+
+/***/ }),
+/* 582 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_126.jpg";
+
+/***/ }),
+/* 583 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_127.jpg";
+
+/***/ }),
+/* 584 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_128.jpg";
+
+/***/ }),
+/* 585 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_129.jpg";
+
+/***/ }),
+/* 586 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_130.jpg";
+
+/***/ }),
+/* 587 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_131.jpg";
+
+/***/ }),
+/* 588 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_132.jpg";
+
+/***/ }),
+/* 589 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -4157,7 +4380,7 @@ var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(577);
+__webpack_require__(590);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4230,13 +4453,13 @@ var Checkbox = function (_Component) {
 exports.Checkbox = Checkbox;
 
 /***/ }),
-/* 577 */
+/* 590 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 578 */
+/* 591 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4323,13 +4546,13 @@ var Radio = function (_Component) {
 exports.Radio = Radio;
 
 /***/ }),
-/* 579 */
+/* 592 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 580 */
+/* 593 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4350,7 +4573,7 @@ var _links = __webpack_require__(182);
 
 var _form = __webpack_require__(181);
 
-__webpack_require__(581);
+__webpack_require__(594);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -4402,7 +4625,7 @@ var Contacts = function (_Component) {
               React.createElement(
                 'div',
                 { className: 'item' },
-                React.createElement('img', { src: __webpack_require__(582), alt: '' })
+                React.createElement('img', { src: __webpack_require__(595), alt: '' })
               )
             ),
             React.createElement(
@@ -4427,19 +4650,19 @@ var Contacts = function (_Component) {
 exports.Contacts = Contacts;
 
 /***/ }),
-/* 581 */
+/* 594 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 582 */
+/* 595 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_17.jpg";
 
 /***/ }),
-/* 583 */
+/* 596 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
