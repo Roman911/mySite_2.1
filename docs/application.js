@@ -90,18 +90,19 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = __webpack_require__(1);
 
-var React = _interopRequireWildcard(_react);
+var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(445);
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+var _content = __webpack_require__(446);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // eslint-disable-line
-
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var About = function (_Component) {
   _inherits(About, _Component);
@@ -115,147 +116,169 @@ var About = function (_Component) {
   _createClass(About, [{
     key: 'render',
     value: function render() {
+      var lang = void 0;
+      var languageBrowser = navigator.language;
+      if (languageBrowser === 'uk-UA') {
+        lang = 0;
+      } else if (languageBrowser === 'ru-RU') {
+        lang = 1;
+      } else {
+        lang = 2;
+      }
 
-      return React.createElement(
+      var header = _content.contentItem.map(function (item, index) {
+        return _react2.default.createElement(
+          'div',
+          { key: index, className: 'item' },
+          _react2.default.createElement(
+            'h4',
+            null,
+            item.aboutMe[lang]
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'italic' },
+            item.lovePhoto[lang]
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            item.text[lang]
+          )
+        );
+      });
+
+      var title = _content.contentItem.map(function (item, index) {
+        return _react2.default.createElement(
+          'div',
+          { key: index, className: 'content' },
+          _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(
+              'b',
+              null,
+              _react2.default.createElement('i', { className: 'fas fa-user' }),
+              ' ',
+              item.title[lang]
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            item.name[lang]
+          ),
+          _react2.default.createElement('img', { src: __webpack_require__(447), alt: '' })
+        );
+      });
+
+      var text = _content.contentItem.map(function (item, index) {
+        return _react2.default.createElement(
+          'div',
+          { key: index, className: 'content content__text' },
+          _react2.default.createElement(
+            'p',
+            null,
+            item.text2[lang]
+          )
+        );
+      });
+
+      return _react2.default.createElement(
         'section',
         { className: 'about-me', id: 'navabout' },
-        React.createElement(
+        _react2.default.createElement(
           'div',
           { className: 'page-content-M' },
-          React.createElement(
-            'div',
-            { className: 'item' },
-            React.createElement(
-              'h4',
-              null,
-              'ABOUT ME'
-            ),
-            React.createElement(
-              'p',
-              { className: 'italic' },
-              'I love photography'
-            ),
-            React.createElement(
-              'p',
-              null,
-              'We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            )
-          ),
-          React.createElement(
+          header,
+          _react2.default.createElement(
             'div',
             { className: 'grid-container' },
-            React.createElement(
+            _react2.default.createElement(
               'div',
               { className: 'content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6' },
-              React.createElement(
-                'div',
-                { className: 'item' },
-                React.createElement(
-                  'p',
-                  null,
-                  React.createElement(
-                    'b',
-                    null,
-                    React.createElement('i', { className: 'fas fa-user' }),
-                    ' My Name:'
-                  )
-                ),
-                React.createElement(
-                  'p',
-                  null,
-                  'Roman Lysyk'
-                ),
-                React.createElement('img', { src: __webpack_require__(446), alt: '' })
-              )
+              title
             ),
-            React.createElement(
+            _react2.default.createElement(
               'div',
               { className: 'content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6' },
-              React.createElement(
-                'div',
-                { className: 'item item__text' },
-                React.createElement(
-                  'p',
-                  null,
-                  'Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                )
-              )
+              text
             )
           ),
-          React.createElement(
+          _react2.default.createElement(
             'div',
             { className: 'content-block' },
-            React.createElement(
+            _react2.default.createElement(
               'p',
               null,
               'Im really good at:'
             ),
-            React.createElement(
+            _react2.default.createElement(
               'div',
               { className: 'properties' },
-              React.createElement(
+              _react2.default.createElement(
                 'div',
                 { className: 'properties__header' },
-                React.createElement('i', { className: 'fas fa-camera-retro' }),
-                React.createElement(
+                _react2.default.createElement('i', { className: 'fas fa-camera-retro' }),
+                _react2.default.createElement(
                   'p',
                   null,
                   ' Photography'
                 )
               ),
-              React.createElement(
+              _react2.default.createElement(
                 'div',
                 { className: 'properties__bar' },
-                React.createElement(
+                _react2.default.createElement(
                   'div',
                   { className: 'properties__bar_rate' },
-                  React.createElement(
+                  _react2.default.createElement(
                     'p',
                     null,
                     '90 %'
                   )
                 )
               ),
-              React.createElement(
+              _react2.default.createElement(
                 'div',
                 { className: 'properties__header' },
-                React.createElement('i', { className: 'fas fa-laptop' }),
-                React.createElement(
+                _react2.default.createElement('i', { className: 'fas fa-laptop' }),
+                _react2.default.createElement(
                   'p',
                   null,
                   ' Web Design'
                 )
               ),
-              React.createElement(
+              _react2.default.createElement(
                 'div',
                 { className: 'properties__bar' },
-                React.createElement(
+                _react2.default.createElement(
                   'div',
                   { className: 'properties__bar_rate' },
-                  React.createElement(
+                  _react2.default.createElement(
                     'p',
                     null,
                     '85 %'
                   )
                 )
               ),
-              React.createElement(
+              _react2.default.createElement(
                 'div',
                 { className: 'properties__header' },
-                React.createElement('i', { className: 'fas fa-images' }),
-                React.createElement(
+                _react2.default.createElement('i', { className: 'fas fa-images' }),
+                _react2.default.createElement(
                   'p',
                   null,
                   ' Photoshop'
                 )
               ),
-              React.createElement(
+              _react2.default.createElement(
                 'div',
                 { className: 'properties__bar' },
-                React.createElement(
+                _react2.default.createElement(
                   'div',
                   { className: 'properties__bar_rate' },
-                  React.createElement(
+                  _react2.default.createElement(
                     'p',
                     null,
                     '75 %'
@@ -849,15 +872,15 @@ var _scrollingUp = __webpack_require__(440);
 
 var _home = __webpack_require__(442);
 
-var _footer = __webpack_require__(456);
+var _footer = __webpack_require__(458);
 
-var _gallery = __webpack_require__(458);
+var _gallery = __webpack_require__(460);
 
 var _about = __webpack_require__(173);
 
-var _contacts = __webpack_require__(593);
+var _contacts = __webpack_require__(618);
 
-__webpack_require__(596);
+__webpack_require__(621);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -949,7 +972,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _navbar = __webpack_require__(438);
+var _navbarConfig = __webpack_require__(438);
 
 var _reactRouterDom = __webpack_require__(81);
 
@@ -1024,7 +1047,7 @@ var NavbarComponent = function (_Component) {
       } else {
         lang = 2;
       }
-      var links = _navbar.navbarItems.map(function (item, index) {
+      var links = _navbarConfig.navbarItems.map(function (item, index) {
         return _react2.default.createElement(
           _reactRouterDom.NavLink,
           { onClick: function onClick() {
@@ -1235,15 +1258,15 @@ var _header = __webpack_require__(443);
 
 var _about = __webpack_require__(173);
 
-var _other = __webpack_require__(447);
+var _other = __webpack_require__(448);
 
-var _portfolio = __webpack_require__(449);
+var _portfolio = __webpack_require__(450);
 
-var _works = __webpack_require__(450);
+var _works = __webpack_require__(452);
 
-var _contact = __webpack_require__(453);
+var _contact = __webpack_require__(455);
 
-var _contactItem = __webpack_require__(454);
+var _contactItem = __webpack_require__(456);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1368,10 +1391,31 @@ exports.Header = Header;
 /* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/images/foto_18.jpg";
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var contentItem = [{
+  aboutMe: ['про мене', 'обо мне', 'about me'],
+  lovePhoto: ['Я люблю фотографувати', 'Я люблю фотографировать', 'I love photography'],
+  text: ['Ласкаво прошу на мій сайт! Мене звати Роман. Я займаюсь фотозйомкою більше 5 років. Фотографія для мене - це спосіб зафіксувати момент життя, впіймати емоцію і настрій. Фотографії - це те, що останеться з вами на все життя, те, що ви будете показувати своїм дітям і внукам. Саме тому я з великою увагою підхожу до їхнього створення. Головна задача для мене – це зберегти неповторні моменти вашого життя. Особливість моменту, щирість емоції, красиве світло і композиція — це основні складові хорошої фотографії, на мій погляд.', 'Добро пожаловать на мой сайт! Меня зовут Роман. Я занимаюсь фотосъёмкой более 5 лет. Фотография для меня - это способ запечатлеть мгновение жизни, уловить эмоцию и настроение. Фотографии - это то, что останется с вами на всю жизнь, то, что вы будете показывать своим детям и внукам. Именно поэтому я с большим вниманием подхожу к их созданию. Главная задача для меня – это сохранить неповторимые моменты вашей жизни. Уникальность момента, искренние эмоции, красивый свет и композиция — вот основные составляющие хорошей фотографии, на мой взгляд.', 'We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+  title: ['Мене звати:', 'Меня зовут:', 'My Name:'],
+  name: ['Роман Лисик', 'Роман Лысык', 'Roman Lysyk'],
+  text2: ['Особливість моменту, щирість емоції, красиве світло і композиція — це основні складові хорошої фотографії, на мій погляд. Кожний проект для мене художньо особливий і має виключно індивідуально-творчий підхід. Те, чим я займаюсь це історія до якої можна доторкнутися крізь час. Це те, що ніколи не старіє і немає терміну дії…', 'Уникальность момента, искренние эмоции, красивый свет и композиция — вот основные составляющие хорошей фотографии, на мой взгляд. Каждый проект для меня художественно особенный и имеет исключительно индивидуально-творческой подход. Те, чем я занимаюсь это история к которой можно дотронутся сквозь время. Это то, что некогда не стареет, не имеет срока годности…', 'Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.']
+}];
+
+exports.contentItem = contentItem;
 
 /***/ }),
 /* 447 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_18.jpg";
+
+/***/ }),
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1388,7 +1432,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(448);
+__webpack_require__(449);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1487,13 +1531,13 @@ var Other = function (_Component) {
 exports.Other = Other;
 
 /***/ }),
-/* 448 */
+/* 449 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 449 */
+/* 450 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1508,18 +1552,19 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = __webpack_require__(1);
 
-var React = _interopRequireWildcard(_react);
+var _react2 = _interopRequireDefault(_react);
+
+var _portfolio = __webpack_require__(451);
 
 __webpack_require__(174);
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // eslint-disable-line
-
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Portfolio = function (_Component) {
   _inherits(Portfolio, _Component);
@@ -1533,18 +1578,30 @@ var Portfolio = function (_Component) {
   _createClass(Portfolio, [{
     key: 'render',
     value: function render() {
+      var lang = void 0;
+      var languageBrowser = navigator.language;
+      if (languageBrowser === 'uk-UA') {
+        lang = 0;
+      } else if (languageBrowser === 'ru-RU') {
+        lang = 1;
+      } else {
+        lang = 2;
+      }
+      var port = _portfolio.item.map(function (item, index) {
+        return _react2.default.createElement(
+          'h2',
+          { key: index },
+          item.head[lang]
+        );
+      });
 
-      return React.createElement(
+      return _react2.default.createElement(
         'section',
         { className: 'portfolio relative', id: 'navportfolio' },
-        React.createElement(
+        _react2.default.createElement(
           'div',
           { className: 'portfolio__header' },
-          React.createElement(
-            'h2',
-            null,
-            'PORTFOLIO'
-          )
+          port
         )
       );
     }
@@ -1556,7 +1613,23 @@ var Portfolio = function (_Component) {
 exports.Portfolio = Portfolio;
 
 /***/ }),
-/* 450 */
+/* 451 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var item = [{
+  head: ['PORTFOLIO', 'PORTFOLIO2', 'PORTFOLIO3']
+}];
+
+exports.item = item;
+
+/***/ }),
+/* 452 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1579,11 +1652,11 @@ var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _works = __webpack_require__(451);
+var _works = __webpack_require__(453);
 
 var _slid = __webpack_require__(178);
 
-__webpack_require__(452);
+__webpack_require__(454);
 
 __webpack_require__(179);
 
@@ -1821,7 +1894,7 @@ var Works = function (_Component) {
 exports.Works = Works;
 
 /***/ }),
-/* 451 */
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1883,7 +1956,7 @@ var imgItems = [{
   portrait: 'portrait',
   imgUrl: __webpack_require__(119)
 }, {
-  id: 8,
+  id: 0,
   line: 3,
   title: 't7',
   portrait: 'portrait',
@@ -1893,13 +1966,13 @@ var imgItems = [{
 exports.imgItems = imgItems;
 
 /***/ }),
-/* 452 */
+/* 454 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 453 */
+/* 455 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1961,7 +2034,7 @@ var ContactBaner = function (_Component) {
 exports.ContactBaner = ContactBaner;
 
 /***/ }),
-/* 454 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1982,7 +2055,7 @@ var _form = __webpack_require__(181);
 
 var _links = __webpack_require__(182);
 
-__webpack_require__(455);
+__webpack_require__(457);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2041,13 +2114,13 @@ var Contact = function (_Component) {
 exports.Contact = Contact;
 
 /***/ }),
-/* 455 */
+/* 457 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 456 */
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2064,7 +2137,7 @@ var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-__webpack_require__(457);
+__webpack_require__(459);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -2147,13 +2220,13 @@ var Footer = function (_Component) {
 exports.Footer = Footer;
 
 /***/ }),
-/* 457 */
+/* 459 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 458 */
+/* 460 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2170,21 +2243,25 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _foto = __webpack_require__(459);
+var _foto = __webpack_require__(461);
 
-var _task = __webpack_require__(460);
+var _task = __webpack_require__(462);
 
-var _taskRadio = __webpack_require__(461);
+var _taskRadio = __webpack_require__(463);
 
-var _foto2 = __webpack_require__(462);
+var _tags = __webpack_require__(464);
 
-var _checkbox = __webpack_require__(589);
+var _foto2 = __webpack_require__(465);
 
-var _radio = __webpack_require__(591);
+var _checkbox = __webpack_require__(613);
+
+var _radio = __webpack_require__(615);
+
+var _tags2 = __webpack_require__(616);
 
 __webpack_require__(183);
 
-__webpack_require__(592);
+__webpack_require__(617);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2212,9 +2289,11 @@ var Gallery = function (_Component) {
       family: false,
       gestation: false,
       radioState: false,
-      date: false
+      date: false,
+      showed: false
     };
     _this.toggle = _this.toggle.bind(_this);
+    _this.addClass = _this.addClass.bind(_this);
     return _this;
   }
 
@@ -2241,10 +2320,20 @@ var Gallery = function (_Component) {
       }
     }
   }, {
+    key: "addClass",
+    value: function addClass() {
+      if (window.pageYOffset < 350) {
+        this.setState({ showed: false });
+      } else {
+        this.setState({ showed: true });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
+      var onsc = addEventListener('scroll', this.addClass);
       var img = [];
       _foto2.imgItems.map(function (item) {
         if (_this2.state.portrait || _this2.state.children || _this2.state.family || _this2.state.gestation || !item.imgUrl) {
@@ -2276,7 +2365,7 @@ var Gallery = function (_Component) {
         }
         img.push(item);
       });
-      img = this.state.date === true ? img.reverse() : img;
+      img = this.state.date ? img : img.reverse();
       var checkbox = checked.map(function (item, index) {
         return _react2.default.createElement(
           "div",
@@ -2295,6 +2384,13 @@ var Gallery = function (_Component) {
           _react2.default.createElement(_radio.Radio, { name: item.name, id: item.id, index: index, checked: _this2.state.radioState })
         );
       });
+      var tag = _tags.tags.map(function (item, index) {
+        return _react2.default.createElement(
+          "div",
+          { key: index },
+          _react2.default.createElement(_tags2.Tags, { tag: item.tag })
+        );
+      });
       return _react2.default.createElement(
         "section",
         { className: "gallery" },
@@ -2309,7 +2405,7 @@ var Gallery = function (_Component) {
               { className: "window-task" },
               _react2.default.createElement(
                 "div",
-                { className: "window-task__header" },
+                { className: "window-header" },
                 _react2.default.createElement(
                   "p",
                   null,
@@ -2318,7 +2414,7 @@ var Gallery = function (_Component) {
               ),
               _react2.default.createElement(
                 "div",
-                { className: "window-task__categories" },
+                { className: "window-control" },
                 _react2.default.createElement(
                   "p",
                   null,
@@ -2328,7 +2424,7 @@ var Gallery = function (_Component) {
               ),
               _react2.default.createElement(
                 "div",
-                { className: "window-task__radio" },
+                { className: "window-control" },
                 _react2.default.createElement(
                   "p",
                   null,
@@ -2336,6 +2432,20 @@ var Gallery = function (_Component) {
                 ),
                 radio1
               )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "window-tags" },
+              _react2.default.createElement(
+                "div",
+                { className: "window-header" },
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Tags:"
+                )
+              ),
+              tag
             )
           ),
           _react2.default.createElement(_foto.Foto, { img: img })
@@ -2350,7 +2460,7 @@ var Gallery = function (_Component) {
 exports.Gallery = Gallery;
 
 /***/ }),
-/* 459 */
+/* 461 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2474,6 +2584,7 @@ var Foto = function (_Component) {
       var _this2 = this;
 
       var imgItem = this.props.img;
+      console.log(imgItem);
       var img = imgItem.map(function (item, index) {
         if (index % 4 === 0) {
           return _react2.default.createElement(
@@ -2481,7 +2592,7 @@ var Foto = function (_Component) {
             { key: index, className: 'item', onClick: function onClick() {
                 return _this2.setModal(true, index, imgItem.length);
               } },
-            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+            _react2.default.createElement('img', { src: item.imgUrl })
           );
         }
       });
@@ -2492,7 +2603,7 @@ var Foto = function (_Component) {
             { key: index, className: 'item', onClick: function onClick() {
                 return _this2.setModal(true, index, imgItem.length);
               } },
-            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+            _react2.default.createElement('img', { src: item.imgUrl })
           );
         }
       });
@@ -2503,7 +2614,7 @@ var Foto = function (_Component) {
             { key: index, className: 'item', onClick: function onClick() {
                 return _this2.setModal(true, index, imgItem.length);
               } },
-            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+            _react2.default.createElement('img', { src: item.imgUrl })
           );
         }
       });
@@ -2514,7 +2625,7 @@ var Foto = function (_Component) {
             { key: index, className: 'item', onClick: function onClick() {
                 return _this2.setModal(true, index, imgItem.length);
               } },
-            _react2.default.createElement('img', { src: _this2.state.images[item.id] })
+            _react2.default.createElement('img', { src: item.imgUrl })
           );
         }
       });
@@ -2617,7 +2728,7 @@ var Foto = function (_Component) {
 exports.Foto = Foto;
 
 /***/ }),
-/* 460 */
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2647,7 +2758,7 @@ var task = [{
 exports.task = task;
 
 /***/ }),
-/* 461 */
+/* 463 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2665,7 +2776,27 @@ var taskRadio = [{
 exports.taskRadio = taskRadio;
 
 /***/ }),
-/* 462 */
+/* 464 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var tags = [{
+  tag: 'polina'
+}, {
+  tag: 'tatiana'
+}, {
+  tag: 'ania'
+}];
+
+exports.tags = tags;
+
+/***/ }),
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2722,1644 +2853,1917 @@ var imgItems = [{
   teg: ['Beach'],
   date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(463)
+  imgUrl: __webpack_require__(466)
 }, {
   id: 7,
   title: 'Beach, Obolon',
   teg: ['Beach'],
   date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(464)
+  imgUrl: __webpack_require__(467)
 }, {
   id: 8,
   title: 'Beach, Obolon',
   teg: ['Beach'],
   date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(465)
+  imgUrl: __webpack_require__(468)
 }, {
   id: 9,
   title: 'Beach, Obolon',
   teg: ['Beach'],
   date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(466)
+  imgUrl: __webpack_require__(469)
 }, {
   id: 10,
   title: 'Beach, Obolon',
   teg: ['Beach'],
   date: [2011, 8, 27],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(467)
+  imgUrl: __webpack_require__(470)
 }, {
   id: 11,
   title: 'Curly, European square',
   teg: ['Curly'],
   date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(468)
+  imgUrl: __webpack_require__(471)
 }, {
   id: 12,
   title: 'Curly, European square',
   teg: ['Curly'],
   date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(469)
+  imgUrl: __webpack_require__(472)
 }, {
   id: 13,
   title: 'Curly, European square',
   teg: ['Curly'],
   date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(470)
+  imgUrl: __webpack_require__(473)
 }, {
   id: 14,
   title: 'Curly, European square',
   teg: ['Curly'],
   date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(471)
+  imgUrl: __webpack_require__(474)
 }, {
   id: 15,
   title: 'Curly, European square',
   teg: ['Curly'],
   date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(472)
+  imgUrl: __webpack_require__(475)
 }, {
   id: 16,
   title: 'Curly, European square',
   teg: ['Curly'],
   date: [2012, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(473)
+  imgUrl: __webpack_require__(476)
 }, {
   id: 17,
   title: 'Tatiana, Podgoretsky castle',
   teg: ['Tatiana'],
   date: [2012, 6, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(474)
+  imgUrl: __webpack_require__(477)
 }, {
   id: 18,
   title: 'Tatiana, Podgoretsky castle',
   teg: ['Tatiana'],
   date: [2012, 6, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(475)
+  imgUrl: __webpack_require__(478)
 }, {
   id: 19,
   title: 'Tatiana, Podgoretsky castle',
   teg: ['Tatiana'],
   date: [2012, 6, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(476)
+  imgUrl: __webpack_require__(479)
 }, {
   id: 20,
   title: 'Tatiana, Podgoretsky castle',
   teg: ['Tatiana'],
   date: [2012, 6, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(477)
+  imgUrl: __webpack_require__(480)
 }, {
   id: 21,
   title: 'Tatiana, Podgoretsky castle',
   teg: ['Tatiana'],
   date: [2012, 6, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(478)
+  imgUrl: __webpack_require__(481)
 }, {
   id: 22,
   title: 'Tatiana, Portrait',
   teg: ['Tatiana'],
   date: [2013, 3, 3],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(479)
+  imgUrl: __webpack_require__(482)
 }, {
   id: 23,
   title: 'Tatiana, Sunset',
   teg: ['Tatiana'],
   date: [2013, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(480)
+  imgUrl: __webpack_require__(483)
 }, {
   id: 24,
   title: 'Tatiana, Sunset',
   teg: ['Tatiana'],
   date: [2013, 5, 5],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(481)
+  imgUrl: __webpack_require__(484)
 }, {
   id: 25,
   title: 'Tatiana, Sunset',
   teg: ['Tatiana'],
   date: [2013, 7, 14],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(482)
+  imgUrl: __webpack_require__(485)
 }, {
   id: 26,
   title: 'Tatiana, Sunset',
   teg: ['Tatiana'],
   date: [2013, 7, 14],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(483)
+  imgUrl: __webpack_require__(486)
 }, {
   id: 27,
   title: 'Tatiana, Museum of Pyrogovo',
   teg: ['Tatiana'],
   date: [2013, 8, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(484)
+  imgUrl: __webpack_require__(487)
 }, {
   id: 28,
   title: 'Tatiana, Museum of Pyrogovo',
   teg: ['Tatiana'],
   date: [2013, 8, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(485)
+  imgUrl: __webpack_require__(488)
 }, {
   id: 29,
   title: 'Tatiana, Museum of Pyrogovo',
   teg: ['Tatiana'],
   date: [2013, 8, 4],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(486)
+  imgUrl: __webpack_require__(489)
 }, {
   id: 30,
   title: 'Tatiana, Svitlovodsk Reservoir',
   teg: ['Tatiana'],
   date: [2013, 9, 8],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(487)
+  imgUrl: __webpack_require__(490)
 }, {
   id: 31,
   title: 'Tatiana, Svitlovodsk Reservoir',
   teg: ['Tatiana'],
   date: [2013, 9, 8],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(488)
+  imgUrl: __webpack_require__(491)
 }, {
   id: 32,
   title: 'Tatiana, Svitlovodsk Reservoir',
   teg: ['Tatiana'],
   date: [2013, 9, 8],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(489)
+  imgUrl: __webpack_require__(492)
 }, {
   id: 33,
   title: 'Tatiana, Svitlovodsk Reservoir',
   teg: ['Tatiana'],
   date: [2013, 9, 8],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(490)
+  imgUrl: __webpack_require__(493)
 }, {
   id: 34,
   title: 'Tatiana, Uhman',
   teg: ['Tatiana'],
   date: [2013, 10, 6],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(491)
+  imgUrl: __webpack_require__(494)
 }, {
   id: 35,
   title: 'Tatiana, Uhman',
   teg: ['Tatiana'],
   date: [2013, 10, 6],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(492)
+  imgUrl: __webpack_require__(495)
 }, {
   id: 36,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 4, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(493)
+  imgUrl: __webpack_require__(496)
 }, {
   id: 37,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 4, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(494)
+  imgUrl: __webpack_require__(497)
 }, {
   id: 38,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 4, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(495)
+  imgUrl: __webpack_require__(498)
 }, {
   id: 39,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 4, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(496)
+  imgUrl: __webpack_require__(499)
 }, {
   id: 40,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 4, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(497)
+  imgUrl: __webpack_require__(500)
 }, {
   id: 41,
   title: 'Oksana, Brody',
   teg: ['Oksana'],
   date: [2014, 9, 27],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(498)
+  imgUrl: __webpack_require__(501)
 }, {
   id: 42,
   title: 'Oksana, Brody',
   teg: ['Oksana'],
   date: [2014, 9, 27],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(499)
+  imgUrl: __webpack_require__(502)
 }, {
   id: 43,
   title: 'Oksana, Brody',
   teg: ['Oksana'],
   date: [2014, 9, 27],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(500)
+  imgUrl: __webpack_require__(503)
 }, {
   id: 44,
   title: 'Oksana, Brody',
   teg: ['Oksana'],
   date: [2014, 9, 27],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(501)
+  imgUrl: __webpack_require__(504)
 }, {
   id: 45,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 10, 12],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(502)
+  imgUrl: __webpack_require__(505)
 }, {
   id: 46,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 10, 12],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(503)
+  imgUrl: __webpack_require__(506)
 }, {
   id: 47,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 10, 12],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(504)
+  imgUrl: __webpack_require__(507)
 }, {
   id: 48,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 10, 12],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(505)
+  imgUrl: __webpack_require__(508)
 }, {
   id: 49,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 10, 12],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(506)
+  imgUrl: __webpack_require__(509)
 }, {
   id: 50,
   title: 'Tatiana, VDNH',
   teg: ['Tatiana'],
   date: [2014, 10, 12],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(507)
+  imgUrl: __webpack_require__(510)
 }, {
   id: 51,
   title: 'Anna, 2 months',
   teg: ['Anna'],
   date: [2015, 2, 21],
   family: 'family',
-  imgUrl: __webpack_require__(508)
+  imgUrl: __webpack_require__(511)
 }, {
   id: 52,
   title: 'Anna, 2 months',
   teg: ['Anna'],
   date: [2015, 2, 21],
   children: 'children',
-  imgUrl: __webpack_require__(509)
+  imgUrl: __webpack_require__(512)
 }, {
   id: 53,
   title: 'Tatiana, Ivy',
   teg: ['Tatiana'],
   date: [2015, 9, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(510)
+  imgUrl: __webpack_require__(513)
 }, {
   id: 54,
   title: 'Tatiana, Ivy',
   teg: ['Tatiana'],
   date: [2015, 9, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(511)
+  imgUrl: __webpack_require__(514)
 }, {
   id: 55,
   title: 'Tatiana, Ivy',
   teg: ['Tatiana'],
   date: [2015, 9, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(512)
+  imgUrl: __webpack_require__(515)
 }, {
   id: 56,
   title: 'Tatiana, Ivy',
   teg: ['Tatiana'],
   date: [2015, 9, 26],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(513)
+  imgUrl: __webpack_require__(516)
 }, {
   id: 57,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(514)
+  imgUrl: __webpack_require__(517)
 }, {
   id: 58,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(515)
+  imgUrl: __webpack_require__(518)
 }, {
   id: 59,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(516)
+  imgUrl: __webpack_require__(519)
 }, {
   id: 60,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(517)
+  imgUrl: __webpack_require__(520)
 }, {
   id: 61,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(518)
+  imgUrl: __webpack_require__(521)
 }, {
   id: 62,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(519)
+  imgUrl: __webpack_require__(522)
 }, {
   id: 63,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(520)
+  imgUrl: __webpack_require__(523)
 }, {
   id: 64,
   title: 'Ksenia and sakura',
   teg: ['Ksenia'],
   date: [2016, 4, 24],
   portrait: 'portrait',
-  imgUrl: __webpack_require__(521)
+  imgUrl: __webpack_require__(524)
 }, {
   id: 65,
   title: 'Tatiana, Waiting for a miracle',
   teg: ['Tatiana'],
   date: [2016, 10, 1],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(522)
+  imgUrl: __webpack_require__(525)
 }, {
   id: 66,
   title: 'Tatiana, Waiting for a miracle',
   teg: ['Tatiana'],
   date: [2016, 10, 1],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(523)
+  imgUrl: __webpack_require__(526)
 }, {
   id: 67,
   title: 'Tatiana, Waiting for a miracle',
   teg: ['Tatiana'],
   date: [2016, 10, 1],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(524)
+  imgUrl: __webpack_require__(527)
 }, {
   id: 68,
   title: 'Tatiana, Waiting for a miracle',
   teg: ['Tatiana'],
   date: [2016, 10, 1],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(525)
+  imgUrl: __webpack_require__(528)
 }, {
   id: 69,
   title: 'Tatiana, Waiting for a miracle',
   teg: ['Tatiana'],
   date: [2016, 10, 1],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(526)
+  imgUrl: __webpack_require__(529)
 }, {
   id: 70,
   title: 'Tatiana, Studio Yu-Na',
   teg: ['Tatiana'],
   date: [2017, 1, 21],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(527)
+  imgUrl: __webpack_require__(530)
 }, {
   id: 71,
   title: 'Tatiana, Studio Yu-Na',
   teg: ['Tatiana'],
   date: [2017, 1, 21],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(528)
+  imgUrl: __webpack_require__(531)
 }, {
   id: 72,
   title: 'Tatiana, Studio Yu-Na',
   teg: ['Tatiana'],
   date: [2017, 1, 21],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(529)
+  imgUrl: __webpack_require__(532)
 }, {
   id: 73,
   title: 'Tatiana, Studio Yu-Na',
   teg: ['Tatiana'],
   date: [2017, 1, 21],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(530)
+  imgUrl: __webpack_require__(533)
 }, {
   id: 74,
   title: 'Tatiana, Studio Yu-Na',
   teg: ['Tatiana'],
   date: [2017, 1, 21],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(531)
+  imgUrl: __webpack_require__(534)
 }, {
   id: 75,
   title: 'Tatiana, Studio Yu-Na',
   teg: ['Tatiana'],
   date: [2017, 1, 21],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(532)
+  imgUrl: __webpack_require__(535)
 }, {
   id: 76,
   title: 'Tatiana, Studio Yu-Na',
   teg: ['Tatiana'],
   date: [2017, 1, 21],
   gestation: 'gestation',
-  imgUrl: __webpack_require__(533)
+  imgUrl: __webpack_require__(536)
 }, {
   id: 77,
   title: 'Polina, 2 months',
   teg: ['Polina'],
   date: [2017, 4, 22],
   children: 'children',
-  imgUrl: __webpack_require__(534)
+  imgUrl: __webpack_require__(537)
 }, {
   id: 78,
   title: 'Polina, 2 months',
   teg: ['Polina'],
   date: [2017, 4, 22],
   children: 'children',
-  imgUrl: __webpack_require__(535)
+  imgUrl: __webpack_require__(538)
 }, {
   id: 79,
   title: 'Polina, 2 months',
   teg: ['Polina'],
   date: [2017, 4, 22],
   children: 'children',
-  imgUrl: __webpack_require__(536)
+  imgUrl: __webpack_require__(539)
 }, {
   id: 80,
   title: 'Polina, 2 months',
   teg: ['Polina'],
   date: [2017, 4, 22],
   children: 'children',
-  imgUrl: __webpack_require__(537)
+  imgUrl: __webpack_require__(540)
 }, {
   id: 81,
   title: 'Polina, 2 months',
   teg: ['Polina'],
   date: [2017, 4, 22],
   children: 'children',
-  imgUrl: __webpack_require__(538)
+  imgUrl: __webpack_require__(541)
 }, {
   id: 82,
   title: 'Polina, 4 months',
   teg: ['Polina'],
   date: [2017, 5, 16],
   children: 'children',
-  imgUrl: __webpack_require__(539)
+  imgUrl: __webpack_require__(542)
 }, {
   id: 83,
   title: 'Ksenia and Polina',
   teg: ['Polina', 'Ksenia'],
   date: [2017, 5, 28],
   family: 'family',
-  imgUrl: __webpack_require__(540)
+  imgUrl: __webpack_require__(543)
 }, {
   id: 84,
   title: 'Ksenia and Polina',
   teg: ['Polina', 'Ksenia'],
   date: [2017, 5, 28],
   family: 'family',
-  imgUrl: __webpack_require__(541)
+  imgUrl: __webpack_require__(544)
 }, {
   id: 85,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(542)
+  imgUrl: __webpack_require__(545)
 }, {
   id: 86,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(543)
+  imgUrl: __webpack_require__(546)
 }, {
   id: 87,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(544)
+  imgUrl: __webpack_require__(547)
 }, {
   id: 88,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(545)
+  imgUrl: __webpack_require__(548)
 }, {
   id: 89,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(546)
+  imgUrl: __webpack_require__(549)
 }, {
   id: 90,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(547)
+  imgUrl: __webpack_require__(550)
 }, {
   id: 91,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(548)
+  imgUrl: __webpack_require__(551)
 }, {
   id: 92,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(549)
+  imgUrl: __webpack_require__(552)
 }, {
   id: 93,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(550)
+  imgUrl: __webpack_require__(553)
 }, {
   id: 94,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(551)
+  imgUrl: __webpack_require__(554)
 }, {
   id: 95,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(552)
+  imgUrl: __webpack_require__(555)
 }, {
   id: 96,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   children: 'children',
-  imgUrl: __webpack_require__(553)
+  imgUrl: __webpack_require__(556)
 }, {
   id: 97,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   family: 'family',
-  imgUrl: __webpack_require__(554)
+  imgUrl: __webpack_require__(557)
 }, {
   id: 98,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   family: 'family',
-  imgUrl: __webpack_require__(555)
+  imgUrl: __webpack_require__(558)
 }, {
   id: 99,
   title: 'Annia, 1 year',
   teg: ['Annia'],
   date: [2017, 8, 5],
   family: 'family',
-  imgUrl: __webpack_require__(556)
+  imgUrl: __webpack_require__(559)
 }, {
   id: 100,
   title: 'Polina, 6 months',
   teg: ['Polina'],
   date: [2017, 8, 12],
   children: 'children',
-  imgUrl: __webpack_require__(557)
+  imgUrl: __webpack_require__(560)
 }, {
   id: 101,
   title: 'Polina, 6 months',
   teg: ['Polina'],
   date: [2017, 8, 12],
   children: 'children',
-  imgUrl: __webpack_require__(558)
+  imgUrl: __webpack_require__(561)
 }, {
   id: 102,
   title: 'Polina, 6 months',
   teg: ['Polina'],
   date: [2017, 8, 12],
   children: 'children',
-  imgUrl: __webpack_require__(559)
+  imgUrl: __webpack_require__(562)
 }, {
   id: 103,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(560)
+  imgUrl: __webpack_require__(563)
 }, {
   id: 104,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(561)
+  imgUrl: __webpack_require__(564)
 }, {
   id: 105,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(562)
+  imgUrl: __webpack_require__(565)
 }, {
   id: 106,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(563)
+  imgUrl: __webpack_require__(566)
 }, {
   id: 107,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(564)
+  imgUrl: __webpack_require__(567)
 }, {
   id: 108,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(565)
+  imgUrl: __webpack_require__(568)
 }, {
   id: 109,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(566)
+  imgUrl: __webpack_require__(569)
 }, {
   id: 110,
   title: 'Polina, 7 months',
   teg: ['Polina'],
   date: [2017, 8, 27],
   children: 'children',
-  imgUrl: __webpack_require__(567)
+  imgUrl: __webpack_require__(570)
 }, {
   id: 111,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   children: 'children',
-  imgUrl: __webpack_require__(568)
+  imgUrl: __webpack_require__(571)
 }, {
   id: 112,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   family: 'family',
-  imgUrl: __webpack_require__(569)
+  imgUrl: __webpack_require__(572)
 }, {
   id: 113,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   children: 'children',
-  imgUrl: __webpack_require__(570)
+  imgUrl: __webpack_require__(573)
 }, {
   id: 114,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   family: 'family',
-  imgUrl: __webpack_require__(571)
+  imgUrl: __webpack_require__(574)
 }, {
   id: 115,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   children: 'children',
-  imgUrl: __webpack_require__(572)
+  imgUrl: __webpack_require__(575)
 }, {
   id: 116,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   children: 'children',
-  imgUrl: __webpack_require__(573)
+  imgUrl: __webpack_require__(576)
 }, {
   id: 117,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   children: 'children',
-  imgUrl: __webpack_require__(574)
+  imgUrl: __webpack_require__(577)
 }, {
   id: 118,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   children: 'children',
-  imgUrl: __webpack_require__(575)
+  imgUrl: __webpack_require__(578)
 }, {
   id: 119,
   title: 'Nastia and Yulia, Brovary park',
   teg: ['Nastia'],
   date: [2017, 9, 3],
   children: 'children',
-  imgUrl: __webpack_require__(576)
+  imgUrl: __webpack_require__(579)
 }, {
   id: 120,
   title: 'Annia, Brovary',
   teg: ['Annia'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(577)
+  imgUrl: __webpack_require__(580)
 }, {
   id: 121,
   title: 'Annia, Brovary',
   teg: ['Annia'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(578)
+  imgUrl: __webpack_require__(581)
 }, {
   id: 122,
   title: 'Annia, Brovary',
   teg: ['Annia'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(579)
+  imgUrl: __webpack_require__(582)
 }, {
   id: 123,
   title: 'Annia, Brovary',
   teg: ['Annia'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(580)
+  imgUrl: __webpack_require__(583)
 }, {
   id: 124,
   title: 'Annia, Brovary',
   teg: ['Annia'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(581)
+  imgUrl: __webpack_require__(584)
 }, {
   id: 125,
   title: 'Polina, 8 months',
   teg: ['Polina'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(582)
+  imgUrl: __webpack_require__(585)
 }, {
   id: 126,
   title: 'Polina, 8 months',
   teg: ['Polina'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(583)
+  imgUrl: __webpack_require__(586)
 }, {
   id: 127,
   title: 'Polina, 8 months',
   teg: ['Polina'],
   date: [2017, 9, 16],
   children: 'children',
-  imgUrl: __webpack_require__(584)
+  imgUrl: __webpack_require__(587)
 }, {
   id: 128,
   title: 'Polina, Autumn',
   teg: ['Polina'],
   date: [2017, 10, 16],
   children: 'children',
-  imgUrl: __webpack_require__(585)
+  imgUrl: __webpack_require__(588)
 }, {
   id: 129,
   title: 'Polina, Autumn',
   teg: ['Polina'],
   date: [2017, 10, 16],
   children: 'children',
-  imgUrl: __webpack_require__(586)
+  imgUrl: __webpack_require__(589)
 }, {
   id: 130,
   title: 'Polina, Autumn',
   teg: ['Polina'],
   date: [2017, 10, 16],
   children: 'children',
-  imgUrl: __webpack_require__(587)
+  imgUrl: __webpack_require__(590)
 }, {
   id: 131,
   title: 'Polina, Autumn',
   teg: ['Polina'],
   date: [2017, 10, 16],
   children: 'children',
-  imgUrl: __webpack_require__(588)
+  imgUrl: __webpack_require__(591)
+}, {
+  id: 132,
+  title: 'Polina, Mikolaia day',
+  teg: ['Polina'],
+  date: [2017, 12, 19],
+  children: 'children',
+  imgUrl: __webpack_require__(592)
+}, {
+  id: 133,
+  title: 'Polina, Mikolaia day',
+  teg: ['Polina'],
+  date: [2017, 12, 19],
+  children: 'children',
+  imgUrl: __webpack_require__(593)
+}, {
+  id: 134,
+  title: 'Polina, Mikolaia day',
+  teg: ['Polina'],
+  date: [2017, 12, 19],
+  children: 'children',
+  imgUrl: __webpack_require__(594)
+}, {
+  id: 135,
+  title: 'Polina, Mikolaia day',
+  teg: ['Polina'],
+  date: [2017, 12, 19],
+  children: 'children',
+  imgUrl: __webpack_require__(595)
+}, {
+  id: 136,
+  title: 'Polina, Mikolaia day',
+  teg: ['Polina'],
+  date: [2017, 12, 19],
+  children: 'children',
+  imgUrl: __webpack_require__(596)
+}, {
+  id: 137,
+  title: 'Polina, Mikolaia day',
+  teg: ['Polina'],
+  date: [2017, 12, 19],
+  children: 'children',
+  imgUrl: __webpack_require__(597)
+}, {
+  id: 138,
+  title: 'Polina, Vigvam',
+  teg: ['Polina'],
+  date: [2018, 1, 20],
+  children: 'children',
+  imgUrl: __webpack_require__(598)
+}, {
+  id: 139,
+  title: 'Polina, Vigvam',
+  teg: ['Polina'],
+  date: [2018, 1, 20],
+  children: 'children',
+  imgUrl: __webpack_require__(599)
+}, {
+  id: 140,
+  title: 'Polina, Vigvam',
+  teg: ['Polina'],
+  date: [2018, 1, 20],
+  children: 'children',
+  imgUrl: __webpack_require__(600)
+}, {
+  id: 141,
+  title: 'Polina, Vigvam',
+  teg: ['Polina'],
+  date: [2018, 1, 20],
+  children: 'children',
+  imgUrl: __webpack_require__(601)
+}, {
+  id: 142,
+  title: 'Polina, Vigvam',
+  teg: ['Polina'],
+  date: [2018, 1, 20],
+  children: 'children',
+  imgUrl: __webpack_require__(602)
+}, {
+  id: 143,
+  title: 'Polina, Polina Bbirthday Party',
+  teg: ['Polina'],
+  date: [2018, 2, 12],
+  children: 'children',
+  imgUrl: __webpack_require__(603)
+}, {
+  id: 144,
+  title: 'Polina, Polina Bbirthday Party',
+  teg: ['Polina'],
+  date: [2018, 2, 12],
+  children: 'children',
+  imgUrl: __webpack_require__(604)
+}, {
+  id: 145,
+  title: 'Polina, Polina Bbirthday Party',
+  teg: ['Polina'],
+  date: [2018, 2, 12],
+  children: 'children',
+  imgUrl: __webpack_require__(605)
+}, {
+  id: 146,
+  title: 'Polina, Polina Bbirthday Party',
+  teg: ['Polina'],
+  date: [2018, 2, 12],
+  children: 'children',
+  imgUrl: __webpack_require__(606)
+}, {
+  id: 147,
+  title: 'Polina, Polina Bbirthday Party',
+  teg: ['Polina'],
+  date: [2018, 2, 12],
+  family: 'family',
+  imgUrl: __webpack_require__(607)
+}, {
+  id: 148,
+  title: 'Polina, Polina Bbirthday Party',
+  teg: ['Polina'],
+  date: [2018, 2, 12],
+  family: 'family',
+  imgUrl: __webpack_require__(608)
+}, {
+  id: 149,
+  title: 'Polina, Snow',
+  teg: ['Polina'],
+  date: [2018, 3, 4],
+  children: 'children',
+  imgUrl: __webpack_require__(609)
+}, {
+  id: 150,
+  title: 'Polina, Snow',
+  teg: ['Polina'],
+  date: [2018, 3, 4],
+  children: 'children',
+  imgUrl: __webpack_require__(610)
+}, {
+  id: 151,
+  title: 'Polina, Snow',
+  teg: ['Polina'],
+  date: [2018, 3, 4],
+  children: 'children',
+  imgUrl: __webpack_require__(611)
+}, {
+  id: 152,
+  title: 'Polina, Snow',
+  teg: ['Polina'],
+  date: [2018, 3, 4],
+  children: 'children',
+  imgUrl: __webpack_require__(612)
 }];
 
 exports.imgItems = imgItems;
 
 /***/ }),
-/* 463 */
+/* 466 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_007.jpg";
 
 /***/ }),
-/* 464 */
+/* 467 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_008.jpg";
 
 /***/ }),
-/* 465 */
+/* 468 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_009.jpg";
 
 /***/ }),
-/* 466 */
+/* 469 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_010.jpg";
 
 /***/ }),
-/* 467 */
+/* 470 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_011.jpg";
 
 /***/ }),
-/* 468 */
+/* 471 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_012.jpg";
 
 /***/ }),
-/* 469 */
+/* 472 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_013.jpg";
 
 /***/ }),
-/* 470 */
+/* 473 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_014.jpg";
 
 /***/ }),
-/* 471 */
+/* 474 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_015.jpg";
 
 /***/ }),
-/* 472 */
+/* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_016.jpg";
 
 /***/ }),
-/* 473 */
+/* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_017.jpg";
 
 /***/ }),
-/* 474 */
+/* 477 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_018.jpg";
 
 /***/ }),
-/* 475 */
+/* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_019.jpg";
 
 /***/ }),
-/* 476 */
+/* 479 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_020.jpg";
 
 /***/ }),
-/* 477 */
+/* 480 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_021.jpg";
 
 /***/ }),
-/* 478 */
+/* 481 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_022.jpg";
 
 /***/ }),
-/* 479 */
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_023.jpg";
 
 /***/ }),
-/* 480 */
+/* 483 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_024.jpg";
 
 /***/ }),
-/* 481 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_025.jpg";
 
 /***/ }),
-/* 482 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_026.jpg";
 
 /***/ }),
-/* 483 */
+/* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_027.jpg";
 
 /***/ }),
-/* 484 */
+/* 487 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_028.jpg";
 
 /***/ }),
-/* 485 */
+/* 488 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_029.jpg";
 
 /***/ }),
-/* 486 */
+/* 489 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_030.jpg";
 
 /***/ }),
-/* 487 */
+/* 490 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_031.jpg";
 
 /***/ }),
-/* 488 */
+/* 491 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_032.jpg";
 
 /***/ }),
-/* 489 */
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_033.jpg";
 
 /***/ }),
-/* 490 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_034.jpg";
 
 /***/ }),
-/* 491 */
+/* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_035.jpg";
 
 /***/ }),
-/* 492 */
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_036.jpg";
 
 /***/ }),
-/* 493 */
+/* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_037.jpg";
 
 /***/ }),
-/* 494 */
+/* 497 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_038.jpg";
 
 /***/ }),
-/* 495 */
+/* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_039.jpg";
 
 /***/ }),
-/* 496 */
+/* 499 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_040.jpg";
 
 /***/ }),
-/* 497 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_041.jpg";
 
 /***/ }),
-/* 498 */
+/* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_042.jpg";
 
 /***/ }),
-/* 499 */
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_043.jpg";
 
 /***/ }),
-/* 500 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_044.jpg";
 
 /***/ }),
-/* 501 */
+/* 504 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_045.jpg";
 
 /***/ }),
-/* 502 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_046.jpg";
 
 /***/ }),
-/* 503 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_047.jpg";
 
 /***/ }),
-/* 504 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_048.jpg";
 
 /***/ }),
-/* 505 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_049.jpg";
 
 /***/ }),
-/* 506 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_050.jpg";
 
 /***/ }),
-/* 507 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_051.jpg";
 
 /***/ }),
-/* 508 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_052.jpg";
 
 /***/ }),
-/* 509 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_053.jpg";
 
 /***/ }),
-/* 510 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_054.jpg";
 
 /***/ }),
-/* 511 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_055.jpg";
 
 /***/ }),
-/* 512 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_056.jpg";
 
 /***/ }),
-/* 513 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_057.jpg";
 
 /***/ }),
-/* 514 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_058.jpg";
 
 /***/ }),
-/* 515 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_059.jpg";
 
 /***/ }),
-/* 516 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_060.jpg";
 
 /***/ }),
-/* 517 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_061.jpg";
 
 /***/ }),
-/* 518 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_062.jpg";
 
 /***/ }),
-/* 519 */
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_063.jpg";
 
 /***/ }),
-/* 520 */
+/* 523 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_064.jpg";
 
 /***/ }),
-/* 521 */
+/* 524 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_065.jpg";
 
 /***/ }),
-/* 522 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_066.jpg";
 
 /***/ }),
-/* 523 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_067.jpg";
 
 /***/ }),
-/* 524 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_068.jpg";
 
 /***/ }),
-/* 525 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_069.jpg";
 
 /***/ }),
-/* 526 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_070.jpg";
 
 /***/ }),
-/* 527 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_071.jpg";
 
 /***/ }),
-/* 528 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_072.jpg";
 
 /***/ }),
-/* 529 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_073.jpg";
 
 /***/ }),
-/* 530 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_074.jpg";
 
 /***/ }),
-/* 531 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_075.jpg";
 
 /***/ }),
-/* 532 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_076.jpg";
 
 /***/ }),
-/* 533 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_077.jpg";
 
 /***/ }),
-/* 534 */
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_078.jpg";
 
 /***/ }),
-/* 535 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_079.jpg";
 
 /***/ }),
-/* 536 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_080.jpg";
 
 /***/ }),
-/* 537 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_081.jpg";
 
 /***/ }),
-/* 538 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_082.jpg";
 
 /***/ }),
-/* 539 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_083.jpg";
 
 /***/ }),
-/* 540 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_084.jpg";
 
 /***/ }),
-/* 541 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_085.jpg";
 
 /***/ }),
-/* 542 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_086.jpg";
 
 /***/ }),
-/* 543 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_087.jpg";
 
 /***/ }),
-/* 544 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_088.jpg";
 
 /***/ }),
-/* 545 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_089.jpg";
 
 /***/ }),
-/* 546 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_090.jpg";
 
 /***/ }),
-/* 547 */
+/* 550 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_091.jpg";
 
 /***/ }),
-/* 548 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_092.jpg";
 
 /***/ }),
-/* 549 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_093.jpg";
 
 /***/ }),
-/* 550 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_094.jpg";
 
 /***/ }),
-/* 551 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_095.jpg";
 
 /***/ }),
-/* 552 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_096.jpg";
 
 /***/ }),
-/* 553 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_097.jpg";
 
 /***/ }),
-/* 554 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_098.jpg";
 
 /***/ }),
-/* 555 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_099.jpg";
 
 /***/ }),
-/* 556 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_100.jpg";
 
 /***/ }),
-/* 557 */
+/* 560 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_101.jpg";
 
 /***/ }),
-/* 558 */
+/* 561 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_102.jpg";
 
 /***/ }),
-/* 559 */
+/* 562 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_103.jpg";
 
 /***/ }),
-/* 560 */
+/* 563 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_104.jpg";
 
 /***/ }),
-/* 561 */
+/* 564 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_105.jpg";
 
 /***/ }),
-/* 562 */
+/* 565 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_106.jpg";
 
 /***/ }),
-/* 563 */
+/* 566 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_107.jpg";
 
 /***/ }),
-/* 564 */
+/* 567 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_108.jpg";
 
 /***/ }),
-/* 565 */
+/* 568 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_109.jpg";
 
 /***/ }),
-/* 566 */
+/* 569 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_110.jpg";
 
 /***/ }),
-/* 567 */
+/* 570 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_111.jpg";
 
 /***/ }),
-/* 568 */
+/* 571 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_112.jpg";
 
 /***/ }),
-/* 569 */
+/* 572 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_113.jpg";
 
 /***/ }),
-/* 570 */
+/* 573 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_114.jpg";
 
 /***/ }),
-/* 571 */
+/* 574 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_115.jpg";
 
 /***/ }),
-/* 572 */
+/* 575 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_116.jpg";
 
 /***/ }),
-/* 573 */
+/* 576 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_117.jpg";
 
 /***/ }),
-/* 574 */
+/* 577 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_118.jpg";
 
 /***/ }),
-/* 575 */
+/* 578 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_119.jpg";
 
 /***/ }),
-/* 576 */
+/* 579 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_120.jpg";
 
 /***/ }),
-/* 577 */
+/* 580 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_121.jpg";
 
 /***/ }),
-/* 578 */
+/* 581 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_122.jpg";
 
 /***/ }),
-/* 579 */
+/* 582 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_123.jpg";
 
 /***/ }),
-/* 580 */
+/* 583 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_124.jpg";
 
 /***/ }),
-/* 581 */
+/* 584 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_125.jpg";
 
 /***/ }),
-/* 582 */
+/* 585 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_126.jpg";
 
 /***/ }),
-/* 583 */
+/* 586 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_127.jpg";
 
 /***/ }),
-/* 584 */
+/* 587 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_128.jpg";
 
 /***/ }),
-/* 585 */
+/* 588 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_129.jpg";
 
 /***/ }),
-/* 586 */
+/* 589 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_130.jpg";
 
 /***/ }),
-/* 587 */
+/* 590 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_131.jpg";
 
 /***/ }),
-/* 588 */
+/* 591 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_132.jpg";
 
 /***/ }),
-/* 589 */
+/* 592 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_133.jpg";
+
+/***/ }),
+/* 593 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_134.jpg";
+
+/***/ }),
+/* 594 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_135.jpg";
+
+/***/ }),
+/* 595 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_136.jpg";
+
+/***/ }),
+/* 596 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_137.jpg";
+
+/***/ }),
+/* 597 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_138.jpg";
+
+/***/ }),
+/* 598 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_139.jpg";
+
+/***/ }),
+/* 599 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_140.jpg";
+
+/***/ }),
+/* 600 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_141.jpg";
+
+/***/ }),
+/* 601 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_142.jpg";
+
+/***/ }),
+/* 602 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_143.jpg";
+
+/***/ }),
+/* 603 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_144.jpg";
+
+/***/ }),
+/* 604 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_145.jpg";
+
+/***/ }),
+/* 605 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_146.jpg";
+
+/***/ }),
+/* 606 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_147.jpg";
+
+/***/ }),
+/* 607 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_148.jpg";
+
+/***/ }),
+/* 608 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_149.jpg";
+
+/***/ }),
+/* 609 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_150.jpg";
+
+/***/ }),
+/* 610 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_151.jpg";
+
+/***/ }),
+/* 611 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_152.jpg";
+
+/***/ }),
+/* 612 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/foto_153.jpg";
+
+/***/ }),
+/* 613 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4380,7 +4784,7 @@ var _classnames = __webpack_require__(46);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-__webpack_require__(590);
+__webpack_require__(614);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4453,13 +4857,13 @@ var Checkbox = function (_Component) {
 exports.Checkbox = Checkbox;
 
 /***/ }),
-/* 590 */
+/* 614 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 591 */
+/* 615 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4546,13 +4950,68 @@ var Radio = function (_Component) {
 exports.Radio = Radio;
 
 /***/ }),
-/* 592 */
+/* 616 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Tags = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Tags = function (_Component) {
+  _inherits(Tags, _Component);
+
+  function Tags(props) {
+    _classCallCheck(this, Tags);
+
+    return _possibleConstructorReturn(this, (Tags.__proto__ || Object.getPrototypeOf(Tags)).call(this, props));
+  }
+
+  _createClass(Tags, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'p',
+          null,
+          this.props.tag
+        )
+      );
+    }
+  }]);
+
+  return Tags;
+}(_react.Component);
+
+exports.Tags = Tags;
+
+/***/ }),
+/* 617 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 593 */
+/* 618 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4573,7 +5032,7 @@ var _links = __webpack_require__(182);
 
 var _form = __webpack_require__(181);
 
-__webpack_require__(594);
+__webpack_require__(619);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -4625,7 +5084,7 @@ var Contacts = function (_Component) {
               React.createElement(
                 'div',
                 { className: 'item' },
-                React.createElement('img', { src: __webpack_require__(595), alt: '' })
+                React.createElement('img', { src: __webpack_require__(620), alt: '' })
               )
             ),
             React.createElement(
@@ -4650,19 +5109,19 @@ var Contacts = function (_Component) {
 exports.Contacts = Contacts;
 
 /***/ }),
-/* 594 */
+/* 619 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 595 */
+/* 620 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "assets/images/foto_17.jpg";
 
 /***/ }),
-/* 596 */
+/* 621 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

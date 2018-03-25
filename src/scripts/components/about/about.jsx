@@ -1,41 +1,50 @@
-import * as React from 'react';// eslint-disable-line
-import { Component } from 'react';
+import React, { Component } from 'react';
 import './about.styl';
+import { contentItem } from "./content.js";
 
 class About extends Component {
   render() {
+    let lang;
+    const languageBrowser = navigator.language;
+    if (languageBrowser === 'uk-UA') {
+      lang = 0;
+    } else if (languageBrowser === 'ru-RU') {
+      lang = 1;
+    } else {
+      lang = 2;
+    }
+
+    const header = contentItem.map((item, index) => {
+      return <div key={index} className="item">
+        <h4>{item.aboutMe[lang]}</h4>
+        <p className="italic">{item.lovePhoto[lang]}</p>
+        <p>{item.text[lang]}</p>
+      </div>;
+    });
+
+    const title = contentItem.map((item, index) => {
+      return <div key={index} className="content">
+        <p><b><i className="fas fa-user"/> {item.title[lang]}</b></p>
+        <p>{item.name[lang]}</p>
+        <img src={require("../../../../assets/images/foto_18.jpg")} alt=""/>
+      </div>;
+    });
+
+    const text = contentItem.map((item, index) => {
+      return <div key={index} className="content content__text">
+        <p>{item.text2[lang]}</p>
+      </div>
+    });
 
     return <section className="about-me" id="navabout">
       <div className="page-content-M">
-        <div className="item">
-          <h4>ABOUT ME</h4>
-          <p className="italic">I love photography</p>
-          <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+        {header}
         <div className="grid-container">
           <div className="content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="item">
-              <p><b><i className="fas fa-user"/> My Name:</b></p>
-              <p>Roman Lysyk</p>
-              <img src={require("../../../../assets/images/foto_18.jpg")} alt=""/>
-            </div>
+            {title}
           </div>
           <div className="content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="item item__text">
-              <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</p>
-            </div>
+            {text}
           </div>
         </div>
         <div className="content-block">

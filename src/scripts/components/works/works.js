@@ -60,7 +60,7 @@ const imgItems = [
     imgUrl: require('./../../../../assets/images/foto_002.jpg'),
   },
   {
-    id: 8,
+    id: 0,
     line: 3,
     title: 't7',
     portrait: 'portrait',

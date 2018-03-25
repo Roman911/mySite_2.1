@@ -236,6 +236,13 @@
   background-color: rgba(119,119,119,0.2);
   transition: 0.4s;
 }
+@media screen and (max-width: 768px) {
+  .previous,
+  .next {
+    margin: 5px;
+    padding: 60px 20px;
+  }
+}
 .header {
   box-sizing: border-box;
   height: 100vh;
@@ -269,44 +276,45 @@
   line-height: 1.8;
 }
 .about-me .item > h4 {
+  text-transform: uppercase;
   margin: 10px 0;
   text-align: center;
   font-weight: 400;
 }
 .about-me .item > p {
   margin: 15px 0;
-  text-align: start;
+  text-align: justify;
 }
 .about-me .item > p.italic {
   text-align: center;
   font-style: italic;
 }
-.about-me .content-block .item {
+.about-me .content-block .content {
+  padding: 0 16px 64px;
   box-sizing: border-box;
 }
-.about-me .content-block .item > p {
+.about-me .content-block .content > p {
   text-align: center;
 }
-.about-me .content-block .item > img {
+.about-me .content-block .content > img {
   border: none;
   border-radius: 5px;
   max-width: 100%;
   opacity: 0.7;
   transition: 0.5s;
 }
-.about-me .content-block .item > img:hover {
+.about-me .content-block .content > img:hover {
   opacity: 1;
   transition: 0.5s;
 }
-.about-me .content-block .item__text {
-  box-sizing: border-box;
+.about-me .content-block .content__text {
   height: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
 }
-.about-me .content-block .item__text > p {
+.about-me .content-block .content__text > p {
   text-align: center;
 }
 .about-me .content-block > p {
@@ -513,8 +521,11 @@
 .slide.show {
   display: block;
 }
-.contacts {
-  padding: 63px;
+@media screen and (max-width: 768px) {
+  .slide > img {
+    max-width: calc(100vw - 10px);
+    max-height: calc(100vh - 10px);
+  }
 }
 .contacts .page-content-M .head {
   margin: 25px 0 0;
@@ -634,6 +645,11 @@
       transform: scale(1.05, 1.05);
   transition: 0.5s;
 }
+@media screen and (max-width: 768px) {
+  .gallery .page-content-L .page-content-M .content-wrapper {
+    margin: 5px;
+  }
+}
 .controls > label {
   display: -ms-flexbox;
   display: flex;
@@ -685,12 +701,42 @@
 .content-wrapper1 {
   margin: 64px 5px;
 }
-.content-wrapper1 .window-task {
+.content-wrapper1 .window-task,
+.content-wrapper1 .window-tags {
   width: 250px;
   box-sizing: border-box;
-  padding: 20px;
   border: 1px solid #a0a0a0;
   box-shadow: 0 0 5px 1px #929292;
+}
+.content-wrapper1 .window-task .window-header,
+.content-wrapper1 .window-tags .window-header {
+  box-sizing: border-box;
+  padding: 10px 25px;
+  background-color: #777;
+}
+.content-wrapper1 .window-task .window-header > p,
+.content-wrapper1 .window-tags .window-header > p {
+  color: #f1f1f1;
+}
+.content-wrapper1 .window-task .window-control,
+.content-wrapper1 .window-tags .window-control {
+  padding: 0 20px;
+}
+.content-wrapper1 .window-task .window-control > p,
+.content-wrapper1 .window-tags .window-control > p {
+  margin: 5px;
+}
+.content-wrapper1 .window-task {
+  padding-bottom: 12px;
+}
+.content-wrapper1 .window-tags {
+  margin-top: 7px;
+}
+@media screen and (max-width: 768px) {
+  .content-wrapper1 {
+    margin: 0;
+    display: none;
+  }
 }
 .contacts {
   padding: 63px;
@@ -744,6 +790,11 @@
 .contacts .fas,
 .contacts .fab {
   margin: 5px;
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 0;
+  }
 }
 html {
   font-size: $laptopsFontSize;

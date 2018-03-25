@@ -34,3 +34,9 @@
       transform translateY(0)
 .slide.show
   display block
+
+@media screen and (max-width: 768px)
+  .slide
+    > img
+      max-width calc(100vw - 10px)
+      max-height calc(100vh - 10px)

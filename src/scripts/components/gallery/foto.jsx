@@ -77,31 +77,32 @@ class Foto extends Component {
 
   render() {
     const imgItem = this.props.img;
+    console.log(imgItem);
     const img = imgItem.map((item, index) => {
       if ((index % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
-          <img src={this.state.images[item.id]}/>
+          <img src={item.imgUrl}/>
         </div>;
       }
     });
     const img2 = imgItem.map((item, index) => {
       if (((index - 1) % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
-          <img src={this.state.images[item.id]}/>
+          <img src={item.imgUrl}/>
         </div>;
       }
     });
     const img3 = imgItem.map((item, index) => {
       if (((index - 2) % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
-          <img src={this.state.images[item.id]}/>
+          <img src={item.imgUrl}/>
         </div>;
       }
     });
     const img4 = imgItem.map((item, index) => {
       if (((index - 3) % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>
-          <img src={this.state.images[item.id]}/>
+          <img src={item.imgUrl}/>
         </div>;
       }
     });

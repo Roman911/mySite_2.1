@@ -1055,6 +1055,174 @@ const imgItems = [
     children: 'children',
     imgUrl: require('./../../../../assets/images/foto_132.jpg')
   },
+  {
+    id: 132,
+    title: 'Polina, Mikolaia day',
+    teg: ['Polina'],
+    date: [2017, 12, 19],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_133.jpg')
+  },
+  {
+    id: 133,
+    title: 'Polina, Mikolaia day',
+    teg: ['Polina'],
+    date: [2017, 12, 19],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_134.jpg')
+  },
+  {
+    id: 134,
+    title: 'Polina, Mikolaia day',
+    teg: ['Polina'],
+    date: [2017, 12, 19],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_135.jpg')
+  },
+  {
+    id: 135,
+    title: 'Polina, Mikolaia day',
+    teg: ['Polina'],
+    date: [2017, 12, 19],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_136.jpg')
+  },
+  {
+    id: 136,
+    title: 'Polina, Mikolaia day',
+    teg: ['Polina'],
+    date: [2017, 12, 19],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_137.jpg')
+  },
+  {
+    id: 137,
+    title: 'Polina, Mikolaia day',
+    teg: ['Polina'],
+    date: [2017, 12, 19],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_138.jpg')
+  },
+  {
+    id: 138,
+    title: 'Polina, Vigvam',
+    teg: ['Polina'],
+    date: [2018, 1, 20],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_139.jpg')
+  },
+  {
+    id: 139,
+    title: 'Polina, Vigvam',
+    teg: ['Polina'],
+    date: [2018, 1, 20],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_140.jpg')
+  },
+  {
+    id: 140,
+    title: 'Polina, Vigvam',
+    teg: ['Polina'],
+    date: [2018, 1, 20],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_141.jpg')
+  },
+  {
+    id: 141,
+    title: 'Polina, Vigvam',
+    teg: ['Polina'],
+    date: [2018, 1, 20],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_142.jpg')
+  },
+  {
+    id: 142,
+    title: 'Polina, Vigvam',
+    teg: ['Polina'],
+    date: [2018, 1, 20],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_143.jpg')
+  },
+  {
+    id: 143,
+    title: 'Polina, Polina Bbirthday Party',
+    teg: ['Polina'],
+    date: [2018, 2, 12],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_144.jpg')
+  },
+  {
+    id: 144,
+    title: 'Polina, Polina Bbirthday Party',
+    teg: ['Polina'],
+    date: [2018, 2, 12],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_145.jpg')
+  },
+  {
+    id: 145,
+    title: 'Polina, Polina Bbirthday Party',
+    teg: ['Polina'],
+    date: [2018, 2, 12],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_146.jpg')
+  },
+  {
+    id: 146,
+    title: 'Polina, Polina Bbirthday Party',
+    teg: ['Polina'],
+    date: [2018, 2, 12],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_147.jpg')
+  },
+  {
+    id: 147,
+    title: 'Polina, Polina Bbirthday Party',
+    teg: ['Polina'],
+    date: [2018, 2, 12],
+    family: 'family',
+    imgUrl: require('./../../../../assets/images/foto_148.jpg')
+  },
+  {
+    id: 148,
+    title: 'Polina, Polina Bbirthday Party',
+    teg: ['Polina'],
+    date: [2018, 2, 12],
+    family: 'family',
+    imgUrl: require('./../../../../assets/images/foto_149.jpg')
+  },
+  {
+    id: 149,
+    title: 'Polina, Snow',
+    teg: ['Polina'],
+    date: [2018, 3, 4],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_150.jpg')
+  },
+  {
+    id: 150,
+    title: 'Polina, Snow',
+    teg: ['Polina'],
+    date: [2018, 3, 4],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_151.jpg')
+  },
+  {
+    id: 151,
+    title: 'Polina, Snow',
+    teg: ['Polina'],
+    date: [2018, 3, 4],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_152.jpg')
+  },
+  {
+    id: 152,
+    title: 'Polina, Snow',
+    teg: ['Polina'],
+    date: [2018, 3, 4],
+    children: 'children',
+    imgUrl: require('./../../../../assets/images/foto_153.jpg')
+  },
 ];
 
 export { imgItems };

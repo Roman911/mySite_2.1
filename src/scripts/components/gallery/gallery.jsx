@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { Foto } from "./foto.jsx";
 import { task } from "./../window-task/task.js";
 import { taskRadio } from "./../window-task/task-radio.js";
+import { tags } from "../window-task/tags.js";
 import { imgItems } from './foto.js'
 import { Checkbox } from "./../window-task/checkbox.jsx";
 import { Radio } from "./../window-task/radio.jsx";
+import { Tags } from "../window-task/tags.jsx";
 import './gallery.styl';
 import './../window-task/window-task.styl';
 
@@ -21,9 +23,11 @@ class Gallery extends Component {
       family: false,
       gestation: false,
       radioState: false,
-      date: false
+      date: false,
+      showed: false
     };
     this.toggle = this.toggle.bind(this);
+    this.addClass = this.addClass.bind(this);
   }
 
   toggle(id) {
@@ -46,7 +50,16 @@ class Gallery extends Component {
     }
   }
 
+  addClass() {
+    if (window.pageYOffset < 350) {
+      this.setState({ showed: false });
+    } else {
+      this.setState({ showed: true });
+    }
+  }
+
   render() {
+    const onsc = addEventListener('scroll', this.addClass);
     let img = [];
     imgItems.map((item) => {
       if (this.state.portrait || this.state.children || this.state.family || this.state.gestation || !item.imgUrl) {
@@ -78,7 +91,7 @@ class Gallery extends Component {
       }
       img.push(item)
     });
-    img = (this.state.date === true) ? img.reverse() : img;
+    img = this.state.date ? img : img.reverse();
     const checkbox = checked.map((item, index) => {
       return <div key={index} onChange={() => this.toggle(index)} >
         < Checkbox name={item.name} id={item.id} index={index} checked={this.state.checkboxState} />
@@ -89,21 +102,32 @@ class Gallery extends Component {
         < Radio name={item.name} id={item.id} index={index} checked={this.state.radioState} />
       </div>
     });
+    const tag = tags.map((item, index) => {
+      return <div key={index}>
+        <Tags tag={item.tag}/>
+      </div>
+    });
     return <section className="gallery">
       <div className="page-content-L">
         <div className='content-wrapper1'>
           <div className='window-task'>
-            <div className="window-task__header">
+            <div className="window-header">
               <p>Select</p>
             </div>
-            <div className='window-task__categories'>
+            <div className='window-control'>
               <p>Categories</p>
               { checkbox }
             </div>
-            <div className='window-task__radio'>
+            <div className='window-control'>
               <p>Date</p>
               { radio1 }
             </div>
+          </div>
+          <div className='window-tags'>
+            <div className="window-header">
+              <p>Tags:</p>
+            </div>
+            { tag }
           </div>
         </div>
         < Foto img={img} />

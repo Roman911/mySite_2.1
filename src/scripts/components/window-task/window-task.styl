@@ -2,9 +2,30 @@
 
 .content-wrapper1
   margin 64px 5px
-  .window-task
+  .window-task,
+  .window-tags
     width 250px
     box-sizing border-box
-    padding 20px
     border 1px solid $Gray + 30%
     box-shadow 0 0 5px 1px $Gray + 20%
+    .window-header
+      box-sizing border-box
+      padding 10px 25px
+      background-color $Gray
+      > p
+        color $Gray + 90%
+    .window-control
+      padding 0 20px
+      > p
+        margin 5px
+
+  .window-task
+    padding-bottom 12px
+
+  .window-tags
+    margin-top 7px
+
+@media screen and (max-width: 768px)
+  .content-wrapper1
+    margin 0
+    display none
