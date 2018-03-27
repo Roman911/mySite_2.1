@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import './../../../styles/buttons.styl'
 
 class Tags extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
-    return <div>
-      <p>{this.props.tag}</p>
+    const classString = this.props.show ? "btn__tag active" : "btn__tag";
+    return <div className={classString}>
+      <button className='button__tag'><p>{this.props.tag}</p></button>
     </div>
   }
 }

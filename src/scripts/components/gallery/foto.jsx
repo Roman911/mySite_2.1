@@ -77,7 +77,6 @@ class Foto extends Component {
 
   render() {
     const imgItem = this.props.img;
-    console.log(imgItem);
     const img = imgItem.map((item, index) => {
       if ((index % 4) === 0) {
         return <div key={index} className="item" onClick={() => this.setModal(true, index, imgItem.length)}>

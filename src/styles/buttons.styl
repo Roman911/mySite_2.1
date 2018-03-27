@@ -91,6 +91,26 @@
     background-color alpha($Gray, .2)
     transition .4s
 
+//button tags
+.tags
+  margin 4px
+  .btn__tag
+    .button__tag
+      box-sizing border-box
+      border none
+      background-color $Gray + 90%
+      padding 0 6px
+      cursor pointer
+      &:hover
+        background-color $Gray + 70%
+  .btn__tag.active
+    .button__tag
+      background-color $Gray - 50%
+      transform scale(1.12)
+      > p
+        font-weight 500
+        color $red
+
 @media screen and (max-width: 768px)
 //button modal next, prev
   .previous,

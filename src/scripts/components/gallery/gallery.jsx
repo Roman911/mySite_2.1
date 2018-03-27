@@ -17,37 +17,36 @@ class Gallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checkboxState: false,
       portrait: false,
       children: false,
       family: false,
       gestation: false,
-      radioState: false,
       date: false,
-      showed: false
+      showed: false,
+      show: false,
+      currentIndex: null,
+      tag: null
     };
     this.toggle = this.toggle.bind(this);
     this.addClass = this.addClass.bind(this);
   }
 
   toggle(id) {
-    this.setState({checkboxState: !this.state.checkboxState});
+    this.setState({tag: null, currentIndex: null});
     if (id === 0) {
-      this.setState({portrait: !this.state.portrait})
+      this.setState({portrait: !this.state.portrait});
     } else if (id === 1) {
-      this.setState({children: !this.state.children})
+      this.setState({children: !this.state.children});
     } else if (id === 2) {
-      this.setState({family: !this.state.family})
+      this.setState({family: !this.state.family});
     } else if (id === 3) {
-      this.setState({gestation: !this.state.gestation})
+      this.setState({gestation: !this.state.gestation});
     }
   }
 
-  toggleRadio(id) {
-    this.setState({radioState: !this.state.radioState});
-    if (id === 0) {
-      this.setState({date: !this.state.date})
-    }
+  toggleRadio() {
+    this.setState({date: !this.state.date});
+    this.setState({show: !this.state.show})
   }
 
   addClass() {
@@ -58,11 +57,20 @@ class Gallery extends Component {
     }
   }
 
+  tag(tag, index) {
+    this.setState({portrait: false, children: false, family: false, gestation: false});
+    if (this.state.tag === tag) {
+      this.setState({tag: null, currentIndex: null});
+    } else {
+      this.setState({tag: tag, currentIndex: index});
+    }
+  }
+
   render() {
     const onsc = addEventListener('scroll', this.addClass);
     let img = [];
     imgItems.map((item) => {
-      if (this.state.portrait || this.state.children || this.state.family || this.state.gestation || !item.imgUrl) {
+      if (this.state.tag || this.state.portrait || this.state.children || this.state.family || this.state.gestation || !item.imgUrl) {
         return;
       }
       img.push(item);
@@ -89,22 +97,31 @@ class Gallery extends Component {
       if (!this.state.gestation || !item.gestation) {
         return;
       }
-      img.push(item)
+      img.push(item);
     });
-    img = this.state.date ? img : img.reverse();
+    imgItems.map((item) => {
+      if (item.tag !== this.state.tag || !item) {
+        return;
+      }
+      img.push(item);
+    });
+    img = this.state.date ? img.reverse() : img;
     const checkbox = checked.map((item, index) => {
       return <div key={index} onChange={() => this.toggle(index)} >
-        < Checkbox name={item.name} id={item.id} index={index} checked={this.state.checkboxState} />
+        < Checkbox name={item.name} index={index} />
       </div>
     });
     const radio1 = radio.map((item, index) => {
-      return <div key={index} onChange={() => this.toggleRadio(index)}>
-        < Radio name={item.name} id={item.id} index={index} checked={this.state.radioState} />
+      return <div key={index} onChange={() => this.toggleRadio()}>
+        < Radio name={item.name} index={index} show={this.state.show} />
       </div>
     });
     const tag = tags.map((item, index) => {
-      return <div key={index}>
-        <Tags tag={item.tag}/>
+      return <div className='tags' key={index} onClick={() => this.tag(item.tag, index)} >
+        <Tags
+          tag={item.tag}
+          show={this.state.currentIndex === index}
+        />
       </div>
     });
     return <section className="gallery">
@@ -127,7 +144,9 @@ class Gallery extends Component {
             <div className="window-header">
               <p>Tags:</p>
             </div>
-            { tag }
+            <div className='window-content'>
+              { tag }
+            </div>
           </div>
         </div>
         < Foto img={img} />
